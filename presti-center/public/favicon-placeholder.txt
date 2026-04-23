@@ -1,0 +1,2 @@
+Replace this file with an actual favicon.ico (ideally 32x32 .ico format).
+You can generate one for free at https://favicon.io or https://realfavicongenerator.net.
