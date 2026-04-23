@@ -41,7 +41,6 @@ export default function RevealOnMount({
 
   const delayClass = delay ? `d${delay}` : '';
   return (
-    // @ts-expect-error - dynamic ref typing
     <Tag ref={ref} className={`r ${delayClass} ${className}`.trim()}>
       {children}
     </Tag>
