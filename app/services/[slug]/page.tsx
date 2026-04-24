@@ -8,6 +8,7 @@ import RequestButton from '@/components/RequestButton';
 import FAQSection from '@/components/FAQSection';
 import FinalCTA from '@/components/FinalCTA';
 import CredsBar from '@/components/CredsBar';
+import SmartImage from '@/components/SmartImage';
 
 export function generateStaticParams() {
   return SERVICE_CONTENT.map((s) => ({ slug: s.slug }));
