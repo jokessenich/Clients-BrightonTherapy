@@ -10,10 +10,12 @@
 }
 
 :root {
-  --rust: #b85c38;
-  --rust-hover: #a34e2e;
-  --rust-light: #d4856a;
-  --rust-soft: #f5e6dc;
+  /* Primary accent: deep navy from the Presti Center logo */
+  --rust: #1e4d8c;
+  --rust-hover: #17407a;
+  --rust-light: #5a84bc;
+  --rust-soft: #e4ecf7;
+  /* Warm bed — unchanged, preserves the editorial warmth */
   --dark: #1c1917;
   --dark-2: #2d2926;
   --bg: #fefcf9;
@@ -24,8 +26,8 @@
   --text-light: #78716c;
   --text-faint: #a8a29e;
   --white: #ffffff;
-  --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  --sans: 'Karla', system-ui, -apple-system, sans-serif;
+  --serif: var(--font-serif), 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --sans: var(--font-sans), 'Karla', system-ui, -apple-system, sans-serif;
   --shadow-sm: 0 1px 2px rgba(28, 25, 23, 0.04);
   --shadow-md: 0 8px 24px rgba(28, 25, 23, 0.08);
   --shadow-lg: 0 24px 48px rgba(28, 25, 23, 0.12);
@@ -100,16 +102,13 @@ body.js-reveal .r.v {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
 }
 .nav-brand { display: flex; align-items: center; gap: 0.75rem; }
-.nav-logo {
-  width: 44px; height: 44px;
+.nav-logo-img {
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: var(--rust);
-  display: flex; align-items: center; justify-content: center;
-  color: var(--white);
-  font-family: var(--serif);
-  font-size: 1.4rem;
-  font-weight: 500;
+  object-fit: contain;
   flex-shrink: 0;
+  background: var(--bg);
 }
 .nav-brand-text {
   font-family: var(--sans);
@@ -280,7 +279,7 @@ body.js-reveal .r.v {
   border: none;
 }
 .btn-fill { background: var(--rust); color: var(--white); }
-.btn-fill:hover { background: var(--rust-hover); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(184, 92, 56, 0.25); }
+.btn-fill:hover { background: var(--rust-hover); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(30, 77, 140, 0.25); }
 .btn-outline {
   border: 1.5px solid rgba(255, 255, 255, 0.35);
   color: var(--white);
@@ -581,7 +580,7 @@ body.js-reveal .r.v {
   transition: all 0.3s;
   margin: -0.5px;
 }
-.area-tag:hover { color: var(--white); border-color: var(--rust); background: rgba(184, 92, 56, 0.15); }
+.area-tag:hover { color: var(--white); border-color: var(--rust); background: rgba(30, 77, 140, 0.15); }
 
 /* ───────── CTA ───────── */
 .cta { padding: 7rem 3.5rem; text-align: center; }

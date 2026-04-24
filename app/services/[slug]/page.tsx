@@ -64,8 +64,14 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       {/* Inner hero */}
       <section className="hero hero-inner">
         <div className="hero-bg">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={svc.heroImage} alt={svc.heroAlt} loading="eager" />
+          <SmartImage
+            image={svc.heroImage}
+            alt={svc.heroAlt}
+            fill
+            priority
+            sizes="100vw"
+            style={{ objectFit: 'cover', objectPosition: 'center 75%' }}
+          />
         </div>
         <div className="hero-content">
           <div className="hero-eyebrow r v">{svc.audience}</div>

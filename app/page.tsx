@@ -3,6 +3,7 @@ import CredsBar from '@/components/CredsBar';
 import FinalCTA from '@/components/FinalCTA';
 import AreasServed from '@/components/AreasServed';
 import FAQSection from '@/components/FAQSection';
+import SmartImage from '@/components/SmartImage';
 import { IMAGES, SITE } from '@/lib/site';
 
 export const metadata = {
@@ -52,7 +53,7 @@ export default function Home() {
         }
         subtitle="Compassionate, evidence-based therapy for individuals, couples, and families. Serving Livingston & Oakland Counties with in-person and teletherapy sessions."
         bgImage={IMAGES.hero}
-        bgAlt="Warm sunlit window in a calm therapy office"
+        bgAlt="Brick building with painted mural asking 'How are you, really?'"
         showStats
       />
 
@@ -85,12 +86,11 @@ export default function Home() {
           </div>
         </div>
         <div className="intro-right r d3">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <SmartImage
+            image={IMAGES.warmChat}
+            alt="Two women in a warm, supportive conversation with a therapist"
             className="intro-img"
-            src={IMAGES.warmChat}
-            alt="Two people in a warm, supportive conversation in a therapy setting"
-            loading="lazy"
+            sizes="(max-width: 1024px) 100vw, 28rem"
           />
           <p className="intro-img-caption">
             Compassionate support for couples, families, and individuals
@@ -142,8 +142,13 @@ export default function Home() {
 
         <div className="svc-block r">
           <div className="svc-img-col">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={IMAGES.adult} alt="Adult individual therapy session" loading="lazy" />
+            <SmartImage
+              image={IMAGES.couples}
+              alt="Adult couple in counseling with a therapist"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              style={{ objectFit: 'cover' }}
+            />
             <div className="svc-img-label">Adults &amp; Couples</div>
           </div>
           <div className="svc-list-col">
@@ -174,8 +179,13 @@ export default function Home() {
 
         <div className="svc-block r">
           <div className="svc-img-col">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={IMAGES.couples2} alt="Teen therapy session" loading="lazy" />
+            <SmartImage
+              image={IMAGES.teen}
+              alt="Teen in session with a therapist"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              style={{ objectFit: 'cover' }}
+            />
             <div className="svc-img-label">Children &amp; Teens</div>
           </div>
           <div className="svc-list-col">
@@ -220,28 +230,53 @@ export default function Home() {
         </div>
         <div className="mosaic-grid">
           <div className="mosaic-img mosaic-tall r">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={IMAGES.therapist} alt="Therapist in a warm session" loading="lazy" />
+            <SmartImage
+              image={IMAGES.therapist}
+              alt="Experienced therapist in a warm individual session"
+              fill
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              style={{ objectFit: 'cover' }}
+            />
             <span className="mosaic-label">Individual</span>
           </div>
           <div className="mosaic-img r d1">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={IMAGES.couples} alt="Couples counseling session" loading="lazy" />
+            <SmartImage
+              image={IMAGES.couples}
+              alt="Couple in counseling session"
+              fill
+              sizes="(max-width: 1024px) 50vw, 25vw"
+              style={{ objectFit: 'cover' }}
+            />
             <span className="mosaic-label">Couples</span>
           </div>
           <div className="mosaic-img r d2">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={IMAGES.teen} alt="Teen therapy session" loading="lazy" />
+            <SmartImage
+              image={IMAGES.teen}
+              alt="Teenager in conversation with therapist"
+              fill
+              sizes="(max-width: 1024px) 50vw, 25vw"
+              style={{ objectFit: 'cover' }}
+            />
             <span className="mosaic-label">Teens</span>
           </div>
           <div className="mosaic-img r d3">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={IMAGES.group} alt="Group therapy session" loading="lazy" />
+            <SmartImage
+              image={IMAGES.group}
+              alt="Supportive conversation between two women"
+              fill
+              sizes="(max-width: 1024px) 50vw, 25vw"
+              style={{ objectFit: 'cover' }}
+            />
             <span className="mosaic-label">Group</span>
           </div>
           <div className="mosaic-img r d4">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={IMAGES.couples2} alt="Youth counseling" loading="lazy" />
+            <SmartImage
+              image={IMAGES.couples2}
+              alt="Young person in therapy session"
+              fill
+              sizes="(max-width: 1024px) 50vw, 25vw"
+              style={{ objectFit: 'cover' }}
+            />
             <span className="mosaic-label">Youth</span>
           </div>
         </div>

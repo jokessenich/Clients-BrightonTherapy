@@ -1,5 +1,7 @@
 import { IMAGES } from './site';
 
+type ImageRef = { src: string; width: number; height: number; alt: string };
+
 export type ServiceContent = {
   slug: string;
   title: string;
@@ -7,7 +9,7 @@ export type ServiceContent = {
   metaTitle: string;
   metaDesc: string;
   audience: string;
-  heroImage: string;
+  heroImage: ImageRef;
   heroAlt: string;
   intro: string;
   sections: { heading: string; body: string[] }[];

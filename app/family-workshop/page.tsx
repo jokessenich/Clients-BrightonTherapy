@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import CredsBar from '@/components/CredsBar';
 import FinalCTA from '@/components/FinalCTA';
 import FAQSection from '@/components/FAQSection';
+import SmartImage from '@/components/SmartImage';
 import { IMAGES, SITE } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -105,12 +106,11 @@ export default function FamilyWorkshopPage() {
           </div>
         </div>
         <div className="intro-right r d3">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <SmartImage
+            image={IMAGES.group}
+            alt="Warm, connected conversation between two women"
             className="intro-img"
-            src={IMAGES.group}
-            alt="A small therapy group in warm natural light"
-            loading="lazy"
+            sizes="(max-width: 1024px) 100vw, 28rem"
           />
           <p className="intro-img-caption">
             Small groups. Real presence. Clinician-led.

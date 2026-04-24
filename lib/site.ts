@@ -135,28 +135,28 @@ export const SERVICES = [
   },
 ];
 
-// Curated Unsplash image IDs — warm, human, professionally calm
-// Format: photo-{id} appended to https://images.unsplash.com/
+// Local photo assets — dimensions matter for Next.js Image component
+// (prevents cumulative layout shift and enables responsive srcset)
 export const IMAGES = {
-  hero: 'https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=2400&q=80',
-  warmChat: 'https://images.unsplash.com/photo-1573497019418-b400bb3ab074?auto=format&fit=crop&w=1600&q=80',
-  therapist: 'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=1200&q=80',
-  couples: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80',
-  couples2: 'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=1200&q=80',
-  teen: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80',
-  group: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80',
-  adult: 'https://images.unsplash.com/photo-1573497019236-17f8177b81e8?auto=format&fit=crop&w=1200&q=80',
-  // Service-specific
-  add: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1600&q=80',
-  anxiety: 'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=1600&q=80',
-  autism: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1600&q=80',
-  children: 'https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=1600&q=80',
-  depression: 'https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?auto=format&fit=crop&w=1600&q=80',
-  coaching: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1600&q=80',
-  teletherapy: 'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=1600&q=80',
-  staff: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1600&q=80',
-  about: 'https://images.unsplash.com/photo-1558403194-611308249627?auto=format&fit=crop&w=1600&q=80',
-  workshop: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=80',
-  contact: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80',
-  office: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80',
+  hero: { src: '/images/hero.jpg', width: 1920, height: 2878, alt: 'Brick building with painted mural asking "How are you, really?"' },
+  warmChat: { src: '/images/warmchat.jpg', width: 1600, height: 1066, alt: 'Two women in a warm, supportive conversation with a therapist' },
+  therapist: { src: '/images/therapist.jpg', width: 1400, height: 787, alt: 'Experienced therapist in conversation with a client in a light, warm office' },
+  couples: { src: '/images/couples.jpg', width: 1400, height: 787, alt: 'Couple in counseling session with therapist' },
+  couples2: { src: '/images/couples2.jpg', width: 1400, height: 787, alt: 'Teenage girl in conversation with a therapist in a bright office' },
+  teen: { src: '/images/teen1.jpg', width: 1400, height: 787, alt: 'Teen in hoodie talking with a therapist' },
+  group: { src: '/images/group.jpg', width: 1400, height: 787, alt: 'Two women in a warm, animated conversation' },
+  adult: { src: '/images/adult.jpg', width: 1400, height: 787, alt: 'Adult individual therapy session' },
+  // Reused photos for specific pages (same file, different semantic alt)
+  children: { src: '/images/couples2.jpg', width: 1400, height: 787, alt: 'Young person meeting with a therapist' },
+  anxiety: { src: '/images/warmchat.jpg', width: 1600, height: 1066, alt: 'Quiet moment of understanding in a therapy session' },
+  autism: { src: '/images/therapist.jpg', width: 1400, height: 787, alt: 'Calm, supportive therapy environment' },
+  depression: { src: '/images/adult.jpg', width: 1400, height: 787, alt: 'Individual working through difficult feelings with a therapist' },
+  add: { src: '/images/teen1.jpg', width: 1400, height: 787, alt: 'Focused conversation in a therapy session' },
+  coaching: { src: '/images/group.jpg', width: 1400, height: 787, alt: 'Coach and client in an engaged session' },
+  teletherapy: { src: '/images/warmchat.jpg', width: 1600, height: 1066, alt: 'Connection and conversation in therapy' },
+  about: { src: '/images/group.jpg', width: 1400, height: 787, alt: 'Warm conversation at the Presti Center' },
+  staff: { src: '/images/therapist.jpg', width: 1400, height: 787, alt: 'Member of our clinical team' },
+  workshop: { src: '/images/group.jpg', width: 1400, height: 787, alt: 'Connection and community in a group setting' },
+  contact: { src: '/images/warmchat.jpg', width: 1600, height: 1066, alt: 'Welcoming environment at the Presti Center' },
+  office: { src: '/images/therapist.jpg', width: 1400, height: 787, alt: 'Our therapy office' },
 };

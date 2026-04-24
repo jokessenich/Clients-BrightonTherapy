@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { NAV_LINKS, SITE } from '@/lib/site';
@@ -24,7 +25,14 @@ export default function Nav() {
   return (
     <nav className={`nav ${stuck ? 'stuck' : ''}`}>
       <Link href="/" className="nav-brand" aria-label="Home">
-        <div className="nav-logo">P</div>
+        <Image
+          src="/images/logo.png"
+          alt="William A. Presti Center logo"
+          width={200}
+          height={200}
+          className="nav-logo-img"
+          priority
+        />
         <span className="nav-brand-text">
           William A. Presti Center
           <small>For Families &amp; Youth</small>

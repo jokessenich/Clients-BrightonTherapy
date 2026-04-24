@@ -1,15 +1,18 @@
 import RequestButton from './RequestButton';
 import RevealOnMount from './RevealOnMount';
+import SmartImage, { ImageRef } from './SmartImage';
 import { SITE } from '@/lib/site';
 
 type Props = {
   eyebrow: string;
   title: React.ReactNode;
   subtitle: string;
-  bgImage: string;
-  bgAlt: string;
+  bgImage: ImageRef;
+  bgAlt?: string;
   showStats?: boolean;
   inner?: boolean;
+  /** Pass true for the site's top-of-page hero on first paint (LCP). */
+  priority?: boolean;
 };
 
 export default function Hero({
@@ -20,12 +23,19 @@ export default function Hero({
   bgAlt,
   showStats = false,
   inner = false,
+  priority = true,
 }: Props) {
   return (
     <section className={`hero ${inner ? 'hero-inner' : ''}`}>
       <div className="hero-bg">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={bgImage} alt={bgAlt} loading="eager" />
+        <SmartImage
+          image={bgImage}
+          alt={bgAlt ?? bgImage.alt}
+          fill
+          priority={priority}
+          sizes="100vw"
+          style={{ objectFit: 'cover', objectPosition: 'center 75%' }}
+        />
       </div>
       <div className="hero-content">
         <RevealOnMount as="div" className="hero-eyebrow">

@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import CredsBar from '@/components/CredsBar';
 import FinalCTA from '@/components/FinalCTA';
 import AreasServed from '@/components/AreasServed';
+import SmartImage from '@/components/SmartImage';
 import { IMAGES, SITE } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -61,12 +62,11 @@ export default function AboutPage() {
           </div>
         </div>
         <div className="intro-right r d3">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            className="intro-img"
-            src={IMAGES.warmChat}
+          <SmartImage
+            image={IMAGES.warmChat}
             alt="A warm conversation in a Presti Center therapy room"
-            loading="lazy"
+            className="intro-img"
+            sizes="(max-width: 1024px) 100vw, 28rem"
           />
           <p className="intro-img-caption">
             Compassionate care, every time you walk in

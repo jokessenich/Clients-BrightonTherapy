@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Hero from '@/components/Hero';
 import CredsBar from '@/components/CredsBar';
 import FinalCTA from '@/components/FinalCTA';
+import SmartImage from '@/components/SmartImage';
 import { IMAGES, SITE } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -110,8 +111,12 @@ export default function StaffPage() {
       <section className="staff-grid">
         {STAFF.map((person, i) => (
           <div key={person.name} className={`staff-card r ${i < 3 ? `d${i + 1}` : ''}`}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={person.photo} alt={person.alt} className="staff-photo" loading="lazy" />
+            <SmartImage
+              image={person.photo}
+              alt={person.alt}
+              className="staff-photo"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
             <div className="staff-name">{person.name}</div>
             <div className="staff-cred">{person.credentials}</div>
             <p className="staff-bio">{person.bio}</p>
