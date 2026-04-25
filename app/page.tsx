@@ -4,6 +4,7 @@ import FinalCTA from '@/components/FinalCTA';
 import AreasServed from '@/components/AreasServed';
 import FAQSection from '@/components/FAQSection';
 import SmartImage from '@/components/SmartImage';
+import Testimonials from '@/components/Testimonials';
 import { IMAGES, SITE } from '@/lib/site';
 
 export const metadata = {
@@ -320,39 +321,31 @@ export default function Home() {
 
       <AreasServed />
 
-      {/* WHAT TO EXPECT — lowers activation barrier */}
-      <section className="testimonial-section">
-        <div className="testimonial-inner" style={{ maxWidth: 760, textAlign: 'left' }}>
-          <div className="testimonial-eyebrow r" style={{ textAlign: 'left' }}>What Happens When You Call</div>
-          <h2 className="r d1" style={{
-            fontFamily: 'var(--serif)',
-            fontSize: 'clamp(1.8rem, 2.6vw, 2.4rem)',
-            color: 'var(--dark)',
-            lineHeight: 1.2,
-            marginBottom: '2rem',
-            fontWeight: 400,
-            letterSpacing: '-0.01em',
-          }}>
-            No script. No pressure. Just a real conversation.
-          </h2>
-          <div className="r d2" style={{
-            fontSize: '1rem',
-            color: 'var(--text-light)',
-            fontWeight: 300,
-            lineHeight: 1.85,
-          }}>
-            <p style={{ marginBottom: '1.2rem' }}>
-              When you call <a href={`tel:${SITE.phoneRaw}`} style={{ color: 'var(--rust)', fontWeight: 600 }}>{SITE.phone}</a>, you&apos;ll reach a real person — not a phone tree. We&apos;ll spend a few minutes understanding what brought you here and what you&apos;re looking for.
-            </p>
-            <p style={{ marginBottom: '1.2rem' }}>
-              From there, we match you with a therapist or coach we genuinely think will be a good fit, and we get you scheduled — usually within the same week. First sessions are about getting to know each other, not diving into the deep end.
-            </p>
-            <p>
-              That&apos;s it. No insurance hoops, no long intake forms before we&apos;ve even met. Just a doorway in.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Testimonials
+        eyebrow="In Our Clients' Words"
+        heading={<>What people say about <em>the work</em> we do together</>}
+        testimonials={[
+          {
+            quote: "I can not express how much Jo has helped me deal with several different traumatic experiences I have had to face. She opened my eyes, gave me a different point of view, pulled me out of some dark places and gave me tools to manage my stress, anxiety and toxic people. All at a price I could actually afford! I am in a much better place because of her.",
+            author: 'Lisa M.',
+            context: 'Google review',
+            rating: 5,
+          },
+          {
+            quote: "I left a message after hours and got a call the next morning from the owner. She spoke to me for a half hour on the phone and said she had the right therapist for my daughter. I was so impressed. We have been to a few different places and nothing compares to how our therapist handles teenagers. Go here with confidence. The best place!",
+            author: 'M. F.',
+            context: 'Parent of teen client',
+            rating: 5,
+          },
+          {
+            quote: "I have seen Jo off and on for many years. She has helped me individually and through couples therapy. She is the only therapist I have ever felt safe with and always gives honest and constructive feedback. She is not afraid to tell you the things you may not want to hear. I don't know where I would be without her help through some very difficult times.",
+            author: 'J. D.',
+            context: 'Google review',
+            rating: 5,
+          },
+        ]}
+        schemaId="home-reviews-schema"
+      />
 
       <FAQSection faqs={homeFaqs} />
 

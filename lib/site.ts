@@ -159,4 +159,11 @@ export const IMAGES = {
   workshop: { src: '/images/group.jpg', width: 1400, height: 787, alt: 'Connection and community in a group setting' },
   contact: { src: '/images/warmchat.jpg', width: 1600, height: 1066, alt: 'Welcoming environment at the Presti Center' },
   office: { src: '/images/therapist.jpg', width: 1400, height: 787, alt: 'Our therapy office' },
+  // Staff portraits — all 800x1067 (3:4 portrait)
+  staffJohanna: { src: '/images/staff/johanna.jpg', width: 800, height: 1067, alt: 'Portrait of Johanna Ciak, Director and Founder of the William A. Presti Center' },
+  staffArica: { src: '/images/staff/arica.jpg', width: 800, height: 1067, alt: 'Portrait of Arica VanGelderen, Operations Director' },
+  staffKisha: { src: '/images/staff/kisha.jpg', width: 800, height: 1067, alt: 'Portrait of Kisha Hath, Therapist and Clinical Supervisor' },
+  staffMarcie: { src: '/images/staff/marcie.jpg', width: 800, height: 1067, alt: 'Portrait of Marcie Reznik, Certified Life Coach' },
+  staffMitchell: { src: '/images/staff/mitchell.jpg', width: 800, height: 1067, alt: 'Portrait of Mitchell Brown, Clinical Mental Health Counselor and Coach' },
+  staffSuzette: { src: '/images/staff/suzette.jpg', width: 800, height: 1067, alt: 'Portrait of Suzette Presti, Intake Manager' },
 };

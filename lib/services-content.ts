@@ -17,6 +17,13 @@ export type ServiceContent = {
   whoFor: string[];
   faqs: { q: string; a: string }[];
   related: string[]; // slugs
+  /** Optional real testimonial to display on this service page */
+  testimonial?: {
+    quote: string;
+    author: string;
+    context?: string;
+    rating?: number;
+  };
 };
 
 export const SERVICE_CONTENT: ServiceContent[] = [
@@ -136,6 +143,12 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       },
     ],
     related: ['depression-therapy', 'adult-counseling', 'teenage-therapy'],
+    testimonial: {
+      quote: "She opened my eyes, gave me a different point of view, pulled me out of some dark places and gave me tools to manage my stress, anxiety and toxic people. All at a price I could actually afford. I am in a much better place because of her.",
+      author: 'Lisa M.',
+      context: 'Google review',
+      rating: 5,
+    },
   },
 
   {
@@ -252,6 +265,12 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       },
     ],
     related: ['teenage-therapy', 'add-therapy', 'autism-spectrum-disorder'],
+    testimonial: {
+      quote: "My wife and I were a little skeptical about using a counseling service for our kids but we decided to try the Presti Center. It turned out to be just what we needed — a safe, friendly atmosphere where our kids could open up to someone besides Dad and Mom. Our kids stated that they would definitely return for more counseling if ever needed.",
+      author: 'K. Bell',
+      context: 'Parent of child clients',
+      rating: 5,
+    },
   },
 
   {
@@ -369,6 +388,12 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       },
     ],
     related: ['couples-coaching', 'adult-counseling', 'family-workshop'],
+    testimonial: {
+      quote: "She has helped me individually and through couples therapy. She is the only therapist I have ever felt safe with and always gives honest and constructive feedback. She is not afraid to tell you the things you may not want to hear. I don't know where I would be without her help through some very difficult times.",
+      author: 'J. D.',
+      context: 'Google review',
+      rating: 5,
+    },
   },
 
   {
@@ -486,6 +511,12 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       },
     ],
     related: ['teen-coaching', 'anxiety-therapy', 'depression-therapy'],
+    testimonial: {
+      quote: "I left a message after hours and got a call the next morning from the owner. She spoke to me for a half hour on the phone and said she had the right therapist for my daughter. I was so impressed. We have been to a few different places and nothing compares to how our therapist handles teenagers. Go here with confidence.",
+      author: 'M. F.',
+      context: 'Parent of teen client',
+      rating: 5,
+    },
   },
 
   {
@@ -661,6 +692,12 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       },
     ],
     related: ['anxiety-therapy', 'depression-therapy', 'coaching-and-mentoring'],
+    testimonial: {
+      quote: "I've seen my therapist on and off for over a year. I always felt comfortable talking to her, and she has helped me so much. Scheduling was super easy and convenient. I would highly recommend her and the WAP Center.",
+      author: 'Erin K.',
+      context: 'Google review',
+      rating: 5,
+    },
   },
 ];
 

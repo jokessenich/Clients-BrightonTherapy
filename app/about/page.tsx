@@ -4,6 +4,7 @@ import CredsBar from '@/components/CredsBar';
 import FinalCTA from '@/components/FinalCTA';
 import AreasServed from '@/components/AreasServed';
 import SmartImage from '@/components/SmartImage';
+import Testimonials from '@/components/Testimonials';
 import { IMAGES, SITE } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -145,6 +146,20 @@ export default function AboutPage() {
       </section>
 
       <AreasServed />
+
+      <Testimonials
+        eyebrow="What clients say"
+        testimonials={[
+          {
+            quote: "I have met all of the therapists here, and they are all super kind and knowledgeable in their field. It is a very warm and inviting place for kids as well as adults — many fun and comfortable seating options, local teenagers have painted beautiful art on the walls, and they always greet you with a smile. I have needed their expertise in multiple areas of my life — with other family members, myself, and my children — and in all ways they have helped us overcome struggles we were experiencing.",
+            author: 'Lacey R.',
+            context: 'Google review',
+            rating: 5,
+          },
+        ]}
+        variant="single"
+        schemaId="about-review-schema"
+      />
 
       <FinalCTA
         heading={<>Come see for <em>yourself</em></>}

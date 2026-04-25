@@ -9,6 +9,7 @@ import FAQSection from '@/components/FAQSection';
 import FinalCTA from '@/components/FinalCTA';
 import CredsBar from '@/components/CredsBar';
 import SmartImage from '@/components/SmartImage';
+import Testimonials from '@/components/Testimonials';
 
 export function generateStaticParams() {
   return SERVICE_CONTENT.map((s) => ({ slug: s.slug }));
@@ -156,6 +157,15 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           </aside>
         </div>
       </section>
+
+      {svc.testimonial && (
+        <Testimonials
+          eyebrow="Real words from real clients"
+          testimonials={[svc.testimonial]}
+          variant="single"
+          schemaId={`review-${svc.slug}`}
+        />
+      )}
 
       <FAQSection
         faqs={svc.faqs}
