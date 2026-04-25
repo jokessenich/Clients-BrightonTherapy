@@ -146,7 +146,7 @@ export default function StaffPage() {
                   image={person.photo}
                   alt={`Portrait of ${person.name}`}
                   className="team-photo"
-                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  sizes="(max-width: 1024px) 280px, 260px"
                 />
               ) : (
                 <Monogram name={person.name} tone={i} className="team-photo" />

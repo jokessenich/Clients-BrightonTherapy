@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { NAV_LINKS, SITE } from '@/lib/site';
+import RequestButton from './RequestButton';
 
 export default function Nav() {
   const [stuck, setStuck] = useState(false);
@@ -72,6 +73,9 @@ export default function Nav() {
             );
           })}
         </ul>
+        <RequestButton className="nav-cta-secondary">
+          Request Appointment
+        </RequestButton>
         <a
           href={`tel:${SITE.phoneRaw}`}
           className="nav-phone"
