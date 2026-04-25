@@ -948,40 +948,49 @@ details[open] .faq-q::after { transform: rotate(45deg); }
   max-width: 620px;
 }
 
-/* Team list — magazine-style alternating rows */
+/* Team list — magazine-style float layout: photo floats, text wraps around */
 .team-list {
   padding: 3rem 3.5rem 5rem;
-  max-width: 1280px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 .team-member {
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 4rem;
   padding: 3rem 0;
   border-top: 1px solid var(--stone);
-  align-items: start;
+  /* Float-based: clear after each member */
+}
+.team-member::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 .team-member:first-child { border-top: 1px solid var(--stone-deep); }
-.team-member:nth-child(even) {
-  grid-template-columns: 1fr 260px;
-}
-.team-member:nth-child(even) .team-photo-col { order: 2; }
-.team-member:nth-child(even) .team-body-col { order: 1; }
 
 .team-photo-col {
-  position: relative;
-  align-self: start;
+  float: left;
+  width: 200px;
+  margin: 0 2rem 1rem 0;
+  shape-outside: margin-box;
 }
+.team-member:nth-child(even) .team-photo-col {
+  float: right;
+  margin: 0 0 1rem 2rem;
+}
+
 .team-photo {
   width: 100%;
+  height: auto;
   aspect-ratio: 3 / 4;
   object-fit: cover;
   filter: saturate(0.88) contrast(1.02);
+  display: block;
 }
 .monogram { aspect-ratio: 3 / 4; }
 
-.team-body-col { padding-top: 0.25rem; }
+/* Body content flows around the photo */
+.team-body-col {
+  /* No grid column — text flows naturally around the floated photo */
+}
 .team-title-block {
   border-bottom: 1px solid var(--stone);
   padding-bottom: 1.25rem;
@@ -989,7 +998,7 @@ details[open] .faq-q::after { transform: rotate(45deg); }
 }
 .team-name {
   font-family: var(--serif);
-  font-size: clamp(2rem, 2.8vw, 2.4rem);
+  font-size: clamp(1.8rem, 2.6vw, 2.2rem);
   font-weight: 400;
   color: var(--dark);
   letter-spacing: -0.01em;
@@ -1026,6 +1035,8 @@ details[open] .faq-q::after { transform: rotate(45deg); }
   padding: 1.25rem 1.5rem;
   margin: 1.5rem 0;
   border-left: 2px solid var(--rust);
+  /* Force specialties block to clear the float so it sits below the photo if needed */
+  clear: both;
 }
 .team-specialties-label {
   font-size: 0.68rem;
@@ -1060,6 +1071,7 @@ details[open] .faq-q::after { transform: rotate(45deg); }
   padding-top: 1.25rem;
   border-top: 1px dashed var(--stone);
   margin-bottom: 1rem;
+  clear: both;
 }
 
 .team-email {
@@ -1729,13 +1741,15 @@ details[open] .faq-q::after { transform: rotate(45deg); }
   .team-list { padding: 2rem 2rem 4rem; }
   .team-member,
   .team-member:nth-child(even) {
-    grid-template-columns: 1fr;
-    gap: 2rem;
     padding: 2.5rem 0;
   }
-  .team-member:nth-child(even) .team-photo-col { order: 1; }
-  .team-member:nth-child(even) .team-body-col { order: 2; }
-  .team-photo-col { max-width: 280px; }
+  .team-photo-col {
+    width: 180px;
+    margin: 0 1.5rem 0.75rem 0;
+  }
+  .team-member:nth-child(even) .team-photo-col {
+    margin: 0 0 0.75rem 1.5rem;
+  }
   .staff-intro { padding: 4rem 2rem 1rem; }
   .contact-grid { padding: 4rem 2rem; grid-template-columns: 1fr; gap: 3rem; }
   .crumb { padding: 1.5rem 2rem 0; }
@@ -1774,8 +1788,13 @@ details[open] .faq-q::after { transform: rotate(45deg); }
   .staff-grid { grid-template-columns: 1fr; padding: 3rem 1.25rem; }
   .team-list { padding: 1rem 1.25rem 3rem; }
   .team-member,
-  .team-member:nth-child(even) { padding: 2rem 0; gap: 1.5rem; }
-  .team-photo-col { max-width: 220px; }
+  .team-member:nth-child(even) { padding: 2rem 0; }
+  .team-photo-col,
+  .team-member:nth-child(even) .team-photo-col {
+    float: none;
+    width: 180px;
+    margin: 0 0 1.5rem 0;
+  }
   .staff-intro { padding: 3rem 1.25rem 0.5rem; }
   .service-page { padding: 3rem 1.25rem; }
   .contact-grid { padding: 3rem 1.25rem; }
