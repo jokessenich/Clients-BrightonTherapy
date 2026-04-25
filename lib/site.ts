@@ -15,6 +15,14 @@ export const SITE = {
   },
   hours: 'Monday – Friday: 10:00 AM – 7:00 PM',
   pricing: '$82 flat fee per session',
+  foundingYear: 2012,
+  google: {
+    rating: 4.8,
+    reviewCount: 34,
+    placeId: '0x88234ff3590ca07d:0x91e9cd13b0211e7b',
+    reviewUrl:
+      'https://www.google.com/maps/place/William+A.+Presti+Center+For+Families+And+Youth/@42.555232,-83.9232769,12z/data=!4m6!3m5!1s0x88234ff3590ca07d:0x91e9cd13b0211e7b!8m2!3d42.555232!4d-83.791441!9m1!1b1',
+  },
   geo: {
     latitude: 42.5448,
     longitude: -83.8147,

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { SITE, SERVICES } from '@/lib/site';
+import GoogleRating from './GoogleRating';
 
 export default function Footer() {
   return (
@@ -11,8 +12,11 @@ export default function Footer() {
             <p className="footer-brand-text">
               Compassionate, evidence-based mental health care for individuals,
               couples, and families. Serving Brighton, MI and surrounding
-              communities in Livingston &amp; Oakland Counties.
+              communities in Livingston &amp; Oakland Counties since {SITE.foundingYear}.
             </p>
+            <div className="footer-rating">
+              <GoogleRating />
+            </div>
           </div>
           <div>
             <div className="footer-col-title">Services</div>

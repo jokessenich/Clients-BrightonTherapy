@@ -399,7 +399,7 @@ body.js-reveal .r.v {
 }
 .intro-body p + p { margin-top: 1.2rem; }
 .intro-right { position: relative; margin-top: 2rem; }
-.intro-img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+.intro-img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 30% center; }
 .intro-img-caption { margin-top: 1rem; font-size: 0.75rem; color: var(--text-faint); font-style: italic; }
 
 /* ───────── PHILOSOPHY ───────── */
@@ -660,6 +660,7 @@ body.js-reveal .r.v {
 }
 .footer-brand { font-family: var(--serif); font-size: 1.3rem; color: var(--dark); margin-bottom: 0.75rem; }
 .footer-brand-text { font-size: 0.85rem; color: var(--text-light); font-weight: 300; line-height: 1.65; max-width: 320px; }
+.footer-rating { margin-top: 1.25rem; }
 .footer-col-title {
   font-size: 0.65rem;
   font-weight: 600;
@@ -1521,6 +1522,59 @@ details[open] .faq-q::after { transform: rotate(45deg); }
   font-weight: 500;
 }
 
+/* ── Google Rating Badge ── */
+.google-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--stone);
+  text-decoration: none;
+  transition: border-color 0.25s, transform 0.25s;
+  font-family: var(--sans);
+  cursor: pointer;
+}
+.google-rating:hover {
+  border-color: var(--rust);
+  transform: translateY(-1px);
+}
+.google-rating.block {
+  display: inline-flex;
+  margin: 0 auto;
+}
+.google-rating.light {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+.google-rating.light:hover { border-color: rgba(255, 255, 255, 0.4); }
+
+.google-rating-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  color: #f5a623; /* warm gold, doesn't fight the navy */
+}
+.google-rating-star { display: block; }
+.google-rating-star.empty { color: rgba(0,0,0,0.18); }
+.google-rating.light .google-rating-star.empty { color: rgba(255,255,255,0.25); }
+
+.google-rating-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--text);
+  letter-spacing: 0.01em;
+}
+.google-rating.light .google-rating-text { color: rgba(255,255,255,0.85); }
+.google-rating-text strong {
+  font-weight: 700;
+  color: var(--dark);
+}
+.google-rating.light .google-rating-text strong { color: var(--white); }
+.google-rating-divider { opacity: 0.4; }
+
 /* ── New Testimonials component (real Google reviews) ── */
 .testimonials {
   padding: 6rem 3.5rem;
@@ -1545,6 +1599,10 @@ details[open] .faq-q::after { transform: rotate(45deg); }
   max-width: 720px;
 }
 .testimonials-heading em { font-style: italic; color: var(--rust); }
+
+.testimonials-rating {
+  margin: -1.5rem 0 2.5rem;
+}
 
 .testimonials-grid {
   display: grid;

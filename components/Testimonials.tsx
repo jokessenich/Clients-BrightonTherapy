@@ -1,4 +1,5 @@
 import Script from 'next/script';
+import GoogleRating from './GoogleRating';
 
 export type Testimonial = {
   quote: string;
@@ -17,14 +18,17 @@ type Props = {
   variant?: 'grid' | 'single';
   /** ID for JSON-LD schema script */
   schemaId?: string;
+  /** Show the live Google rating badge above the cards */
+  showRating?: boolean;
 };
 
 export default function Testimonials({
-  eyebrow = 'In Our Clients\' Words',
+  eyebrow = "In Our Clients' Words",
   heading,
   testimonials,
   variant = 'grid',
   schemaId = 'reviews-schema',
+  showRating = false,
 }: Props) {
   // JSON-LD Review schema — individual reviews, attached to the business
   const schema = {
@@ -57,6 +61,11 @@ export default function Testimonials({
         {eyebrow && <div className="eyebrow r">{eyebrow}</div>}
         {heading && (
           <h2 className="testimonials-heading r d1">{heading}</h2>
+        )}
+        {showRating && (
+          <div className="testimonials-rating r d2">
+            <GoogleRating />
+          </div>
         )}
         <div className={`testimonials-grid ${variant}`}>
           {testimonials.map((t, i) => (

@@ -80,6 +80,13 @@ const localBusinessSchema = {
   url: SITE.url,
   telephone: SITE.phoneRaw,
   priceRange: '$$',
+  foundingDate: String(SITE.foundingYear),
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: SITE.google.rating,
+    reviewCount: SITE.google.reviewCount,
+    bestRating: 5,
+  },
   description:
     'Compassionate, evidence-based mental health care for individuals, couples, and families in Brighton, Michigan and surrounding communities.',
   address: {

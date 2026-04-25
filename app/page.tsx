@@ -148,7 +148,7 @@ export default function Home() {
               alt="Adult couple in counseling with a therapist"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              style={{ objectFit: 'cover' }}
+              style={{ objectFit: 'cover', objectPosition: '30% center' }}
             />
             <div className="svc-img-label">Adults &amp; Couples</div>
           </div>
@@ -185,7 +185,7 @@ export default function Home() {
               alt="Teen in session with a therapist"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              style={{ objectFit: 'cover' }}
+              style={{ objectFit: 'cover', objectPosition: '70% center' }}
             />
             <div className="svc-img-label">Children &amp; Teens</div>
           </div>
@@ -324,6 +324,7 @@ export default function Home() {
       <Testimonials
         eyebrow="In Our Clients' Words"
         heading={<>What people say about <em>the work</em> we do together</>}
+        showRating
         testimonials={[
           {
             quote: "I can not express how much Jo has helped me deal with several different traumatic experiences I have had to face. She opened my eyes, gave me a different point of view, pulled me out of some dark places and gave me tools to manage my stress, anxiety and toxic people. All at a price I could actually afford! I am in a much better place because of her.",
