@@ -146,26 +146,38 @@ export const SERVICES = [
 // Local photo assets — dimensions matter for Next.js Image component
 // (prevents cumulative layout shift and enables responsive srcset)
 export const IMAGES = {
+  // === Headline / brand-anchor photos (reserved spots) ===
   hero: { src: '/images/hero.jpg', width: 1920, height: 2878, alt: 'Brick building with painted mural asking "How are you, really?"' },
   warmChat: { src: '/images/warmchat.jpg', width: 1600, height: 1066, alt: 'Two women in a warm, supportive conversation with a therapist' },
+
+  // === Original pool (still used in some service-mosaic slots on home) ===
   therapist: { src: '/images/therapist.jpg', width: 1400, height: 787, alt: 'Experienced therapist in conversation with a client in a light, warm office' },
-  couples: { src: '/images/couples.jpg', width: 1400, height: 787, alt: 'Couple in counseling session with therapist' },
-  couples2: { src: '/images/couples2.jpg', width: 1400, height: 787, alt: 'Teenage girl in conversation with a therapist in a bright office' },
+  couples: { src: '/images/couples_v2.jpg', width: 1600, height: 1066, alt: 'A couple walking together on a tree-lined path' },
+  couples2: { src: '/images/holding_hands.jpg', width: 1600, height: 1068, alt: 'Two people holding hands at sunset' },
   teen: { src: '/images/teen1.jpg', width: 1400, height: 787, alt: 'Teen in hoodie talking with a therapist' },
   group: { src: '/images/group.jpg', width: 1400, height: 787, alt: 'Two women in a warm, animated conversation' },
-  adult: { src: '/images/adult.jpg', width: 1400, height: 787, alt: 'Adult individual therapy session' },
-  // Reused photos for specific pages (same file, different semantic alt)
-  children: { src: '/images/couples2.jpg', width: 1400, height: 787, alt: 'Young person meeting with a therapist' },
-  anxiety: { src: '/images/warmchat.jpg', width: 1600, height: 1066, alt: 'Quiet moment of understanding in a therapy session' },
-  autism: { src: '/images/therapist.jpg', width: 1400, height: 787, alt: 'Calm, supportive therapy environment' },
-  depression: { src: '/images/adult.jpg', width: 1400, height: 787, alt: 'Individual working through difficult feelings with a therapist' },
-  add: { src: '/images/teen1.jpg', width: 1400, height: 787, alt: 'Focused conversation in a therapy session' },
-  coaching: { src: '/images/group.jpg', width: 1400, height: 787, alt: 'Coach and client in an engaged session' },
-  teletherapy: { src: '/images/warmchat.jpg', width: 1600, height: 1066, alt: 'Connection and conversation in therapy' },
-  about: { src: '/images/group.jpg', width: 1400, height: 787, alt: 'Warm conversation at the Presti Center' },
-  staff: { src: '/images/therapist.jpg', width: 1400, height: 787, alt: 'Member of our clinical team' },
-  workshop: { src: '/images/group.jpg', width: 1400, height: 787, alt: 'Connection and community in a group setting' },
-  contact: { src: '/images/warmchat.jpg', width: 1600, height: 1066, alt: 'Welcoming environment at the Presti Center' },
+  adult: { src: '/images/therapist_client.jpg', width: 1600, height: 900, alt: 'Adult in a bright, supportive counseling session' },
+
+  // === Topic slots (each now has a distinct fresh photo) ===
+  conversation: { src: '/images/conversation.jpg', width: 1600, height: 1068, alt: 'Two women in a warm, supportive conversation' },
+  reflection: { src: '/images/reflection.jpg', width: 1600, height: 1066, alt: 'Person sitting by the water at sunset, in quiet reflection' },
+  quietMorning: { src: '/images/quiet_morning.jpg', width: 1600, height: 1061, alt: 'Young woman holding a warm mug by a sunlit window' },
+  familyWalk: { src: '/images/family_walk.jpg', width: 1600, height: 1174, alt: 'Mother walking with her children on a forest path' },
+  sunrisePath: { src: '/images/sunrise_path.jpg', width: 1600, height: 1200, alt: 'A path winding through a sunlit meadow at sunrise' },
+  therapySession: { src: '/images/therapy_session.jpg', width: 1600, height: 900, alt: 'Adult counseling session in a warm, modern therapy office' },
+
+  // === Aliases for service & marketing pages (point at the new fresh photos) ===
+  children: { src: '/images/family_walk.jpg', width: 1600, height: 1174, alt: 'Family walking together on a forest path' },
+  anxiety: { src: '/images/quiet_morning.jpg', width: 1600, height: 1061, alt: 'Quiet morning moment with a warm mug by the window' },
+  autism: { src: '/images/sunrise_path.jpg', width: 1600, height: 1200, alt: 'A calm, sunlit path through a meadow' },
+  depression: { src: '/images/reflection.jpg', width: 1600, height: 1066, alt: 'Person finding a quiet moment of reflection by the water' },
+  add: { src: '/images/therapy_session.jpg', width: 1600, height: 900, alt: 'Focused conversation in a therapy session' },
+  coaching: { src: '/images/sunrise_path.jpg', width: 1600, height: 1200, alt: 'A path winding forward through a sunlit meadow' },
+  teletherapy: { src: '/images/conversation.jpg', width: 1600, height: 1068, alt: 'Connection and conversation across the screen' },
+  about: { src: '/images/conversation.jpg', width: 1600, height: 1068, alt: 'Warm conversation at the Presti Center' },
+  staff: { src: '/images/conversation.jpg', width: 1600, height: 1068, alt: 'A welcoming, supportive conversation' },
+  workshop: { src: '/images/family_walk.jpg', width: 1600, height: 1174, alt: 'Family connection and community' },
+  contact: { src: '/images/conversation.jpg', width: 1600, height: 1068, alt: 'Welcoming environment at the Presti Center' },
   office: { src: '/images/therapist.jpg', width: 1400, height: 787, alt: 'Our therapy office' },
   // Staff portraits — sized to native source dimensions
   staffJohanna: { src: '/images/staff/johanna.jpg', width: 197, height: 263, alt: 'Portrait of Johanna Ciak, Director and Founder of the William A. Presti Center' },

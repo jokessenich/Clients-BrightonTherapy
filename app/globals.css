@@ -399,7 +399,7 @@ body.js-reveal .r.v {
 }
 .intro-body p + p { margin-top: 1.2rem; }
 .intro-right { position: relative; margin-top: 2rem; }
-.intro-img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 30% center; }
+.intro-img { width: 100%; height: auto; }
 .intro-img-caption { margin-top: 1rem; font-size: 0.75rem; color: var(--text-faint); font-style: italic; }
 
 /* ───────── PHILOSOPHY ───────── */
@@ -1769,7 +1769,6 @@ details[open] .faq-q::after { transform: rotate(45deg); }
   .hero-stat-value { font-size: 1.4rem; }
   .intro { grid-template-columns: 1fr; gap: 3rem; padding: 5rem 2rem; }
   .intro-right { margin-top: 0; }
-  .intro-img { aspect-ratio: 16 / 9; }
   .services { padding: 5rem 2rem 0; }
   .svc-block { grid-template-columns: 1fr; }
   .svc-img-col { min-height: 300px; order: 1 !important; }

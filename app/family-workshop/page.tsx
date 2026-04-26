@@ -107,8 +107,8 @@ export default function FamilyWorkshopPage() {
         </div>
         <div className="intro-right r d3">
           <SmartImage
-            image={IMAGES.group}
-            alt="Warm, connected conversation between two women"
+            image={IMAGES.familyWalk}
+            alt="A family walking together on a forest path"
             className="intro-img"
             sizes="(max-width: 1024px) 100vw, 28rem"
           />

@@ -404,8 +404,8 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     metaDesc:
       'Forward-focused couples coaching in Brighton, MI. Learn practical communication and connection tools fast. $82 flat fee. HSA qualified. Evening and virtual options.',
     audience: 'Couples',
-    heroImage: IMAGES.coaching,
-    heroAlt: 'Two people in a focused, warm conversation',
+    heroImage: IMAGES.couples2,
+    heroAlt: 'Two people holding hands at sunset, in a moment of connection',
     intro:
       'Couples coaching is for partnerships that don\'t need deep clinical work but want sharper tools, clearer communication, and a stronger foundation. Think of it as practical, structured, forward-focused — less about excavating the past, more about building what you want next.',
     sections: [
@@ -527,8 +527,8 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     metaDesc:
       'Goal-driven teen coaching in Brighton, MI for ages 13–18. School, friendships, identity, and what comes next. $82 flat fee. HSA qualified.',
     audience: 'Ages 13–18',
-    heroImage: IMAGES.coaching,
-    heroAlt: 'Teen and mentor working together at a desk',
+    heroImage: IMAGES.conversation,
+    heroAlt: 'Two people in a focused, supportive conversation',
     intro:
       'Teen coaching is mentoring with structure. It\'s for teens who don\'t need clinical therapy but want a trusted adult in their corner — someone outside of family and school — to help them set goals, build skills, and figure out who they want to be.',
     sections: [

@@ -145,10 +145,10 @@ export default function Home() {
           <div className="svc-img-col">
             <SmartImage
               image={IMAGES.couples}
-              alt="Adult couple in counseling with a therapist"
+              alt="A couple walking together on a tree-lined path"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              style={{ objectFit: 'cover', objectPosition: '30% center' }}
+              style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
             />
             <div className="svc-img-label">Adults &amp; Couples</div>
           </div>
@@ -181,11 +181,11 @@ export default function Home() {
         <div className="svc-block r">
           <div className="svc-img-col">
             <SmartImage
-              image={IMAGES.teen}
-              alt="Teen in session with a therapist"
+              image={IMAGES.familyWalk}
+              alt="Mother walking with her children on a forest path"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              style={{ objectFit: 'cover', objectPosition: '70% center' }}
+              style={{ objectFit: 'cover', objectPosition: 'center center' }}
             />
             <div className="svc-img-label">Children &amp; Teens</div>
           </div>
@@ -242,8 +242,8 @@ export default function Home() {
           </div>
           <div className="mosaic-img r d1">
             <SmartImage
-              image={IMAGES.couples}
-              alt="Couple in counseling session"
+              image={IMAGES.couples2}
+              alt="Two people holding hands at sunset"
               fill
               sizes="(max-width: 1024px) 50vw, 25vw"
               style={{ objectFit: 'cover' }}
@@ -272,13 +272,13 @@ export default function Home() {
           </div>
           <div className="mosaic-img r d4">
             <SmartImage
-              image={IMAGES.couples2}
-              alt="Young person in therapy session"
+              image={IMAGES.therapySession}
+              alt="Adult counseling session in a warm therapy office"
               fill
               sizes="(max-width: 1024px) 50vw, 25vw"
               style={{ objectFit: 'cover' }}
             />
-            <span className="mosaic-label">Youth</span>
+            <span className="mosaic-label">Adults</span>
           </div>
         </div>
       </section>

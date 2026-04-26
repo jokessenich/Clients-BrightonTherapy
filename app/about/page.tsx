@@ -64,7 +64,7 @@ export default function AboutPage() {
         </div>
         <div className="intro-right r d3">
           <SmartImage
-            image={IMAGES.warmChat}
+            image={IMAGES.conversation}
             alt="A warm conversation in a Presti Center therapy room"
             className="intro-img"
             sizes="(max-width: 1024px) 100vw, 28rem"
