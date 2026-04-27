@@ -264,6 +264,11 @@ body.js-reveal .r.v {
   align-items: center;
   flex-wrap: wrap;
 }
+.hero-rating {
+  margin-top: -1.25rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
 .hero-meta {
   position: absolute;
   bottom: 5rem;

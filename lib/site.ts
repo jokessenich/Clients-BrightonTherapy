@@ -173,11 +173,12 @@ export const IMAGES = {
   depression: { src: '/images/reflection.jpg', width: 1600, height: 1066, alt: 'Person finding a quiet moment of reflection by the water' },
   add: { src: '/images/therapy_session.jpg', width: 1600, height: 900, alt: 'Focused conversation in a therapy session' },
   coaching: { src: '/images/sunrise_path.jpg', width: 1600, height: 1200, alt: 'A path winding forward through a sunlit meadow' },
-  teletherapy: { src: '/images/conversation.jpg', width: 1600, height: 1068, alt: 'Connection and conversation across the screen' },
-  about: { src: '/images/conversation.jpg', width: 1600, height: 1068, alt: 'Warm conversation at the Presti Center' },
-  staff: { src: '/images/conversation.jpg', width: 1600, height: 1068, alt: 'A welcoming, supportive conversation' },
+  // === Marketing-page hero aliases — each page gets a distinct image ===
+  about: { src: '/images/conversation.jpg', width: 1600, height: 1068, alt: 'Two women in a warm, supportive conversation at the Presti Center' },
+  staff: { src: '/images/therapist_client.jpg', width: 1600, height: 900, alt: 'Member of our clinical team in a bright, supportive session' },
+  contact: { src: '/images/quiet_morning.jpg', width: 1600, height: 1061, alt: 'A calm, inviting moment — reach out when you are ready' },
+  teletherapy: { src: '/images/reflection.jpg', width: 1600, height: 1066, alt: 'A quiet moment of connection — therapy from wherever you are' },
   workshop: { src: '/images/family_walk.jpg', width: 1600, height: 1174, alt: 'Family connection and community' },
-  contact: { src: '/images/conversation.jpg', width: 1600, height: 1068, alt: 'Welcoming environment at the Presti Center' },
   office: { src: '/images/therapist.jpg', width: 1400, height: 787, alt: 'Our therapy office' },
   // Staff portraits — sized to native source dimensions
   staffJohanna: { src: '/images/staff/johanna.jpg', width: 197, height: 263, alt: 'Portrait of Johanna Ciak, Director and Founder of the William A. Presti Center' },

@@ -56,6 +56,7 @@ export default function Home() {
         bgImage={IMAGES.hero}
         bgAlt="Brick building with painted mural asking 'How are you, really?'"
         showStats
+        showRating
       />
 
       <CredsBar />

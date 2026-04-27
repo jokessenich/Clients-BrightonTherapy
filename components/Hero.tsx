@@ -1,6 +1,7 @@
 import RequestButton from './RequestButton';
 import RevealOnMount from './RevealOnMount';
 import SmartImage, { ImageRef } from './SmartImage';
+import GoogleRating from './GoogleRating';
 import { SITE } from '@/lib/site';
 
 type Props = {
@@ -10,6 +11,8 @@ type Props = {
   bgImage: ImageRef;
   bgAlt?: string;
   showStats?: boolean;
+  /** Show a small Google rating chip between the subtitle and CTAs */
+  showRating?: boolean;
   inner?: boolean;
   /** Pass true for the site's top-of-page hero on first paint (LCP). */
   priority?: boolean;
@@ -22,6 +25,7 @@ export default function Hero({
   bgImage,
   bgAlt,
   showStats = false,
+  showRating = false,
   inner = false,
   priority = true,
 }: Props) {
@@ -47,7 +51,12 @@ export default function Hero({
         <RevealOnMount as="p" className="hero-sub" delay={2}>
           {subtitle}
         </RevealOnMount>
-        <RevealOnMount as="div" className="hero-actions" delay={3}>
+        {showRating && (
+          <RevealOnMount as="div" className="hero-rating" delay={3}>
+            <GoogleRating theme="light" />
+          </RevealOnMount>
+        )}
+        <RevealOnMount as="div" className="hero-actions" delay={showRating ? 4 : 3}>
           <a href={`tel:${SITE.phoneRaw}`} className="btn btn-fill">
             Call {SITE.phone}
           </a>
