@@ -140,7 +140,7 @@ export default function Sidebar() {
                     <option>Individual Therapy</option>
                     <option>Couples Counseling</option>
                     <option>Child &amp; Teen Therapy</option>
-                    <option>Group Therapy</option>
+                    <option>Family Workshop</option>
                     <option>Anxiety &amp; Depression</option>
                     <option>Trauma / PTSD</option>
                     <option>Addiction</option>

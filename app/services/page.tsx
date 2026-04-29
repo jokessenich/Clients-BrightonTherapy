@@ -42,8 +42,8 @@ export default function ServicesIndex() {
           </>
         }
         subtitle="Whatever brought you here, you don't have to navigate it alone. Our therapists and certified coaches offer compassionate, evidence-based support for individuals, couples, and families across Brighton, MI."
-        bgImage={IMAGES.therapySession}
-        bgAlt="Warm conversation in a calm therapy office"
+        bgImage={IMAGES.couples2}
+        bgAlt="Two people holding hands at sunset"
         inner
       />
       <CredsBar />

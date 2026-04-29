@@ -164,17 +164,16 @@ export const IMAGES = {
   quietMorning: { src: '/images/quiet_morning.jpg', width: 1600, height: 1061, alt: 'Young woman holding a warm mug by a sunlit window' },
   familyWalk: { src: '/images/family_walk.jpg', width: 1600, height: 1174, alt: 'Mother walking with her children on a forest path' },
   sunrisePath: { src: '/images/sunrise_path.jpg', width: 1600, height: 1200, alt: 'A path winding through a sunlit meadow at sunrise' },
-  therapySession: { src: '/images/therapy_session.jpg', width: 1600, height: 900, alt: 'Adult counseling session in a warm, modern therapy office' },
 
   // === Aliases for service & marketing pages (point at the new fresh photos) ===
   children: { src: '/images/family_walk.jpg', width: 1600, height: 1174, alt: 'Family walking together on a forest path' },
   anxiety: { src: '/images/quiet_morning.jpg', width: 1600, height: 1061, alt: 'Quiet morning moment with a warm mug by the window' },
   autism: { src: '/images/sunrise_path.jpg', width: 1600, height: 1200, alt: 'A calm, sunlit path through a meadow' },
   depression: { src: '/images/reflection.jpg', width: 1600, height: 1066, alt: 'Person finding a quiet moment of reflection by the water' },
-  add: { src: '/images/therapy_session.jpg', width: 1600, height: 900, alt: 'Focused conversation in a therapy session' },
+  add: { src: '/images/couples2.jpg', width: 1400, height: 787, alt: 'A young woman in a bright, supportive therapy session' },
   coaching: { src: '/images/sunrise_path.jpg', width: 1600, height: 1200, alt: 'A path winding forward through a sunlit meadow' },
   // === Marketing-page hero aliases — each page gets a distinct image ===
-  about: { src: '/images/conversation.jpg', width: 1600, height: 1068, alt: 'Two women in a warm, supportive conversation at the Presti Center' },
+  about: { src: '/images/warmchat.jpg', width: 1600, height: 1066, alt: 'Two people in a warm, supportive conversation' },
   staff: { src: '/images/therapist_client.jpg', width: 1600, height: 900, alt: 'Member of our clinical team in a bright, supportive session' },
   contact: { src: '/images/quiet_morning.jpg', width: 1600, height: 1061, alt: 'A calm, inviting moment — reach out when you are ready' },
   teletherapy: { src: '/images/reflection.jpg', width: 1600, height: 1066, alt: 'A quiet moment of connection — therapy from wherever you are' },

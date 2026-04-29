@@ -10,6 +10,8 @@ type Props = {
   subtitle: string;
   bgImage: ImageRef;
   bgAlt?: string;
+  /** Object-position for the hero background; default 'center 75%' favored the old mural. Override per-page. */
+  bgPosition?: string;
   showStats?: boolean;
   /** Show a small Google rating chip between the subtitle and CTAs */
   showRating?: boolean;
@@ -24,6 +26,7 @@ export default function Hero({
   subtitle,
   bgImage,
   bgAlt,
+  bgPosition = 'center 75%',
   showStats = false,
   showRating = false,
   inner = false,
@@ -38,7 +41,7 @@ export default function Hero({
           fill
           priority={priority}
           sizes="100vw"
-          style={{ objectFit: 'cover', objectPosition: 'center 75%' }}
+          style={{ objectFit: 'cover', objectPosition: bgPosition }}
         />
       </div>
       <div className="hero-content">

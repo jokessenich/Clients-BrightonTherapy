@@ -53,8 +53,9 @@ export default function Home() {
           </>
         }
         subtitle="Compassionate, evidence-based therapy for individuals, couples, and families. Serving Livingston & Oakland Counties with in-person and teletherapy sessions."
-        bgImage={IMAGES.hero}
-        bgAlt="Brick building with painted mural asking 'How are you, really?'"
+        bgImage={IMAGES.conversation}
+        bgAlt="Two women in a warm, supportive conversation"
+        bgPosition="center 30%"
         showStats
         showRating
       />
@@ -123,9 +124,9 @@ export default function Home() {
               will help you realize your strengths and live an empowered life.
             </p>
             <p>
-              Our center offers a variety of groups for children, teens, and
-              adults — because healing often happens in community, not just in
-              isolation.
+              We also run an adult-only Family Workshop — a small group setting
+              where adults work on family relationships together. Healing often
+              happens in community, not just in isolation.
             </p>
           </div>
         </div>
@@ -263,18 +264,18 @@ export default function Home() {
           </div>
           <div className="mosaic-img r d3">
             <SmartImage
-              image={IMAGES.group}
-              alt="Supportive conversation between two women"
+              image={IMAGES.familyWalk}
+              alt="A family walking together on a forest path"
               fill
               sizes="(max-width: 1024px) 50vw, 25vw"
               style={{ objectFit: 'cover' }}
             />
-            <span className="mosaic-label">Group</span>
+            <span className="mosaic-label">Family</span>
           </div>
           <div className="mosaic-img r d4">
             <SmartImage
-              image={IMAGES.therapySession}
-              alt="Adult counseling session in a warm therapy office"
+              image={IMAGES.quietMorning}
+              alt="A quiet, calm moment by the window"
               fill
               sizes="(max-width: 1024px) 50vw, 25vw"
               style={{ objectFit: 'cover' }}
