@@ -171,6 +171,7 @@ export const IMAGES = {
   autism: { src: '/images/sunrise_path.jpg', width: 1600, height: 1200, alt: 'A calm, sunlit path through a meadow' },
   depression: { src: '/images/reflection.jpg', width: 1600, height: 1066, alt: 'Person finding a quiet moment of reflection by the water' },
   add: { src: '/images/couples2.jpg', width: 1400, height: 787, alt: 'A young woman in a bright, supportive therapy session' },
+  youthSession: { src: '/images/couples2.jpg', width: 1400, height: 787, alt: 'A young woman in a bright, supportive therapy session' },
   coaching: { src: '/images/sunrise_path.jpg', width: 1600, height: 1200, alt: 'A path winding forward through a sunlit meadow' },
   // === Marketing-page hero aliases — each page gets a distinct image ===
   about: { src: '/images/warmchat.jpg', width: 1600, height: 1066, alt: 'Two people in a warm, supportive conversation' },

@@ -183,8 +183,8 @@ export default function Home() {
         <div className="svc-block r">
           <div className="svc-img-col">
             <SmartImage
-              image={IMAGES.familyWalk}
-              alt="Mother walking with her children on a forest path"
+              image={IMAGES.youthSession}
+              alt="A young woman in a bright, supportive therapy session"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               style={{ objectFit: 'cover', objectPosition: 'center center' }}
@@ -235,10 +235,10 @@ export default function Home() {
           <div className="mosaic-img mosaic-tall r">
             <SmartImage
               image={IMAGES.therapist}
-              alt="Experienced therapist in a warm individual session"
+              alt="Therapist in a warm individual session"
               fill
               sizes="(max-width: 1024px) 100vw, 40vw"
-              style={{ objectFit: 'cover' }}
+              style={{ objectFit: 'cover', objectPosition: '25% center' }}
             />
             <span className="mosaic-label">Individual</span>
           </div>
