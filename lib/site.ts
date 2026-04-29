@@ -148,6 +148,7 @@ export const SERVICES = [
 export const IMAGES = {
   // === Headline / brand-anchor photos (reserved spots) ===
   hero: { src: '/images/hero.jpg', width: 1920, height: 2878, alt: 'Brick building with painted mural asking "How are you, really?"' },
+  heroJoyful: { src: '/images/hero_joyful.jpg', width: 2400, height: 1359, alt: 'A group of friends walking together on a sunlit path, laughing' },
   warmChat: { src: '/images/warmchat.jpg', width: 1600, height: 1066, alt: 'Two women in a warm, supportive conversation with a therapist' },
 
   // === Original pool (still used in some service-mosaic slots on home) ===
@@ -174,7 +175,7 @@ export const IMAGES = {
   youthSession: { src: '/images/couples2.jpg', width: 1400, height: 787, alt: 'A young woman in a bright, supportive therapy session' },
   coaching: { src: '/images/sunrise_path.jpg', width: 1600, height: 1200, alt: 'A path winding forward through a sunlit meadow' },
   // === Marketing-page hero aliases — each page gets a distinct image ===
-  about: { src: '/images/warmchat.jpg', width: 1600, height: 1066, alt: 'Two people in a warm, supportive conversation' },
+  about: { src: '/images/friends_sunset.jpg', width: 2000, height: 1333, alt: 'Four friends with arms around each other watching a sunset' },
   staff: { src: '/images/therapist_client.jpg', width: 1600, height: 900, alt: 'Member of our clinical team in a bright, supportive session' },
   contact: { src: '/images/quiet_morning.jpg', width: 1600, height: 1061, alt: 'A calm, inviting moment — reach out when you are ready' },
   teletherapy: { src: '/images/reflection.jpg', width: 1600, height: 1066, alt: 'A quiet moment of connection — therapy from wherever you are' },

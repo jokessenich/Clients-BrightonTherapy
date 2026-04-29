@@ -215,10 +215,10 @@ body.js-reveal .r.v {
   position: absolute; inset: 0;
   background: linear-gradient(
     to top,
-    rgba(28, 25, 23, 0.92) 0%,
-    rgba(28, 25, 23, 0.72) 35%,
-    rgba(28, 25, 23, 0.42) 65%,
-    rgba(28, 25, 23, 0.52) 100%
+    rgba(28, 25, 23, 0.72) 0%,
+    rgba(28, 25, 23, 0.45) 30%,
+    rgba(28, 25, 23, 0.18) 60%,
+    rgba(28, 25, 23, 0.10) 100%
   );
 }
 .hero-content {

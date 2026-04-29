@@ -53,9 +53,9 @@ export default function Home() {
           </>
         }
         subtitle="Compassionate, evidence-based therapy for individuals, couples, and families. Serving Livingston & Oakland Counties with in-person and teletherapy sessions."
-        bgImage={IMAGES.conversation}
-        bgAlt="Two women in a warm, supportive conversation"
-        bgPosition="center 30%"
+        bgImage={IMAGES.heroJoyful}
+        bgAlt="A group of friends walking together on a sunlit path, laughing"
+        bgPosition="center 40%"
         showStats
         showRating
       />
