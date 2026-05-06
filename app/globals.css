@@ -248,8 +248,13 @@ body.js-reveal .r.v {
   color: var(--white);
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45), 0 1px 3px rgba(0, 0, 0, 0.35);
 }
-.hero-h1 em { font-style: italic; color: var(--rust-light); }
+.hero-h1 em {
+  font-style: italic;
+  color: var(--rust-light);
+  text-shadow: 0 2px 22px rgba(0, 0, 0, 0.55), 0 1px 2px rgba(0, 0, 0, 0.6);
+}
 .hero-sub {
   font-size: 1.05rem;
   line-height: 1.7;
