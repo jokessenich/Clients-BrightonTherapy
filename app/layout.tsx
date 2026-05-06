@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.shortName}`,
   },
   description:
-    'Compassionate, evidence-based therapy and coaching for adults, teens, children, and couples in Brighton, MI. $82 flat-fee sessions, HSA qualified, in-person and teletherapy available.',
+    'Compassionate therapy and coaching for adults, teens, children, and couples in Brighton, MI. $82 flat-fee sessions, HSA qualified, in-person and teletherapy available.',
   keywords: [
     'therapist Brighton MI',
     'couples counseling Brighton',
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `${SITE.shortName} | Brighton, MI Therapy`,
     description:
-      'Compassionate, evidence-based therapy for individuals, couples, and families.',
+      'Compassionate therapy for individuals, couples, and families.',
   },
   robots: {
     index: true,
@@ -88,7 +88,7 @@ const localBusinessSchema = {
     bestRating: 5,
   },
   description:
-    'Compassionate, evidence-based mental health care for individuals, couples, and families in Brighton, Michigan and surrounding communities.',
+    'Compassionate mental health care for individuals, couples, and families in Brighton, Michigan and surrounding communities.',
   address: {
     '@type': 'PostalAddress',
     streetAddress: SITE.address.street,

@@ -10,7 +10,7 @@ import { IMAGES, SITE } from '@/lib/site';
 export const metadata = {
   title: 'Therapy & Coaching in Brighton, MI | Couples, Family, Teen & Adult',
   description:
-    'Hope and healing for every family. Compassionate, evidence-based therapy for individuals, couples, teens, and children in Brighton, MI. $82 flat-fee sessions. HSA qualified. In-person and teletherapy.',
+    'Hope and healing for every family. Compassionate therapy for individuals, couples, teens, and children in Brighton, MI. $82 flat-fee sessions. HSA qualified. In-person and teletherapy.',
   alternates: { canonical: SITE.url },
 };
 
@@ -52,7 +52,7 @@ export default function Home() {
             for <em>every</em> family
           </>
         }
-        subtitle="Compassionate, evidence-based therapy for individuals, couples, and families. Serving Livingston & Oakland Counties with in-person and teletherapy sessions."
+        subtitle="Compassionate therapy for individuals, couples, and families. Serving Livingston & Oakland Counties with in-person and teletherapy sessions."
         bgImage={IMAGES.heroJoyful}
         bgAlt="A group of friends walking together on a sunlit path, laughing"
         bgPosition="center 40%"
@@ -73,10 +73,9 @@ export default function Home() {
           </h2>
           <div className="intro-body r d2">
             <p>
-              At William A. Presti Center For Families And Youth, we serve
-              individuals, couples, and families across Brighton, Howell,
-              Milford, South Lyon, Hartland, Fenton, Pinckney, Whitmore Lake,
-              and Hamburg Township with compassionate, evidence-based mental
+              At our center, we serve individuals, couples, and families across
+              Brighton, Howell, Milford, South Lyon, Hartland, Fenton, Pinckney,
+              Whitmore Lake, and Hamburg Township with compassionate mental
               health care.
             </p>
             <p>
@@ -114,8 +113,8 @@ export default function Home() {
           <div className="philosophy-body r d1">
             <p>
               Our therapists will compassionately listen and validate your
-              experience. We understand how emotional pain can cause issues in
-              many parts of a person&apos;s life.
+              experience. We understand how emotional pain can impact many parts
+              of a person&apos;s life.
             </p>
             <p>
               We will teach you new and healthy ways to cope with trauma,
@@ -138,8 +137,9 @@ export default function Home() {
           <div className="eyebrow r">What We Treat</div>
           <h2 className="services-title r d1">Services for all ages</h2>
           <p className="services-note r d2">
-            We specialize in therapeutic services for adults, teens, and
-            children. Every treatment plan is personalized.
+            We specialize in therapeutic and coaching services for adults,
+            teens, and children. We work collaboratively with you to find what
+            helps.
           </p>
         </div>
 
@@ -203,7 +203,7 @@ export default function Home() {
                 'Internet & Gaming Addiction',
                 'Peer Issues',
                 'Autism Spectrum Disorder',
-                'Gender Identity Issues',
+                'Gender Identity Support',
                 'Emotional Dysregulation',
               ].map((item) => (
                 <li key={item} className="svc-item">

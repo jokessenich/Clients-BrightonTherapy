@@ -62,7 +62,7 @@ const TEAM: TeamMember[] = [
     bio: [
       "Kisha received her Masters in Social Work from Michigan State University and her Bachelor of Science from Baker College.",
       "Kisha specializes in working with children and teens, though she has deep experience across all age groups — from clients as young as two through adulthood. Her clinical focus includes trauma, anxiety, depression, family conflict, and sexuality. Her passion is helping clients heal from emotional pain and live empowered lives.",
-      "Kisha uses evidence-based practices and incorporates mindfulness, play therapy, and art therapy in her work with children and teens. She validates her clients' feelings, listens to their stories, and provides a safe, welcoming, judgment-free space — whether in person or virtual. She works with your strengths to help you reach your goals, understanding that life is always changing.",
+      "In her work with children and teens, Kisha incorporates mindfulness, play therapy, and art therapy. She validates her clients' feelings, listens to their stories, and provides a safe, welcoming, judgment-free space — whether in person or virtual. She works with your strengths to help you reach your goals, understanding that life is always changing.",
     ],
     specialties: ['Trauma', 'Anxiety & depression', 'Children & teens', 'Family conflict', 'Sexuality', 'Play & art therapy'],
     personal: 'Kisha lives in Howell with her five-year-old Pomchi and her one-year-old cat. She enjoys traveling, concerts, crafting, and spending time with friends — and she\'s an avid movie fan, especially horror.',

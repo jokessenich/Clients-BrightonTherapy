@@ -10,7 +10,7 @@ import { IMAGES, SITE } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'About | A Healing Community in Brighton, Michigan',
   description:
-    'Meet the William A. Presti Center For Families And Youth — a warm, evidence-based mental health practice in Brighton, MI serving Livingston and Oakland Counties since 1995.',
+    'Meet the William A. Presti Center For Families And Youth — a warm, compassionate mental health practice in Brighton, MI serving Livingston and Oakland Counties since 1995.',
   alternates: { canonical: `${SITE.url}/about` },
 };
 
@@ -92,7 +92,7 @@ export default function AboutPage() {
               with that.
             </p>
             <p>
-              We use evidence-based methods — CBT, DBT skills, EFT,
+              We draw on a range of approaches — CBT, DBT skills, EFT,
               trauma-informed care, mindfulness, and more — but we&apos;re not
               dogmatic about any single model. We meet you where you are and
               build the work around you, not the other way around.

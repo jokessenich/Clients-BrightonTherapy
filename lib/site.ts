@@ -185,7 +185,7 @@ export const IMAGES = {
   staffJohanna: { src: '/images/staff/johanna.jpg', width: 197, height: 263, alt: 'Portrait of Johanna Ciak, Director and Founder of the William A. Presti Center' },
   staffArica: { src: '/images/staff/arica.jpg', width: 199, height: 266, alt: 'Portrait of Arica VanGelderen, Operations Director' },
   staffKisha: { src: '/images/staff/kisha.jpg', width: 315, height: 420, alt: 'Portrait of Kisha Hath, Therapist and Clinical Supervisor' },
-  staffMarcie: { src: '/images/staff/marcie.jpg', width: 768, height: 1024, alt: 'Portrait of Marcie Reznik, Certified Life Coach' },
+  staffMarcie: { src: '/images/staff/marcie.jpg', width: 511, height: 682, alt: 'Portrait of Marcie Reznik, Certified Life Coach' },
   staffMitchell: { src: '/images/staff/mitchell.jpg', width: 255, height: 340, alt: 'Portrait of Mitchell Brown, Clinical Mental Health Counselor and Coach' },
-  staffSuzette: { src: '/images/staff/suzette.jpg', width: 511, height: 682, alt: 'Portrait of Suzette Presti, Intake Manager' },
+  staffSuzette: { src: '/images/staff/suzette.jpg', width: 768, height: 1024, alt: 'Portrait of Suzette Presti, Intake Manager' },
 };

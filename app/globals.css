@@ -119,8 +119,8 @@ body.js-reveal .r.v {
 }
 .nav-brand { display: flex; align-items: center; gap: 0.75rem; }
 .nav-logo-img {
-  width: 44px;
-  height: 44px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   object-fit: contain;
   flex-shrink: 0;

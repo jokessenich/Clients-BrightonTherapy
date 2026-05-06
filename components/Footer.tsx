@@ -10,9 +10,9 @@ export default function Footer() {
           <div>
             <div className="footer-brand">{SITE.shortName}</div>
             <p className="footer-brand-text">
-              Compassionate, evidence-based mental health care for individuals,
-              couples, and families. Serving Brighton, MI and surrounding
-              communities in Livingston &amp; Oakland Counties since {SITE.foundingYear}.
+              Compassionate mental health care for individuals, couples, and
+              families. Serving Brighton, MI and surrounding communities in
+              Livingston &amp; Oakland Counties since {SITE.foundingYear}.
             </p>
             <div className="footer-rating">
               <GoogleRating />
