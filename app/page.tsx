@@ -48,8 +48,7 @@ export default function Home() {
         eyebrow="Brighton, Michigan"
         title={
           <>
-            Hope and healing<br />
-            for <em>every</em> family
+            Where <em>healing</em> begins.
           </>
         }
         subtitle="Compassionate therapy for individuals, couples, and families. Serving Livingston & Oakland Counties with in-person and teletherapy sessions."
