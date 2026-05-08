@@ -12,7 +12,7 @@ export type ServiceContent = {
   heroImage: ImageRef;
   heroAlt: string;
   intro: string;
-  sections: { heading: string; body: string[] }[];
+  sections: { heading: string; body: string[]; bulleted?: boolean }[];
   approach: string[];
   whoFor: string[];
   faqs: { q: string; a: string }[];
@@ -33,38 +33,44 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     shortTitle: 'ADD Therapy',
     metaTitle: 'ADD / ADHD Therapy in Brighton, MI | Children, Teens, Adults',
     metaDesc:
-      'ADD and ADHD therapy in Brighton, MI for children, teens, and adults. Build focus, follow-through, and emotional regulation in a supportive space. $82 flat fee, HSA qualified.',
+      'ADD and ADHD therapy in Brighton, MI for children, teens, and adults. Build focus, follow-through, and self-esteem in a strengths-based, supportive space.',
     audience: 'Children, Teens & Adults',
     heroImage: IMAGES.add,
     heroAlt: 'Person organizing notes in soft natural light',
     intro:
-      'ADD and ADHD aren\'t character flaws or a lack of effort. They\'re differences in how the brain handles attention, motivation, and follow-through. Our therapists work with children, teens, and adults to build practical strategies that fit how their mind actually works, while also addressing the worry, frustration, and exhaustion that often come along with it.',
+      'ADD is a neurological condition with psychological and social consequences. Children, teens, and adults need to understand that it is not their fault, they didn\'t cause it, and there is real hope. By the age of 6 or 7, ADD can already have a significant impact on self-esteem, and many people with ADD are misunderstood and have an inaccurate view of their own strengths. Our therapists and coaches work to help you or your loved one understand ADD, manage symptoms effectively, and see the genuine strengths that come with it.',
     sections: [
       {
-        heading: 'What ADHD can feel like',
+        heading: 'Common signs — inattention',
+        bulleted: true,
         body: [
-          'Difficulty focusing, finishing tasks, or holding onto details — even when the task matters to you.',
-          'Time slipping by without you noticing, or running late even when you\'re trying not to.',
-          'Strong emotions that come on fast, and feel hard to manage in the moment.',
-          'A long history of feeling like you\'re not measuring up, no matter how hard you try.',
+          'Difficulty sustaining attention in tasks or play activities.',
+          'Frequent mistakes in work or school-related activities that require attention to detail.',
+          'Difficulty organizing tasks and activities.',
+          'Avoidance of tasks that require sustained mental effort.',
+          'Losing items needed for tasks and activities.',
+          'Easily distracted by what\'s going on around you.',
+          'Forgetfulness in daily activities.',
         ],
       },
       {
-        heading: 'Common signs to watch for',
+        heading: 'Common signs — impulsivity',
+        bulleted: true,
         body: [
-          'Trouble staying organized at home, school, or work.',
-          'Restlessness, fidgeting, or feeling like your mind is always running.',
-          'Putting things off until the last possible moment, then scrambling.',
-          'Forgetfulness with appointments, deadlines, or things you meant to do.',
-          'Difficulty starting tasks, especially ones that feel boring or overwhelming.',
+          'Difficulty waiting your turn in conversations or games.',
+          'Making decisions quickly, without considering the consequences.',
         ],
       },
       {
         heading: 'How we can help',
+        bulleted: true,
         body: [
-          'For children, sessions blend play, conversation, and parent coaching so the strategies we work on actually carry over to home and school.',
-          'For teens, we focus on self-understanding, building skills around planning and follow-through, and the emotional pieces — because most teens with ADHD are also working through self-esteem and overwhelm.',
-          'For adults, sessions are direct and collaborative, focused on what\'s actually getting in the way at work, in relationships, and in daily life. Our goal is for you to feel less stuck, less ashamed, and more equipped.',
+          'We focus on building self-esteem.',
+          'We provide tools to help you or your child understand ADD.',
+          'We highlight the positive aspects of ADD, not just the challenges.',
+          'We educate you about ADD. Understanding it is crucial to managing symptoms in a positive way.',
+          'We adopt a strengths-based perspective in our treatment approach.',
+          'Call us today for a confidential appointment.',
         ],
       },
     ],
@@ -113,14 +119,16 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     sections: [
       {
         heading: 'What anxiety feels like',
+        bulleted: true,
         body: [
           'Anxiety can leave you feeling powerless and uncertain, affecting both your emotions and your physical well-being.',
           'When it sticks around, it can lead to depression and persistent negative thoughts that wear down your quality of life.',
-          'It can cause daily distress — interfering with your relationships, your decisions, and the things you used to enjoy.',
+          'It can cause daily distress, interfering with your relationships, your decisions, and the things you used to enjoy.',
         ],
       },
       {
         heading: 'Symptoms to watch for',
+        bulleted: true,
         body: [
           'Avoiding social situations out of fear of judgment or embarrassment.',
           'Sudden panic attacks, and the ongoing fear of when the next one might come.',
@@ -132,8 +140,8 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       {
         heading: 'How we can help',
         body: [
-          'Our therapists provide tools and strategies to manage anxiety when it\'s overwhelming, so you have something to reach for in the hard moments.',
-          'We also help you trace the roots of your anxiety. Treatment focuses on resolving the events or circumstances underneath it — not just managing the symptoms on the surface.',
+          'Our therapists and coaches provide tools and strategies to manage anxiety when it\'s overwhelming, so you have something to reach for in the hard moments.',
+          'We also help you trace the roots of your anxiety. Treatment focuses on resolving the events or circumstances underneath it, not just managing the symptoms on the surface.',
           'The goal is for you to live freely again. We\'re here to help you reclaim your life from anxiety that\'s been running the show.',
         ],
       },
@@ -155,7 +163,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     faqs: [
       {
         q: 'How long until I feel better?',
-        a: 'Many clients notice meaningful relief within 6–12 sessions, but everyone\'s timeline is different. We\'ll check in regularly so therapy actually works for your life.',
+        a: 'Everyone\'s timeline is different — and we won\'t pretend otherwise. Some clients feel real relief in a few weeks; others need longer to work through what\'s underneath. We\'ll check in with you regularly so therapy is actually moving in a direction that helps.',
       },
       {
         q: 'I don\'t want to do anything that feels too intense. Is that okay?',
@@ -198,6 +206,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       },
       {
         heading: 'What we can support',
+        bulleted: true,
         body: [
           'Autistic burnout, sensory regulation, and emotional overwhelm.',
           'Worry and low mood that often travel alongside being autistic in a non-autistic world.',
@@ -210,7 +219,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       {
         heading: 'How we can help',
         body: [
-          'Our therapists meet you where you are, with care and without judgment. We listen carefully and adjust the work to fit you, rather than asking you to fit the work.',
+          'Our therapists and coaches meet you where you are, with care and without judgment. We listen carefully and adjust the work to fit you, rather than asking you to fit the work.',
           'We also collaborate with parents, partners, and family members when that\'s helpful, so the people in your life can be part of the support.',
           'You\'re welcome here whether you have a formal diagnosis or are still figuring it out.',
         ],
@@ -252,36 +261,49 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     shortTitle: "Children's Therapy",
     metaTitle: "Children's Therapy in Brighton, MI | Ages 5–12",
     metaDesc:
-      "Play-based, developmentally-attuned therapy for children ages 5–12 in Brighton, MI. We help kids find words for big feelings. $82 flat fee. HSA qualified.",
+      "Compassionate children's therapy in Brighton, MI. Helping kids build confidence, emotional skills, and healthy coping with supportive, family-focused care.",
     audience: 'Ages 5–12',
     heroImage: IMAGES.children,
     heroAlt: 'Child\'s drawing supplies on a sunlit table',
     intro:
-      'Kids don\'t always have words for what they\'re feeling, but their behavior is communicating something. Our children\'s therapy creates a safe, playful space where children can explore what they\'re going through, learn to name big emotions, and build the skills to navigate them.',
+      'Children can experience anxiety, depression, and anger. These overwhelming feelings may cause kids to act out or withdraw, and that can be frightening for both children and parents. Our work with younger clients creates a safe, playful space where kids can learn to name what they\'re feeling and find healthy ways to move through it.',
     sections: [
       {
-        heading: 'What kids often bring in',
+        heading: 'How we help your child',
+        bulleted: true,
         body: [
-          'Worry and fears that get in the way of school, sleep, or friendships.',
-          'Big emotions that lead to meltdowns, shutdowns, or trouble at home.',
-          'Friendship struggles, social anxiety, or feeling left out.',
-          'Adjustment to divorce, a move, a loss, or a major change at home.',
-          'Behavioral challenges, low confidence, or trouble managing frustration.',
-          'School-related stress and pressure.',
+          'We validate the big feelings children experience, including worry, sadness, and anger.',
+          'We understand that overwhelming emotions can lead to acting out or withdrawing, and we meet kids where they are.',
+          'We offer support to children and parents alike, because experiences like these are hard on the whole family.',
         ],
       },
       {
-        heading: 'What therapy looks like for kids',
+        heading: 'What we help children with',
+        bulleted: true,
         body: [
-          'Children process the world through play, story, art, and movement, and our work honors that. Sessions are warm, age-appropriate, and structured around what helps your specific child feel safe and engaged.',
-          'We don\'t lecture, push, or treat kids like problems to solve. We follow their lead, build trust, and create space for what they\'re carrying to come out in a way that fits them.',
+          'Anxiety and worry',
+          'Depression and sadness',
+          'Anger related to divorce, loss, trauma, or school stress',
+          'Emotional dysregulation, big feelings, and trouble at home or school',
+          'Adjustment to major changes',
+        ],
+      },
+      {
+        heading: 'Creative tools for healing',
+        bulleted: true,
+        body: [
+          'We use creative, engaging tools to help children release difficult feelings.',
+          'Play, art, and story help kids process emotions tied to traumatic events in a way that fits how they actually communicate.',
         ],
       },
       {
         heading: 'How we partner with parents',
+        bulleted: true,
         body: [
-          'You know your child better than anyone, and you\'re the most important person in their healing. We meet with you regularly to share what we\'re working on, talk through strategies for home, and answer your questions.',
-          'We also protect the trust we\'re building with your child, so they always know their therapy space is theirs. We\'ll talk openly with you about what to share, what to keep between us, and how to be involved in a way that helps.',
+          'We collaborate with parents on new communication skills and strategies for home.',
+          'We help re-establish positive rapport between you and your child.',
+          'Your feedback is welcomed throughout — you know your child best, and we work as a team.',
+          'We protect your child\'s sense of trust and privacy while keeping you informed at the right level.',
         ],
       },
     ],
@@ -327,40 +349,51 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     shortTitle: 'Depression Therapy',
     metaTitle: 'Depression Therapy in Brighton, MI | Compassionate Care',
     metaDesc:
-      'Compassionate depression therapy for adults, teens, and children in Brighton, MI. A path forward when everything feels heavy or numb. $82 flat fee. HSA qualified.',
+      'Depression therapy in Brighton, MI providing compassionate support to help you manage symptoms and regain balance. Confidential, caring sessions for all ages.',
     audience: 'All Ages',
     heroImage: IMAGES.depression,
     heroAlt: 'Soft morning light through a quiet window',
     intro:
-      'Depression isn\'t just sadness. It can feel like exhaustion, numbness, irritability, or a heaviness that makes ordinary things feel impossibly hard. Whatever it looks like for you, you don\'t have to push through it alone, and you don\'t have to be in crisis to deserve help.',
+      'Depression can show up as more than sadness. It can feel like exhaustion, numbness, irritability, or a heaviness that makes ordinary things feel impossibly hard. Whatever it looks like for you, you don\'t have to push through it alone.',
     sections: [
       {
-        heading: 'What depression can feel like',
+        heading: 'Common symptoms of depression',
+        bulleted: true,
         body: [
-          'A persistent low mood, sadness, or sense of emptiness that doesn\'t lift with rest or distraction.',
-          'Exhaustion that doesn\'t make sense for what you\'ve done that day.',
-          'Numbness, or feeling disconnected from people and things you used to care about.',
-          'Harsh self-criticism, or a quiet conviction that you\'re a burden, lazy, or somehow not enough.',
-          'A loss of motivation that can feel like the very thing that would help is the hardest thing to do.',
+          'Persistent sadness or an anxious, "empty" mood',
+          'Changes in sleep patterns — sleeping too much or too little',
+          'Changes in appetite — eating too much or too little',
+          'Loss of interest or lack of pleasure in things you used to enjoy',
+          'Restlessness or irritability',
+          'Persistent physical symptoms that don\'t respond to treatment, like headaches, chronic pain, or digestive issues',
+          'Difficulty concentrating, remembering, or making decisions',
+          'Fatigue or loss of energy',
+          'Feelings of guilt, hopelessness, or worthlessness',
         ],
       },
       {
-        heading: 'Common signs to watch for',
+        heading: 'Impact of depression',
+        bulleted: true,
         body: [
-          'Trouble getting out of bed, getting dressed, or starting the day.',
-          'Pulling away from friends, family, or activities that used to feel good.',
-          'Sleeping too much or not enough, eating too much or not enough.',
-          'Difficulty concentrating, making decisions, or remembering things.',
-          'Irritability, especially in teens and children, who may show depression as anger or withdrawal rather than sadness.',
-          'Thoughts of self-harm or that life isn\'t worth it. If you\'re experiencing these, please reach out to us or call 988 (Suicide & Crisis Lifeline) right away.',
+          'It can lead to feelings of isolation, shame, and loneliness.',
+          'In severe cases, it can lead to thoughts of suicide and the feeling of not being able to keep fighting. If you\'re experiencing these, please reach out to us or call 988 (Suicide & Crisis Lifeline) right away.',
+        ],
+      },
+      {
+        heading: 'Managing depression',
+        bulleted: true,
+        body: [
+          'Depression can be managed with the right help and support.',
+          'Reaching out is the first step. Therapy provides awareness and tools that allow for a real shift in how you experience your life.',
         ],
       },
       {
         heading: 'How we can help',
+        bulleted: true,
         body: [
-          'Our therapists work with you to gently understand what\'s keeping the depression in place, build small wins, and reconnect with the parts of life that have felt lost or numb.',
-          'We also help you make sense of what\'s underneath. For some clients, depression travels alongside grief, trauma, life transitions, or an undiagnosed neurodivergence. Part of our work is figuring out what\'s actually going on, so the support fits.',
-          'You\'re not lazy and you\'re not broken. Depression lies, and one of the things therapy offers is someone in your corner who can see what you can\'t see right now.',
+          'You don\'t have to face depression alone.',
+          'Our caring and experienced therapists are here to help you understand what\'s going on and find a way through it.',
+          'Call us for a confidential appointment and take the first step toward healing.',
         ],
       },
     ],
@@ -398,42 +431,42 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     slug: 'couples-counseling',
     title: 'Couples Counseling',
     shortTitle: 'Couples Counseling',
-    metaTitle: 'Couples Counseling in Brighton, MI | Repair & Reconnect',
+    metaTitle: 'Couples Counseling in Brighton, MI | Strengthen Your Relationship',
     metaDesc:
-      'Couples counseling in Brighton, MI to repair connection, rebuild trust, and learn to talk to each other again. $82 flat fee. HSA qualified. Evening and virtual options.',
+      'Professional couples counseling in Brighton, MI to improve communication, rebuild trust, and reconnect. Experienced therapists offering in-person and online sessions.',
     audience: 'Couples',
     heroImage: IMAGES.couples,
     heroAlt: 'Couple sitting together in soft natural light',
     intro:
-      'Most couples wait too long to come in. By the time they do, they\'re tired, hurt, and sometimes wondering if it\'s too late. It\'s usually not. Whatever brought you here, there\'s real work that can help.',
+      'Are you and your partner arguing, struggling to communicate, or unable to resolve old conflicts? Our therapists and coaches offer a safe place for couples to express their feelings openly and honestly, and we partner with you to move the relationship in a positive direction.',
     sections: [
       {
-        heading: 'When couples come in',
-        body: [
-          'When the same fight keeps happening, just with different words.',
-          'When trust has been broken — through infidelity, dishonesty, or other ruptures.',
-          'When connection has slowly faded and you feel more like roommates than partners.',
-          'When communication has stopped working and conversations turn into conflict or silence.',
-          'After a major life change — a new baby, a loss, a move, a job shift — that has put pressure on the relationship.',
-          'When one or both partners aren\'t sure whether to stay.',
-        ],
-      },
-      {
-        heading: 'What we work on',
-        body: [
-          'Communication that holds up under stress, instead of breaking down at the worst moments.',
-          'Trust repair after infidelity, betrayal, or other breaches.',
-          'Emotional and physical intimacy, and the closeness that gets lost along the way.',
-          'Conflict that escalates fast and leaves both partners hurt.',
-          'The practical pressures on partnership: parenting, finances, in-laws, and the daily logistics of a shared life.',
-        ],
-      },
-      {
         heading: 'How we can help',
+        bulleted: true,
         body: [
-          'Couples therapy isn\'t about deciding who\'s right. It\'s a guided process for understanding the patterns the two of you are stuck in, and learning to do them differently.',
-          'We help you slow down the moments that usually go sideways, hear each other again, and build the safety to talk about what really matters.',
-          'Some couples come to heal. Some come to figure out whether to stay together. Both are valid reasons to be in the room, and we hold space for either outcome.',
+          'We help you develop new, healthy ways to communicate with your partner.',
+          'We provide a safe place for couples to express their feelings openly and without judgment.',
+          'We encourage couples to partner with each other to move the relationship in a positive direction.',
+          'We help you remember and build on the strengths in your relationship, especially when stress has made those strengths hard to see.',
+          'We help re-establish positive rapport so you can begin to reverse negative dynamics.',
+          'We work with you to resolve old conflicts that drain the relationship and block honest communication.',
+          'We help you understand the root issues that are getting in the way of closeness and connection.',
+          'We move from understanding what\'s underneath to giving you new tools you can use together.',
+        ],
+      },
+      {
+        heading: 'Our mission',
+        bulleted: true,
+        body: [
+          'To help couples embark on a new, hopeful journey together.',
+          'To support you whether you\'re working to heal what\'s broken, or trying to build something stronger from a relationship that\'s already good.',
+          'To meet you where you are, with both partners feeling heard and respected.',
+        ],
+      },
+      {
+        heading: 'How to get started',
+        body: [
+          'Call us today to take the first step. We offer evening appointments and teletherapy options to make it easier to commit to the work, no matter your schedule.',
         ],
       },
     ],
@@ -478,41 +511,48 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     slug: 'couples-coaching',
     title: 'Couples Coaching',
     shortTitle: 'Couples Coaching',
-    metaTitle: 'Couples Coaching in Brighton, MI | Practical Tools, Fast',
+    metaTitle: 'Couples Coaching in Brighton, MI | Build a Stronger Relationship',
     metaDesc:
-      'Forward-focused couples coaching in Brighton, MI. Learn practical communication and connection tools fast. $82 flat fee. HSA qualified. Evening and virtual options.',
+      'Professional couples coaching designed to improve communication, rebuild trust, and strengthen emotional connection. Personalized support from a Certified Couples Coach.',
     audience: 'Couples',
     heroImage: IMAGES.couples2,
     heroAlt: 'Two people holding hands at sunset, in a moment of connection',
     intro:
-      'Couples coaching is for partnerships that don\'t need deep clinical work but want sharper tools, clearer communication, and a stronger foundation. It\'s practical and forward-focused. Less about excavating the past, more about building what you want next.',
+      'Every relationship faces challenges, and we understand the stress couples experience. Our Certified Couples Coach has successfully guided couples through both short and long-term struggles, with practical tools and steady support.',
     sections: [
       {
-        heading: 'When coaching is a good fit',
+        heading: 'How we can help',
+        bulleted: true,
         body: [
-          'When your relationship is fundamentally healthy and you want to make it stronger.',
-          'When you\'re preparing for marriage and want a strong foundation to start from.',
-          'When you\'re recalibrating after a major change, like becoming parents.',
-          'When you want better communication, better conflict, and more intentional connection.',
-          'When you want practical skills and accountability, not deep clinical work.',
+          'Effective communication skills — teaching couples how to express thoughts and feelings clearly and respectfully.',
+          'Fostering empathy — encouraging partners to understand and appreciate each other\'s perspectives.',
+          'Active listening — making sure both partners feel heard and valued.',
+          'A supportive environment where you can share without fear of judgment or backlash.',
+          'Identifying triggers — recognizing what tends to lead to conflict.',
+          'Understanding underlying issues — exploring the root causes of disagreements so you can address what\'s really going on.',
+          'Problem-solving strategies — working together toward solutions instead of blame.',
+          'Collaboration over confrontation — emphasizing teamwork and partnership in resolving disputes.',
+          'Stronger relationships — conflict resolution that builds mutual respect and emotional connection.',
         ],
       },
       {
-        heading: 'What you\'ll work on',
+        heading: 'Services offered',
+        bulleted: true,
         body: [
-          'Communication frameworks that hold up under stress.',
-          'Conflict styles, and how to handle the moments where you usually go sideways.',
-          'Emotional and physical intimacy.',
-          'Shared vision, values, and life planning.',
-          'Practice between sessions, with feedback to make sure the work actually carries over.',
+          'Resolution of short and long-term conflicts',
+          'Life transition support',
+          'Grief and loss',
+          'Understanding and resolving negative communication styles',
+          'Pre-marital support',
+          'Pre and post-divorce support',
+          'Negative self-beliefs',
+          'Financial stress',
         ],
       },
       {
-        heading: 'How coaching is different from counseling',
+        heading: 'Why choose us',
         body: [
-          'Coaching is goal-oriented and structured around skill-building and accountability. Counseling tends to go deeper into history, healing, and clinical concerns.',
-          'If your relationship is in a good place and you want growth, coaching may be the right fit. If there are deeper wounds, mental-health concerns, or significant trust ruptures, counseling is usually the better starting point.',
-          'We can help you figure out which makes sense, and we\'re happy to switch gears if it turns out the other is a better fit. Many couples feel a real shift in 6 to 10 sessions of coaching.',
+          'Our Couples Coach has years of experience navigating relationship dynamics. We are committed to you and to helping you build a stronger, more fulfilling relationship.',
         ],
       },
     ],
@@ -552,40 +592,64 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     shortTitle: 'Teen Therapy',
     metaTitle: 'Teen Therapy in Brighton, MI | Ages 13–18',
     metaDesc:
-      'Teen therapy in Brighton, MI for ages 13–18. A confidential space teens actually want to come to. $82 flat fee. HSA qualified. Evening and virtual options.',
+      'Supportive teen therapy in Brighton, MI. Helping adolescents build confidence, manage emotions, reduce stress, and navigate challenges with compassionate care.',
     audience: 'Ages 13–18',
     heroImage: IMAGES.teen,
     heroAlt: 'Teenager looking thoughtfully out a sunlit window',
     intro:
-      'Being a teenager right now is genuinely hard. Social media, school pressure, identity, friendships, family, the future — it\'s a lot, and most teens don\'t feel safe taking it to the adults in their life. Our work with teens creates a space that\'s actually theirs: confidential, real, and respectful.',
+      'Adolescence is a time of rapid change, emotional growth, and unique challenges. We specialize in supporting teens through these years with personalized therapy that fosters resilience, confidence, and emotional well-being.',
     sections: [
       {
-        heading: 'What teens often bring in',
+        heading: 'Why teen therapy matters',
         body: [
-          'Worry, low mood, or feeling overwhelmed.',
-          'School stress, perfectionism, and burnout.',
-          'Friendships, bullying, and conflict with peers.',
-          'Identity and self-understanding, including questions around gender and sexuality.',
-          'Self-esteem, body image, and concerns about eating.',
-          'Family conflict and trouble communicating at home.',
-          'Trauma, grief, or a major loss.',
-          'Substance use, or too much time on phones, social media, or gaming.',
+          'Teens today face pressures that can feel overwhelming — academic stress, social dynamics, identity exploration, and mental health struggles. Therapy provides a safe space to process these experiences, build coping skills, and develop a stronger sense of self.',
         ],
       },
       {
-        heading: 'What therapy looks like for teens',
+        heading: 'Help your teen break free from screen overuse',
         body: [
-          'A lot of teens come in skeptical, sometimes after being told they have to. We get it. We don\'t lecture, we don\'t pretend to be cool, and we don\'t treat teens like problems to be solved. We treat them like people worth listening to.',
-          'Most teens, after a session or two, decide they\'re actually glad to have a place that\'s just theirs. That sense of choice and ownership is part of what makes therapy work.',
-          'Sessions are confidential and at the teen\'s pace. We follow their lead, and we don\'t push.',
+          'In today\'s digital world, excessive use of the internet, TV, and video games can affect a teen\'s mental health, academic performance, and family relationships. We offer specialized therapy to help teens regain balance, develop healthy habits, and reconnect with real-life experiences. Our approach addresses the underlying emotional challenges while building positive coping strategies for long-term success.',
         ],
       },
       {
-        heading: 'How we work with parents',
+        heading: 'What we treat',
+        bulleted: true,
         body: [
-          'The trust between us and your teen is essential, so we\'re thoughtful about how parents are involved.',
-          'We share general updates with you — how things are going, what we\'re working on — but specifics of what your teen shares stay between us, unless someone is in danger. We\'ll go over this clearly in the first session so everyone knows what to expect.',
-          'We\'re also here to support you. Parenting a teenager is hard, and we offer guidance on how to be in your teen\'s corner without intruding on their therapy.',
+          'Anxiety and panic',
+          'Depression',
+          'Trauma and PTSD',
+          'Self-harm',
+          'Suicidal thoughts',
+          'Low self-esteem',
+          'Body image concerns',
+          'Family conflict',
+          'Communication issues with peers',
+          'School-related stress',
+          'Grief and loss',
+          'ADHD',
+          'Autism spectrum support',
+          'Screen and video game overuse',
+        ],
+      },
+      {
+        heading: 'Our approach',
+        bulleted: true,
+        body: [
+          'Cognitive Behavioral Therapy (CBT)',
+          'Trauma-informed care',
+          'Play and art therapy',
+          'Mindfulness and emotional regulation techniques',
+          'Solution-focused therapy',
+        ],
+      },
+      {
+        heading: 'What to expect',
+        bulleted: true,
+        body: [
+          'A confidential intake session to understand your teen\'s needs and goals.',
+          'A personalized therapy plan with weekly sessions.',
+          'Parents included in the process through optional family sessions and progress check-ins.',
+          'In-person therapy at our Brighton office, secure teletherapy for flexible access, and evening appointments to fit busy schedules.',
         ],
       },
     ],
@@ -641,6 +705,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     sections: [
       {
         heading: 'What coaching can focus on',
+        bulleted: true,
         body: [
           'Time management, study skills, and academic focus.',
           'Friendship and social confidence.',
@@ -711,6 +776,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     sections: [
       {
         heading: 'When coaching helps',
+        bulleted: true,
         body: [
           'When you\'re at a career or life crossroads and want help thinking it through.',
           'When you\'re working on habits, health, or a redesign of how you spend your days.',
@@ -781,8 +847,8 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       {
         heading: 'It\'s never the wrong time to come to therapy',
         body: [
-          'We\'re here for you on your rainy days and your sunny days. Plenty of our clients aren\'t in a crisis when they come in — they\'re doing fine on the outside and just want a space to attend to what\'s underneath, before things get heavier.',
-          'Other clients come during clear hard seasons: a divorce, a death, a diagnosis, a job loss, a major decision. Both reasons to come in are completely valid.',
+          'Therapy isn\'t just for hard seasons. We\'re here for you on your rainy days and your sunny days. Plenty of our clients come in feeling fine and use the space for clarity, growth, and getting to know themselves better.',
+          'Others come during a clear life challenge: a divorce, a death, a diagnosis, a job loss, a major decision. Both are completely valid reasons to be here.',
         ],
       },
       {

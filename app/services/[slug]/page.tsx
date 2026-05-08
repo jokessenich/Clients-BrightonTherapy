@@ -108,9 +108,15 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                   {String(i + 1).padStart(2, '0')} — Section
                 </span>
                 <h2>{sec.heading}</h2>
-                {sec.body.map((p, idx) => (
-                  <p key={idx}>{p}</p>
-                ))}
+                {sec.bulleted ? (
+                  <ul>
+                    {sec.body.map((p, idx) => (
+                      <li key={idx}>{p}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  sec.body.map((p, idx) => <p key={idx}>{p}</p>)
+                )}
               </div>
             ))}
 

@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: 'Who is teletherapy available to?',
-    a: 'Anyone located in Michigan. Our therapists are licensed in Michigan, which means we can provide teletherapy to clients anywhere in the state — not just Brighton and the surrounding area.',
+    a: 'Anyone located in Michigan. Our therapists and coaches are licensed in Michigan, which means we can provide teletherapy to clients anywhere in the state — not just Brighton and the surrounding area.',
   },
   {
     q: 'Is it private and secure?',
@@ -74,7 +74,7 @@ export default function TeletherapyPage() {
               Teletherapy removes that friction. You meet your therapist over a secure video connection, from anywhere you have privacy and internet. That&apos;s it. The work is the same. The rapport is the same. The results are, for most people, the same.
             </p>
             <p>
-              We&apos;ve been doing virtual sessions for years — it&apos;s a real part of our practice, not an afterthought. Our therapists are trained for it, our platform is built for it, and our clients find it genuinely effective.
+              We&apos;ve been doing virtual sessions for years — it&apos;s a real part of our practice, not an afterthought. Our therapists and coaches are trained for it, our platform is built for it, and our clients find it genuinely effective.
             </p>
           </div>
         </div>

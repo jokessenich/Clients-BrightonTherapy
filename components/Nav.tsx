@@ -60,7 +60,10 @@ export default function Nav() {
               : undefined
           }
         >
-          {NAV_LINKS.map((link) => {
+          {(pathname === '/'
+            ? NAV_LINKS
+            : [{ href: '/', label: 'Home' }, ...NAV_LINKS]
+          ).map((link) => {
             const active =
               pathname === link.href ||
               (link.href !== '/' && pathname.startsWith(link.href));

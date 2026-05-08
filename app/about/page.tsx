@@ -10,7 +10,7 @@ import { IMAGES, SITE } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'About | A Healing Community in Brighton, Michigan',
   description:
-    'Meet the William A. Presti Center For Families And Youth — a warm, compassionate mental health practice in Brighton, MI serving Livingston and Oakland Counties since 1995.',
+    'Meet the William A. Presti Center For Families And Youth — a warm, compassionate mental health practice in Brighton, MI serving Livingston, Oakland, and Washtenaw Counties since 1995.',
   alternates: { canonical: `${SITE.url}/about` },
 };
 
@@ -48,8 +48,9 @@ export default function AboutPage() {
             </p>
             <p>
               For years, our therapists and certified coaches have walked
-              alongside individuals, couples, and families across Livingston
-              and Oakland Counties. We&apos;ve sat with people through grief,
+              alongside individuals, couples, and families across Livingston,
+              Oakland, and Washtenaw Counties. We&apos;ve sat with people
+              through grief,
               anxiety, betrayal, transitions, and the hard, ordinary moments
               of adulthood, parenting, and growing up. We&apos;ve also sat with
               them through the breakthroughs.

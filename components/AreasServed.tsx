@@ -6,7 +6,7 @@ export default function AreasServed() {
       <div className="areas-inner">
         <div>
           <h2 className="areas-heading r">
-            Serving communities across Livingston &amp; Oakland Counties
+            Serving communities across Livingston, Oakland &amp; Washtenaw Counties
           </h2>
           <p className="areas-sub r d1">
             In-person sessions in Brighton, MI. Teletherapy available statewide

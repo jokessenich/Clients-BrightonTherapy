@@ -10,7 +10,7 @@ import { IMAGES, SITE } from '@/lib/site';
 export const metadata = {
   title: 'Therapy & Coaching in Brighton, MI | Couples, Family, Teen & Adult',
   description:
-    'Hope and healing for every family. Compassionate therapy for individuals, couples, teens, and children in Brighton, MI. $82 flat-fee sessions. HSA qualified. In-person and teletherapy.',
+    'Where healing begins. Compassionate therapy and coaching for individuals, couples, teens, and children in Brighton, MI. $82 flat-fee sessions. HSA qualified. In-person and teletherapy.',
   alternates: { canonical: SITE.url },
 };
 
@@ -33,7 +33,7 @@ const homeFaqs = [
   },
   {
     q: 'What areas do you serve in person?',
-    a: 'Our office is in Brighton, MI. We commonly serve clients from Howell, Milford, South Lyon, Hartland, Fenton, Pinckney, Whitmore Lake, and Hamburg Township across Livingston and Oakland Counties.',
+    a: 'Our office is in Brighton, MI. We commonly serve clients from Howell, Milford, South Lyon, Hartland, Fenton, Pinckney, Whitmore Lake, Hamburg Township, and across Livingston, Oakland, and Washtenaw Counties.',
   },
   {
     q: 'How do I get started?',
@@ -48,10 +48,10 @@ export default function Home() {
         eyebrow="Brighton, Michigan"
         title={
           <>
-            Where <em>healing</em> begins.
+            Where <em>healing</em> begins
           </>
         }
-        subtitle="Compassionate therapy for individuals, couples, and families. Serving Livingston & Oakland Counties with in-person and teletherapy sessions."
+        subtitle="Compassionate therapy and coaching for children, teens, adults, couples, and families. Serving Livingston, Oakland & Washtenaw Counties with in-person and teletherapy sessions."
         bgImage={IMAGES.heroJoyful}
         bgAlt="A group of friends walking together on a sunlit path, laughing"
         bgPosition="center 40%"
@@ -111,7 +111,7 @@ export default function Home() {
           </div>
           <div className="philosophy-body r d1">
             <p>
-              Our therapists will compassionately listen and validate your
+              Our therapists and coaches will compassionately listen and validate your
               experience. We understand how emotional pain can impact many parts
               of a person&apos;s life.
             </p>
@@ -328,7 +328,7 @@ export default function Home() {
         showRating
         testimonials={[
           {
-            quote: "I can not express how much Jo has helped me deal with several different traumatic experiences I have had to face. She opened my eyes, gave me a different point of view, pulled me out of some dark places and gave me tools to manage my stress, anxiety and toxic people. All at a price I could actually afford! I am in a much better place because of her.",
+            quote: "I can not express how much my therapist has helped me deal with several different traumatic experiences I have had to face. She opened my eyes, gave me a different point of view, pulled me out of some dark places and gave me tools to manage my stress, anxiety and toxic people. All at a price I could actually afford! I am in a much better place because of her.",
             author: 'Lisa M.',
             context: 'Google review',
             rating: 5,

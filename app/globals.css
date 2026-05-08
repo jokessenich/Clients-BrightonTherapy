@@ -119,8 +119,8 @@ body.js-reveal .r.v {
 }
 .nav-brand { display: flex; align-items: center; gap: 0.75rem; }
 .nav-logo-img {
-  width: 56px;
-  height: 56px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   object-fit: contain;
   flex-shrink: 0;
@@ -128,7 +128,7 @@ body.js-reveal .r.v {
 }
 .nav-brand-text {
   font-family: var(--sans);
-  font-size: 0.72rem;
+  font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -140,7 +140,7 @@ body.js-reveal .r.v {
   font-weight: 400;
   letter-spacing: 0.06em;
   color: var(--text-light);
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
 }
 .nav-right { display: flex; align-items: center; gap: 1.25rem; }
@@ -838,6 +838,30 @@ body.js-reveal .r.v {
 .service-prose ul { margin: 1rem 0 1.5rem 1.5rem; }
 .service-prose li { margin-bottom: 0.5rem; color: var(--text-light); }
 .service-prose strong { color: var(--dark); font-weight: 600; }
+
+/* When a section's body is rendered as a bulleted list (vs paragraphs),
+   give it a touch more breathing room so it reads as scannable, not crammed. */
+.svc-section ul {
+  list-style: none;
+  margin: 1rem 0 1.5rem 0;
+  padding: 0;
+}
+.svc-section ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.7;
+}
+.svc-section ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--rust);
+}
 
 /* Editorial section marker */
 .svc-section {
