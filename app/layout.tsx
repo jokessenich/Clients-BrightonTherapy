@@ -45,17 +45,26 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${SITE.name} | Therapy in Brighton, MI`,
     description:
-      'Hope and healing for every family. Compassionate therapy and coaching in Brighton, MI.',
+      'Where healing begins. Compassionate therapy and coaching for children, teens, adults, couples, and families in Brighton, MI.',
     url: SITE.url,
     siteName: SITE.shortName,
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: `${SITE.url}/images/hero_joyful.jpg`,
+        width: 2400,
+        height: 1359,
+        alt: 'A group of friends walking together on a sunlit path, laughing',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${SITE.shortName} | Brighton, MI Therapy`,
     description:
-      'Compassionate therapy for individuals, couples, and families.',
+      'Compassionate therapy and coaching for children, teens, adults, couples, and families.',
+    images: [`${SITE.url}/images/hero_joyful.jpg`],
   },
   robots: {
     index: true,

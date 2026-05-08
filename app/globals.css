@@ -345,7 +345,7 @@ body.js-reveal .r.v {
   justify-content: center;
   gap: 3rem;
   padding: 1.6rem 3.5rem;
-  background: var(--dark);
+  background: var(--rust);
   flex-wrap: wrap;
 }
 .cred {
@@ -353,13 +353,13 @@ body.js-reveal .r.v {
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.85);
   display: flex;
   align-items: center;
   gap: 0.6rem;
   white-space: nowrap;
 }
-.cred::before { content: ''; width: 5px; height: 5px; background: var(--rust); border-radius: 50%; flex-shrink: 0; }
+.cred::before { content: ''; width: 5px; height: 5px; background: rgba(255, 255, 255, 0.55); border-radius: 50%; flex-shrink: 0; }
 
 /* ───────── SHARED ───────── */
 .eyebrow {
@@ -595,7 +595,7 @@ body.js-reveal .r.v {
 .why-item-desc { font-size: 0.82rem; color: var(--text-light); font-weight: 300; line-height: 1.55; }
 
 /* ───────── AREAS ───────── */
-.areas { background: var(--dark); padding: 5rem 3.5rem; }
+.areas { background: var(--rust); padding: 5rem 3.5rem; }
 .areas-inner {
   max-width: 1280px;
   margin: 0 auto;
@@ -612,7 +612,7 @@ body.js-reveal .r.v {
   line-height: 1.2;
   margin-bottom: 1rem;
 }
-.areas-sub { font-size: 0.9rem; color: rgba(255, 255, 255, 0.5); font-weight: 300; line-height: 1.7; }
+.areas-sub { font-size: 0.9rem; color: rgba(255, 255, 255, 0.75); font-weight: 300; line-height: 1.7; }
 .areas-list { display: flex; flex-wrap: wrap; }
 .area-tag {
   font-family: var(--serif);
@@ -624,7 +624,7 @@ body.js-reveal .r.v {
   transition: all 0.3s;
   margin: -0.5px;
 }
-.area-tag:hover { color: var(--white); border-color: var(--rust); background: rgba(30, 77, 140, 0.15); }
+.area-tag:hover { color: var(--white); border-color: rgba(255, 255, 255, 0.6); background: rgba(255, 255, 255, 0.08); }
 
 /* ───────── CTA ───────── */
 .cta { padding: 7rem 3.5rem; text-align: center; }
