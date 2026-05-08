@@ -41,7 +41,7 @@ export default function ServicesIndex() {
             Care for <em>every</em> stage of life
           </>
         }
-        subtitle="Whatever brought you here, you don't have to navigate it alone. Our therapists and certified coaches offer compassionate support for individuals, couples, and families across Brighton, MI."
+        subtitle="Whatever brought you here, we're glad you came. Our therapists and certified coaches offer compassionate support for children, teens, adults, couples, and families across Brighton, MI."
         bgImage={IMAGES.couples2}
         bgAlt="Two people holding hands at sunset"
         inner

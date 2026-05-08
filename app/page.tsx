@@ -78,11 +78,12 @@ export default function Home() {
               health care.
             </p>
             <p>
-              Whether you&apos;re navigating relationship challenges, parenting
-              stress, or emotional struggles, our licensed therapists offer
-              personalized support tailored to your unique needs. Our goal is
-              to help you build stronger connections, foster resilience, and
-              create lasting change — one conversation at a time.
+              Whether you&apos;re nurturing a relationship, raising a family,
+              or growing through a season of change, our therapists and coaches
+              offer personalized support tailored to your unique needs. Our
+              goal is to help you build stronger connections, foster
+              resilience, and create lasting change — one conversation at a
+              time.
             </p>
           </div>
         </div>

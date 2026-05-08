@@ -62,15 +62,15 @@ export default function FamilyWorkshopPage() {
         <div>
           <div className="eyebrow r">About the Workshop</div>
           <h2 className="intro-heading r d1">
-            You don&apos;t have to figure it out alone
+            A space to work on family, together
           </h2>
           <div className="intro-body r d2">
             <p>
-              Family is where some of our deepest struggles begin. It&apos;s
-              also where so much of our healing happens. The Family Workshop is
-              a small group for adults who want to work on family
-              relationships — the ones they grew up in, the ones they&apos;re
-              raising, and everything in between.
+              Family is where so much of life happens — the joys, the
+              questions, the friction, the healing. The Family Workshop is a
+              small group for adults who want to work on family relationships:
+              the ones they grew up in, the ones they&apos;re raising, and
+              everything in between.
             </p>
             <p>
               You&apos;ll meet with a small group of other adults and a

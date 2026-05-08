@@ -438,7 +438,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     heroImage: IMAGES.couples,
     heroAlt: 'Couple sitting together in soft natural light',
     intro:
-      'Are you and your partner arguing, struggling to communicate, or unable to resolve old conflicts? Our therapists and coaches offer a safe place for couples to express their feelings openly and honestly, and we partner with you to move the relationship in a positive direction.',
+      'Whether you and your partner are working through a hard patch or just want to deepen what you have, our therapists and coaches offer a safe place to express your feelings openly and honestly. We partner with you to move the relationship in a positive direction.',
     sections: [
       {
         heading: 'How we can help',
@@ -518,7 +518,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     heroImage: IMAGES.couples2,
     heroAlt: 'Two people holding hands at sunset, in a moment of connection',
     intro:
-      'Every relationship faces challenges, and we understand the stress couples experience. Our Certified Couples Coach has successfully guided couples through both short and long-term struggles, with practical tools and steady support.',
+      'Every relationship has its seasons, and a strong relationship is something you build together. Our Certified Couples Coach has successfully guided couples through everything from quick recalibrations to deeper work, with practical tools and steady support.',
     sections: [
       {
         heading: 'How we can help',
@@ -842,13 +842,13 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     heroImage: IMAGES.adult,
     heroAlt: 'Adult in calm individual therapy session',
     intro:
-      'Many of the adults who come in are doing well by every external measure — capable, caring, holding a lot together. They\'re also tired, worried, or stuck on something they can\'t quite name. Therapy is a space to set some of that down and look at it, with someone in your corner.',
+      'We serve adults who are in all walks of life — caring for others, working hard, building lives. Therapy is a space to grow alongside all of that: to know yourself better, sharpen your relationships, and live with more intention. Whether or not you have a specific problem, everyone deserves a thoughtful space.',
     sections: [
       {
-        heading: 'It\'s never the wrong time to come to therapy',
+        heading: 'We are here for you any time',
         body: [
-          'Therapy isn\'t just for hard seasons. We\'re here for you on your rainy days and your sunny days. Plenty of our clients come in feeling fine and use the space for clarity, growth, and getting to know themselves better.',
-          'Others come during a clear life challenge: a divorce, a death, a diagnosis, a job loss, a major decision. Both are completely valid reasons to be here.',
+          'Therapy is for any season of life. Plenty of our clients come in feeling steady, and use the space for clarity, growth, and getting to know themselves better.',
+          'Others come during a clear life challenge — a divorce, a death, a diagnosis, a major decision. Both are meaningful reasons to be here, and we\'re glad to be here with you.',
         ],
       },
       {

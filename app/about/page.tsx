@@ -130,7 +130,7 @@ export default function AboutPage() {
               body: 'You don\'t have to earn our care or prove your problems are big enough. Whatever brought you here is worth taking seriously.',
             },
             {
-              title: 'Strengths, not just struggles',
+              title: 'Strengths-based',
               body: 'We pay as much attention to what\'s working as to what\'s not. Real change is built on what\'s already strong in you.',
             },
             {
