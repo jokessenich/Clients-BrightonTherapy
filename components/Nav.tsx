@@ -23,8 +23,10 @@ export default function Nav() {
     setMobileOpen(false);
   }, [pathname]);
 
+  const isHome = pathname === '/';
+
   return (
-    <nav className={`nav ${stuck ? 'stuck' : ''}`}>
+    <nav className={`nav ${stuck ? 'stuck' : ''} ${isHome ? '' : 'nav-solid'}`}>
       <Link href="/" className="nav-brand" aria-label="Home">
         <Image
           src="/images/logo.png"
