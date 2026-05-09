@@ -41,7 +41,7 @@ export default function Nav() {
       </Link>
       <div className="nav-right">
         <ul
-          className="nav-links"
+          className={`nav-links ${mobileOpen ? 'mobile-open' : ''}`}
           style={
             mobileOpen
               ? {

@@ -194,14 +194,15 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     heroImage: IMAGES.autism,
     heroAlt: 'Soft natural light through warm textured curtains',
     intro:
-      'Autistic people don\'t need to be fixed. They need spaces that understand them. Our work with autistic clients of every age is rooted in neurodiversity-affirming principles. We honor how your brain works, support the things that are genuinely hard, and never ask you to mask in our office.',
+      'We support children, teens, and adults of all ages with ASD (Autism Spectrum Disorder). Our therapists and coaches partner with you on the things that genuinely make life harder — sensory overwhelm, burnout, communication, identity, and transitions — while respecting who you are.',
     sections: [
       {
-        heading: 'What we mean by affirming',
+        heading: 'Care that fits how you work',
+        bulleted: true,
         body: [
-          'A lot of the support available to autistic people focuses on making them appear less autistic. That\'s not what we do.',
-          'We work with you, not on you. Our goal isn\'t to change who you are. It\'s to help with the things that genuinely make life harder, like sensory overwhelm, burnout, social exhaustion, and the experience of being misunderstood.',
-          'For parents of autistic kids, we offer education, communication strategies, and a space to process the emotional reality of advocating for a child the world isn\'t built for.',
+          'We adjust the work to fit you, rather than asking you to fit the work. Sessions are paced and structured around what helps your specific brain feel safe, engaged, and understood.',
+          'Sensory needs are welcomed. You don\'t have to mask in our office, and you don\'t have to perform comfort you aren\'t feeling.',
+          'For parents of autistic kids, we offer education, communication strategies, and support as you advocate for your child.',
         ],
       },
       {
@@ -218,9 +219,10 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       },
       {
         heading: 'How we can help',
+        bulleted: true,
         body: [
-          'Our therapists and coaches meet you where you are, with care and without judgment. We listen carefully and adjust the work to fit you, rather than asking you to fit the work.',
-          'We also collaborate with parents, partners, and family members when that\'s helpful, so the people in your life can be part of the support.',
+          'Our therapists and coaches meet you where you are, with care and without judgment.',
+          'We collaborate with parents, partners, and family members when that\'s helpful, so the people in your life can be part of the support.',
           'You\'re welcome here whether you have a formal diagnosis or are still figuring it out.',
         ],
       },

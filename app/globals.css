@@ -108,6 +108,21 @@ body.js-reveal .r.v {
 .nav:not(.stuck) .nav-links a { color: rgba(255, 255, 255, 0.9); }
 .nav:not(.stuck) .nav-links a:hover { color: var(--white); }
 .nav:not(.stuck) .nav-links a.active { color: var(--white); }
+
+/* When the mobile menu drawer is open, the menu background goes light/cream
+   regardless of whether the page is at the top or scrolled. Force dark link
+   colors so the menu items are visible. This overrides the white-text rules
+   above that exist for transparent-nav-over-hero on desktop. */
+.nav .nav-links.mobile-open a,
+.nav:not(.stuck) .nav-links.mobile-open a {
+  color: var(--dark);
+}
+.nav .nav-links.mobile-open a:hover,
+.nav .nav-links.mobile-open a.active,
+.nav:not(.stuck) .nav-links.mobile-open a:hover,
+.nav:not(.stuck) .nav-links.mobile-open a.active {
+  color: var(--rust);
+}
 .nav:not(.stuck) .hamburger span { background: var(--white); }
 .nav:not(.stuck) .nav-cta-secondary {
   border-color: rgba(255, 255, 255, 0.5);
@@ -258,10 +273,11 @@ body.js-reveal .r.v {
 .hero-sub {
   font-size: 1.05rem;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.85);
   font-weight: 300;
   max-width: 580px;
   margin-bottom: 2.5rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55), 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 .hero-actions {
   display: flex;
@@ -309,6 +325,16 @@ body.js-reveal .r.v {
 }
 .hero-inner .hero-content { padding-bottom: 0; padding-top: 0; }
 .hero-inner .hero-h1 { font-size: clamp(2.4rem, 4.5vw, 3.8rem); }
+
+/* On mobile the nav is taller relative to the hero, so push the inner-hero
+   content down further so the h1 has clear breathing room below the nav. */
+@media (max-width: 1024px) {
+  .hero-inner { padding-top: 9rem; }
+}
+@media (max-width: 640px) {
+  .hero-inner { padding-top: 8rem; padding-bottom: 3rem; min-height: auto; }
+  .hero-inner .hero-h1 { font-size: 2.2rem; line-height: 1.15; }
+}
 
 /* ───────── BUTTONS ───────── */
 .btn {
