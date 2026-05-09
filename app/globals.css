@@ -140,7 +140,7 @@ body.js-reveal .r.v {
 .nav:not(.stuck) .nav-links.mobile-open a.active {
   color: var(--rust);
 }
-.nav:not(.stuck) .hamburger span { background: var(--white); }
+.nav:not(.stuck):not(.nav-solid) .hamburger span { background: var(--white); }
 .nav:not(.stuck) .nav-cta-secondary {
   border-color: rgba(255, 255, 255, 0.5);
   color: var(--white);
@@ -197,6 +197,20 @@ body.js-reveal .r.v {
   transition: background 0.3s;
 }
 .nav-phone:hover { background: var(--rust-hover); }
+
+/* Phone icon shown on mobile only — replaces the full phone-pill text on
+   small screens where the pill ate too much horizontal space. */
+.nav-phone-icon {
+  display: none;
+  color: var(--rust);
+  padding: 0.4rem;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+.nav-phone-icon:hover { color: var(--rust-hover); }
+.nav.nav-solid .nav-phone-icon { color: var(--rust); }
+.nav:not(.stuck):not(.nav-solid) .nav-phone-icon { color: var(--white); }
 
 /* Secondary CTA in nav (Request Appointment) */
 .nav-cta-secondary {
@@ -335,25 +349,27 @@ body.js-reveal .r.v {
 }
 
 /* Inner page hero (shorter)
-   Note: home .hero uses align-items: end so its content sits low in the photo,
-   but inner heroes need to top-align so their content lands cleanly below the
-   fixed nav. Override the parent's align-items here. */
+   The home .hero uses align-items: end (content sits low in the photo) but
+   inner heroes top-align their content. To clear the fixed nav, the content
+   itself gets a real padding-top — NOT zero like the original override. */
 .hero-inner {
   min-height: 60vh;
   align-items: start;
-  padding-top: 8rem;
+  padding-top: 0;
   padding-bottom: 4rem;
 }
-.hero-inner .hero-content { padding-bottom: 0; padding-top: 0; }
+.hero-inner .hero-content {
+  padding-bottom: 0;
+  padding-top: 9rem;  /* clears ~96px desktop nav with breathing room */
+}
 .hero-inner .hero-h1 { font-size: clamp(2.4rem, 4.5vw, 3.8rem); }
 
-/* On mobile the nav is taller relative to the hero, so push the inner-hero
-   content down further so the h1 has clear breathing room below the nav. */
 @media (max-width: 1024px) {
-  .hero-inner { padding-top: 9rem; }
+  .hero-inner .hero-content { padding-top: 8rem; }
 }
 @media (max-width: 640px) {
-  .hero-inner { padding-top: 8rem; padding-bottom: 3rem; min-height: auto; }
+  .hero-inner { padding-bottom: 3rem; min-height: auto; }
+  .hero-inner .hero-content { padding-top: 7rem; }
   .hero-inner .hero-h1 { font-size: 2.2rem; line-height: 1.15; }
 }
 
@@ -1910,8 +1926,11 @@ details[open] .faq-q::after { transform: rotate(45deg); }
   .nav-brand-text small { font-size: 0.55rem; }
   /* Phone pill is hidden on mobile — the sticky bottom mobile CTA already
      shows "Call us — 810-626-3282" so duplicating it in the nav is just
-     extra visual weight that doesn't fit on a 360px screen. */
+     extra visual weight that doesn't fit on a 360px screen. The phone
+     icon below is the mobile substitute — instant tap-to-call without
+     the ~110px width cost. */
   .nav-phone { display: none; }
+  .nav-phone-icon { display: flex; }
   .hero { padding: 0 1.25rem; }
   .hero-meta { display: none; }
   .hero-h1 { font-size: 2.6rem; }
