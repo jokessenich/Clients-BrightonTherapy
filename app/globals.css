@@ -334,9 +334,13 @@ body.js-reveal .r.v {
   margin-top: 0.15rem;
 }
 
-/* Inner page hero (shorter) */
+/* Inner page hero (shorter)
+   Note: home .hero uses align-items: end so its content sits low in the photo,
+   but inner heroes need to top-align so their content lands cleanly below the
+   fixed nav. Override the parent's align-items here. */
 .hero-inner {
   min-height: 60vh;
+  align-items: start;
   padding-top: 8rem;
   padding-bottom: 4rem;
 }
