@@ -1818,6 +1818,11 @@ details[open] .faq-q::after { transform: rotate(45deg); }
 @media (max-width: 1024px) {
   .nav { padding: 1.2rem 2rem; }
   .nav.stuck { padding: 0.8rem 2rem; }
+  /* Shrink logo a bit at tablet sizes — desktop nav-links are gone here, so
+     the brand is mostly logo + smaller wordmark + phone pill + hamburger. */
+  .nav-logo-img { width: 56px; height: 56px; }
+  .nav-brand-text { font-size: 0.75rem; }
+  .nav-brand-text small { font-size: 0.65rem; }
   .hero { padding: 0 2rem; }
   .hero-meta {
     bottom: 2rem;
@@ -1876,10 +1881,19 @@ details[open] .faq-q::after { transform: rotate(45deg); }
   body { padding-bottom: 60px; }
 }
 @media (max-width: 640px) {
-  .nav { padding: 1rem 1.25rem; }
-  .nav-phone { padding: 0.5rem 1rem; font-size: 0.75rem; }
-  .nav-brand-text { font-size: 0.65rem; }
-  .nav-brand-text small { font-size: 0.58rem; }
+  .nav { padding: 0.75rem 1rem; }
+  /* Shrink the logo on small viewports so the nav fits cleanly in one row */
+  .nav-logo-img { width: 44px; height: 44px; }
+  /* Hide the brand wordmark on small viewports — the logo alone carries the
+     brand. Cramming "William A. Presti Center For Families & Youth" next to
+     a logo and a phone pill on a 360px screen forces multi-line wrapping
+     that explodes the nav height and overlaps the hero content. */
+  .nav-brand-text { display: none; }
+  .nav-phone {
+    padding: 0.5rem 0.85rem;
+    font-size: 0.72rem;
+    white-space: nowrap;
+  }
   .hero { padding: 0 1.25rem; }
   .hero-meta { display: none; }
   .hero-h1 { font-size: 2.6rem; }
