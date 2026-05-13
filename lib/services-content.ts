@@ -38,7 +38,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     heroImage: IMAGES.add,
     heroAlt: 'Person organizing notes in soft natural light',
     intro:
-      'ADD is a neurological condition with psychological and social consequences. Children, teens, and adults need to understand that it is not their fault, they didn\'t cause it, and there is real hope. By the age of 6 or 7, ADD can already have a significant impact on self-esteem, and many people with ADD are misunderstood and have an inaccurate view of their own strengths. Our therapists and coaches work to help you or your loved one understand ADD, manage symptoms effectively, and see the genuine strengths that come with it.',
+      'ADD is a neurological condition with psychological and social consequences. Children, teens, and adults need to understand that it is not their fault, they didn\'t cause it, and there is real hope. By the age of 6 or 7, ADD can already have a significant impact on self-esteem, and many people with ADD are misunderstood and have an inaccurate view of their own strengths. Our therapists work to help you or your loved one understand ADD, manage symptoms effectively, and see the genuine strengths that come with it.',
     sections: [
       {
         heading: 'Common signs — inattention',
@@ -140,7 +140,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       {
         heading: 'How we can help',
         body: [
-          'Our therapists and coaches provide tools and strategies to manage anxiety when it\'s overwhelming, so you have something to reach for in the hard moments.',
+          'Our therapists provide tools and strategies to manage anxiety when it\'s overwhelming, so you have something to reach for in the hard moments.',
           'We also help you trace the roots of your anxiety. Treatment focuses on resolving the events or circumstances underneath it, not just managing the symptoms on the surface.',
           'The goal is for you to live freely again. We\'re here to help you reclaim your life from anxiety that\'s been running the show.',
         ],
@@ -194,7 +194,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     heroImage: IMAGES.autism,
     heroAlt: 'Soft natural light through warm textured curtains',
     intro:
-      'We support children, teens, and adults of all ages with ASD (Autism Spectrum Disorder). Our therapists and coaches partner with you on the things that genuinely make life harder — sensory overwhelm, burnout, communication, identity, and transitions — while respecting who you are.',
+      'We support children, teens, and adults of all ages with ASD (Autism Spectrum Disorder). Our therapists partner with you on the things that genuinely make life harder — sensory overwhelm, burnout, communication, identity, and transitions — while respecting who you are.',
     sections: [
       {
         heading: 'Care that fits how you work',
@@ -221,7 +221,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
         heading: 'How we can help',
         bulleted: true,
         body: [
-          'Our therapists and coaches meet you where you are, with care and without judgment.',
+          'Our therapists meet you where you are, with care and without judgment.',
           'We collaborate with parents, partners, and family members when that\'s helpful, so the people in your life can be part of the support.',
           'You\'re welcome here whether you have a formal diagnosis or are still figuring it out.',
         ],
@@ -385,6 +385,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
         heading: 'Managing depression',
         bulleted: true,
         body: [
+          'Depression does not have to rule your life. We listen, help you understand its effects, and give you successful strategies to move forward.',
           'Depression can be managed with the right help and support.',
           'Reaching out is the first step. Therapy provides awareness and tools that allow for a real shift in how you experience your life.',
         ],
@@ -401,7 +402,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     ],
     approach: [
       'Cognitive Behavioral Therapy (CBT)',
-      'Behavioral activation',
+      'Solution-focused therapy',
       'Mindfulness-based approaches',
       'Trauma-informed care',
       'Coordination with prescribers when medication is part of your care',
@@ -440,7 +441,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     heroImage: IMAGES.couples,
     heroAlt: 'Couple sitting together in soft natural light',
     intro:
-      'Whether you and your partner are working through a hard patch or just want to deepen what you have, our therapists and coaches offer a safe place to express your feelings openly and honestly. We partner with you to move the relationship in a positive direction.',
+      'Whether you and your partner are working through a hard patch or just want to deepen what you have, our therapists offer a safe place to express your feelings openly and honestly. We partner with you to move the relationship in a positive direction.',
     sections: [
       {
         heading: 'How we can help',
@@ -483,7 +484,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       'Couples feeling distant, disconnected, or stuck',
       'Couples recovering from infidelity or betrayal',
       'Couples preparing for marriage or major life change',
-      'Couples who fight the same fight on repeat',
+      'Couples who have short- and long-term unresolved conflicts',
       'Couples figuring out whether to stay together',
     ],
     faqs: [
@@ -520,7 +521,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     heroImage: IMAGES.couples2,
     heroAlt: 'Two people holding hands at sunset, in a moment of connection',
     intro:
-      'Every relationship has its seasons, and a strong relationship is something you build together. Our Certified Couples Coach has successfully guided couples through everything from quick recalibrations to deeper work, with practical tools and steady support.',
+      'Our Certified Couples Coach has successfully guided and supported couples through everything from the loss of a loved one to resolving long-term communication issues. Whether you want to deepen your connection or gain practical tools to improve communication, we can help.',
     sections: [
       {
         heading: 'How we can help',
@@ -569,6 +570,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       'Pre-marital couples wanting a strong foundation',
       'New parents recalibrating their partnership',
       'Couples in fundamentally healthy relationships seeking growth',
+      'Couples wanting to reconnect and improve their relationship dynamics',
       'Couples wanting practical tools without deep clinical work',
     ],
     faqs: [
@@ -798,8 +800,8 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       {
         heading: 'How coaching is different from therapy',
         body: [
-          'Coaching is forward-focused. We\'re less interested in unpacking why something happened and more interested in what you want now and what\'s in the way.',
-          'Our coaches are part of a clinical center, so if therapy turns out to be the better fit, we say so, and the handoff is seamless. A quick conversation up front is usually enough to figure out which one makes sense for you.',
+          'Coaching focuses on moving forward. It is solution-focused. We can help you resolve long-standing fear-based beliefs, and partner with you to move forward with intention and purpose.',
+          'Our coaches work in conjunction with our clinical team. If you have achieved your coaching goals and want to move to therapy, the transition is seamless. We facilitate an internal referral with a therapist who is the best fit for you.',
         ],
       },
     ],
@@ -835,16 +837,16 @@ export const SERVICE_CONTENT: ServiceContent[] = [
 
   {
     slug: 'adult-counseling',
-    title: 'Adult Counseling',
-    shortTitle: 'Adult Counseling',
-    metaTitle: 'Adult Counseling & Therapy in Brighton, MI | Individual Sessions',
+    title: 'Adult Therapy',
+    shortTitle: 'Adult Therapy',
+    metaTitle: 'Adult Therapy in Brighton, MI | Individual Sessions',
     metaDesc:
       'Adult counseling and individual therapy in Brighton, MI. A confidential space to be heard — for anxiety, life transitions, grief, and more. $82 flat fee. HSA qualified.',
     audience: 'Adults',
     heroImage: IMAGES.adult,
     heroAlt: 'Adult in calm individual therapy session',
     intro:
-      'We serve adults who are in all walks of life — caring for others, working hard, building lives. Therapy is a space to grow alongside all of that: to know yourself better, sharpen your relationships, and live with more intention. Whether or not you have a specific problem, everyone deserves a thoughtful space.',
+      'We serve adults in all stages of life — whether you are grieving a loss, in the middle of a major life transition, or dealing with a new diagnosis, therapy is a space to grow and be heard. We help you live with more intention. Everyone deserves a thoughtful space.',
     sections: [
       {
         heading: 'We are here for you any time',
@@ -857,7 +859,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
         heading: 'What we work with',
         body: [
           'Anxiety, depression, stress, and burnout. Grief and loss. Trauma and the long shadow it can cast. Relationship struggles — partners, family, friends, work. Major life transitions: divorce, parenthood, empty nesting, retirement. Identity, purpose, and meaning. Patterns that keep repeating despite your best efforts. Substance use and addiction. Codependency. Self-esteem.',
-          'Sessions are collaborative, paced to you, and grounded in real care. We don\'t do generic therapy — we work with the specific human in front of us.',
+          'Sessions are collaborative, paced to you, grounded in real care. We don\'t do generic therapy. We see and hear the person in front of us. We see you!',
         ],
       },
     ],
@@ -877,8 +879,8 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     ],
     faqs: [
       {
-        q: 'What if I\'m not sure what to talk about?',
-        a: 'That\'s normal. Many clients come in not quite knowing where to start. Part of what we do is help you find the threads.',
+        q: 'What if I don\'t know where to begin?',
+        a: 'It\'s okay. We take the time to get to know you at your pace. We listen, help you sort it out, and gently support you where you are. We partner with you to help you move forward on your terms.',
       },
       {
         q: 'Do you accept insurance?',

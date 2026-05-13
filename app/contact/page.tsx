@@ -7,7 +7,7 @@ import { IMAGES, SITE } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Contact | Therapy Appointments in Brighton, MI',
   description:
-    'Contact the William A. Presti Center in Brighton, MI. Call (810) 626-3282 or request an appointment online. Evening hours and teletherapy available throughout Michigan.',
+    'Contact the William A. Presti Center in Brighton, MI. Call (810) 299-1472 or request an appointment online. Evening hours and teletherapy available throughout Michigan.',
   alternates: { canonical: `${SITE.url}/contact` },
 };
 

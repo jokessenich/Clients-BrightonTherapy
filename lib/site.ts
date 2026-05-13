@@ -2,9 +2,9 @@ export const SITE = {
   name: 'William A. Presti Center For Families And Youth',
   shortName: 'William A. Presti Center',
   url: 'https://brightontherapytreatment.com',
-  phone: '810-626-3282',
-  phoneRaw: '+18106263282',
-  phoneDisplay: '(810) 626-3282',
+  phone: '810-299-1472',
+  phoneRaw: '+18102991472',
+  phoneDisplay: '(810) 299-1472',
   email: 'info@brightontherapytreatment.com',
   address: {
     street: '8123 Grand River Avenue, Suite 3',
@@ -135,8 +135,8 @@ export const SERVICES = [
   },
   {
     slug: 'adult-counseling',
-    title: 'Adult Counseling',
-    shortTitle: 'Adult Counseling',
+    title: 'Adult Therapy',
+    shortTitle: 'Adult Therapy',
     audience: 'Adults',
     summary:
       'A confidential space to be heard — for anxiety, life transitions, grief, and more.',
@@ -187,5 +187,6 @@ export const IMAGES = {
   staffKisha: { src: '/images/staff/kisha.jpg', width: 315, height: 420, alt: 'Portrait of Kisha Hath, Therapist and Clinical Supervisor' },
   staffMarcie: { src: '/images/staff/marcie.jpg', width: 511, height: 682, alt: 'Portrait of Marcie Reznik, Certified Life Coach' },
   staffMitchell: { src: '/images/staff/mitchell.jpg', width: 255, height: 340, alt: 'Portrait of Mitchell Brown, Clinical Mental Health Counselor and Coach' },
+  staffBailey: { src: '/images/staff/bailey.jpg', width: 512, height: 769, alt: 'Portrait of Bailey Vanderweel, Licensed Master Social Worker' },
   staffSuzette: { src: '/images/staff/suzette.jpg', width: 768, height: 1024, alt: 'Portrait of Suzette Presti, Intake Manager' },
 };

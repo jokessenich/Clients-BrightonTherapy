@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Hero from '@/components/Hero';
 import CredsBar from '@/components/CredsBar';
 import FinalCTA from '@/components/FinalCTA';
@@ -37,7 +38,7 @@ const homeFaqs = [
   },
   {
     q: 'How do I get started?',
-    a: 'You can call us at (810) 626-3282 or use our request form. We typically respond within one business day to schedule your first session.',
+    a: 'You can call us at (810) 299-1472 or use our request form. We typically respond within one business day to schedule your first session.',
   },
 ];
 
@@ -158,22 +159,24 @@ export default function Home() {
             <div className="svc-cat">Adults &amp; Couples</div>
             <ul className="svc-list">
               {[
-                'Anxiety',
-                'Depression',
-                'Trauma',
-                'Relationship Issues',
-                'Grief & Loss',
-                'Life Transitions',
-                'Addiction',
-                'Divorce',
-                'Codependency',
-                'Low Self-Esteem',
+                { label: 'Anxiety', href: '/services/anxiety-therapy' },
+                { label: 'Depression', href: '/services/depression-therapy' },
+                { label: 'Trauma', href: '/services' },
+                { label: 'Relationship Issues', href: '/services/couples-counseling' },
+                { label: 'Grief & Loss', href: '/services/adult-counseling' },
+                { label: 'Life Transitions', href: '/services/adult-counseling' },
+                { label: 'Addiction', href: '/services/adult-counseling' },
+                { label: 'Divorce', href: '/services/couples-counseling' },
+                { label: 'Codependency', href: '/services/adult-counseling' },
+                { label: 'Low Self-Esteem', href: '/services/adult-counseling' },
               ].map((item) => (
-                <li key={item} className="svc-item">
-                  <span className="svc-name">{item}</span>
-                  <svg className="svc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
+                <li key={item.label}>
+                  <Link href={item.href} className="svc-item">
+                    <span className="svc-name">{item.label}</span>
+                    <svg className="svc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -195,22 +198,24 @@ export default function Home() {
             <div className="svc-cat">Children &amp; Teens</div>
             <ul className="svc-list">
               {[
-                'ADD / ADHD',
-                'Anxiety',
-                'Depression',
-                'Trauma',
-                'Addiction Issues',
-                'Internet & Gaming Addiction',
-                'Peer Issues',
-                'Autism Spectrum Disorder',
-                'Gender Identity Support',
-                'Emotional Dysregulation',
+                { label: 'ADD / ADHD', href: '/services/add-therapy' },
+                { label: 'Anxiety', href: '/services/anxiety-therapy' },
+                { label: 'Depression', href: '/services/depression-therapy' },
+                { label: 'Trauma', href: '/services' },
+                { label: 'Addiction Issues', href: '/services/teenage-therapy' },
+                { label: 'Internet & Gaming Addiction', href: '/services/teenage-therapy' },
+                { label: 'Peer Issues', href: '/services/teenage-therapy' },
+                { label: 'Autism Spectrum Disorder', href: '/services/autism-spectrum-disorder' },
+                { label: 'Gender Identity Support', href: '/services' },
+                { label: 'Emotional Dysregulation', href: '/services/childrens-therapy' },
               ].map((item) => (
-                <li key={item} className="svc-item">
-                  <span className="svc-name">{item}</span>
-                  <svg className="svc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
+                <li key={item.label}>
+                  <Link href={item.href} className="svc-item">
+                    <span className="svc-name">{item.label}</span>
+                    <svg className="svc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </Link>
                 </li>
               ))}
             </ul>
