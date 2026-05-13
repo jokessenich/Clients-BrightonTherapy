@@ -1858,11 +1858,11 @@ details[open] .faq-q::after { transform: rotate(45deg); }
 @media (max-width: 1024px) {
   .nav { padding: 1.2rem 2rem; }
   .nav.stuck { padding: 0.8rem 2rem; }
-  /* Shrink logo a bit at tablet sizes — desktop nav-links are gone here, so
-     the brand is mostly logo + smaller wordmark + phone pill + hamburger. */
-  .nav-logo-img { width: 56px; height: 56px; }
-  .nav-brand-text { font-size: 0.75rem; }
-  .nav-brand-text small { font-size: 0.65rem; }
+  /* Tablet: logo and wordmark sized for legibility. Desktop nav-links are
+     gone at this breakpoint so the brand has more room. */
+  .nav-logo-img { width: 62px; height: 62px; }
+  .nav-brand-text { font-size: 0.82rem; }
+  .nav-brand-text small { font-size: 0.7rem; }
   .hero { padding: 0 2rem; }
   .hero-meta {
     bottom: 2rem;
@@ -1922,11 +1922,12 @@ details[open] .faq-q::after { transform: rotate(45deg); }
 }
 @media (max-width: 640px) {
   .nav { padding: 0.75rem 1rem; }
-  /* Logo and wordmark larger on mobile per client request — phone pill is
-     hidden on mobile, so there's room for a more prominent brand. */
-  .nav-logo-img { width: 60px; height: 60px; }
-  .nav-brand-text { font-size: 0.72rem; line-height: 1.3; }
-  .nav-brand-text small { font-size: 0.62rem; }
+  /* Logo and wordmark sized for genuine readability on mobile. The phone
+     pill is hidden on mobile (replaced by the small phone icon) which
+     gives the brand a substantial chunk of the nav width. */
+  .nav-logo-img { width: 64px; height: 64px; }
+  .nav-brand-text { font-size: 0.82rem; line-height: 1.25; }
+  .nav-brand-text small { font-size: 0.7rem; }
   /* Phone pill is hidden on mobile — the sticky bottom mobile CTA already
      shows "Call us — 810-299-1472" so duplicating it in the nav is just
      extra visual weight that doesn't fit on a 360px screen. The phone
