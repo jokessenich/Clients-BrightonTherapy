@@ -15,6 +15,11 @@
   --rust-hover: #17407a;
   --rust-light: #5a84bc;
   --rust-soft: #e4ecf7;
+  /* Used for italic <em> emphasis inside body-context headlines.
+     Slightly darker than --rust to read better at thin italic weight
+     against the cream background, while staying distinct from --dark
+     so the emphasis still visually pops. */
+  --rust-deep: #1a3d72;
   /* Warm bed — unchanged, preserves the editorial warmth */
   --dark: #1c1917;
   --dark-2: #2d2926;
@@ -103,8 +108,14 @@ body.js-reveal .r.v {
 }
 
 /* Light-mode nav over the dark hero (initial state, before scrolling) */
-.nav:not(.stuck) .nav-brand-text { color: var(--white); }
-.nav:not(.stuck) .nav-brand-text small { color: rgba(255, 255, 255, 0.75); }
+.nav:not(.stuck) .nav-brand-text {
+  color: var(--white);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55), 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+.nav:not(.stuck) .nav-brand-text small {
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
 .nav:not(.stuck) .nav-links a { color: rgba(255, 255, 255, 0.9); }
 .nav:not(.stuck) .nav-links a:hover { color: var(--white); }
 .nav:not(.stuck) .nav-links a.active { color: var(--white); }
@@ -159,23 +170,36 @@ body.js-reveal .r.v {
   background: var(--bg);
 }
 .nav-brand-text {
-  font-family: var(--sans);
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.005em;
   color: var(--dark);
-  line-height: 1.4;
+  line-height: 1.2;
 }
 .nav-brand-text small {
   display: block;
-  font-weight: 400;
-  letter-spacing: 0.06em;
+  font-family: var(--sans);
+  font-weight: 500;
+  letter-spacing: 0.14em;
   color: var(--text-light);
-  font-size: 0.75rem;
+  font-size: 0.62rem;
   text-transform: uppercase;
+  margin-top: 0.2rem;
 }
 .nav-right { display: flex; align-items: center; gap: 1.25rem; }
+
+/* All interactive nav elements get an explicit pointer cursor. Anchors
+   normally get this by default, but we set it explicitly to cover edge cases
+   (e.g. when an anchor wraps complex children, or when overrides elsewhere
+   reset cursor styles). */
+.nav-brand,
+.nav-links a,
+.nav-phone,
+.nav-phone-icon {
+  cursor: pointer;
+}
+
 .nav-links { display: flex; gap: 1.75rem; list-style: none; align-items: center; margin-right: 0.5rem; }
 .nav-links a {
   font-size: 0.8rem;
@@ -275,17 +299,17 @@ body.js-reveal .r.v {
   padding-top: 10rem;
 }
 .hero-eyebrow {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--rust-light);
-  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 1.75rem;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.85rem;
 }
-.hero-eyebrow::before { content: ''; width: 32px; height: 1px; background: var(--rust-light); }
+.hero-eyebrow::before { content: ''; width: 44px; height: 1.5px; background: var(--rust-light); }
 .hero-h1 {
   font-family: var(--serif);
   font-size: clamp(3rem, 5.5vw, 4.8rem);
@@ -332,6 +356,25 @@ body.js-reveal .r.v {
   gap: 1.2rem;
 }
 .hero-stat { text-align: right; }
+.hero-stat-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  position: relative;
+}
+.hero-stat-link:hover { opacity: 0.85; }
+.hero-stat-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.6);
+  transition: width 0.3s ease;
+}
+.hero-stat-link:hover::after { width: 100%; }
 .hero-stat-value {
   font-family: var(--serif);
   font-size: 1.8rem;
@@ -442,7 +485,7 @@ body.js-reveal .r.v {
   letter-spacing: -0.01em;
   margin-bottom: 2rem;
 }
-.section-heading em { font-style: italic; color: var(--rust); }
+.section-heading em { font-style: italic; font-weight: 500; color: var(--rust-deep); }
 
 /* ───────── INTRO ───────── */
 .intro {
@@ -463,7 +506,7 @@ body.js-reveal .r.v {
   letter-spacing: -0.01em;
   margin-bottom: 2rem;
 }
-.intro-heading em { font-style: italic; color: var(--rust); }
+.intro-heading em { font-style: italic; font-weight: 500; color: var(--rust-deep); }
 .intro-body {
   font-size: 1rem;
   line-height: 1.85;
@@ -602,7 +645,7 @@ body.js-reveal .r.v {
   color: var(--dark);
   line-height: 1.2;
 }
-.mosaic-heading em { font-style: italic; color: var(--rust); }
+.mosaic-heading em { font-style: italic; font-weight: 500; color: var(--rust-deep); }
 .mosaic-body { font-size: 0.95rem; line-height: 1.8; color: var(--text-light); font-weight: 300; }
 .mosaic-grid {
   display: grid;
@@ -703,7 +746,7 @@ body.js-reveal .r.v {
   line-height: 1.1;
   margin-bottom: 1.25rem;
 }
-.cta-heading em { font-style: italic; color: var(--rust); }
+.cta-heading em { font-style: italic; font-weight: 500; color: var(--rust-deep); }
 .cta-body {
   font-size: 1.05rem;
   color: var(--text-light);
@@ -1698,7 +1741,7 @@ details[open] .faq-q::after { transform: rotate(45deg); }
   margin-bottom: 3rem;
   max-width: 720px;
 }
-.testimonials-heading em { font-style: italic; color: var(--rust); }
+.testimonials-heading em { font-style: italic; font-weight: 500; color: var(--rust-deep); }
 
 .testimonials-rating {
   margin: -1.5rem 0 2.5rem;
@@ -1861,8 +1904,8 @@ details[open] .faq-q::after { transform: rotate(45deg); }
   /* Tablet: logo and wordmark sized for legibility. Desktop nav-links are
      gone at this breakpoint so the brand has more room. */
   .nav-logo-img { width: 62px; height: 62px; }
-  .nav-brand-text { font-size: 0.82rem; }
-  .nav-brand-text small { font-size: 0.7rem; }
+  .nav-brand-text { font-size: 1.05rem; }
+  .nav-brand-text small { font-size: 0.6rem; }
   .hero { padding: 0 2rem; }
   .hero-meta {
     bottom: 2rem;
@@ -1926,8 +1969,8 @@ details[open] .faq-q::after { transform: rotate(45deg); }
      pill is hidden on mobile (replaced by the small phone icon) which
      gives the brand a substantial chunk of the nav width. */
   .nav-logo-img { width: 64px; height: 64px; }
-  .nav-brand-text { font-size: 0.82rem; line-height: 1.25; }
-  .nav-brand-text small { font-size: 0.7rem; }
+  .nav-brand-text { font-size: 1rem; line-height: 1.2; }
+  .nav-brand-text small { font-size: 0.55rem; }
   /* Phone pill is hidden on mobile — the sticky bottom mobile CTA already
      shows "Call us — 810-299-1472" so duplicating it in the nav is just
      extra visual weight that doesn't fit on a 360px screen. The phone

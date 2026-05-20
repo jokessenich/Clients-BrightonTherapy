@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import RequestButton from './RequestButton';
 import RevealOnMount from './RevealOnMount';
 import SmartImage, { ImageRef } from './SmartImage';
@@ -68,14 +69,14 @@ export default function Hero({
       </div>
       {showStats && (
         <div className="hero-meta">
-          <div className="hero-stat">
+          <Link href="/affordable-care" className="hero-stat hero-stat-link">
             <div className="hero-stat-value">$82</div>
             <div className="hero-stat-label">Flat Fee</div>
-          </div>
-          <div className="hero-stat">
+          </Link>
+          <Link href="/affordable-care" className="hero-stat hero-stat-link">
             <div className="hero-stat-value">HSA</div>
             <div className="hero-stat-label">Qualified</div>
-          </div>
+          </Link>
           <div className="hero-stat">
             <div className="hero-stat-value">All Ages</div>
             <div className="hero-stat-label">Welcome</div>

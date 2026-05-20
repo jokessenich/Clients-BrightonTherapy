@@ -98,7 +98,7 @@ const TEAM: TeamMember[] = [
   {
     name: 'Bailey Vanderweel',
     title: 'Licensed Master Social Worker',
-    credentials: 'LMSW · M.S.W. Clinical Mental Health',
+    credentials: 'LMSW · Therapist · Masters in Clinical Mental Health',
     email: 'bailey@wapcenter.org',
     photo: IMAGES.staffBailey,
     bio: [
@@ -144,10 +144,10 @@ export default function StaffPage() {
       <section className="staff-intro">
         <div className="eyebrow r">Meet the Team</div>
         <h2 className="section-heading r d1">
-          Experienced clinicians. <em>Human</em> first.
+          Experienced and <em>Compassionate</em> Clinicians
         </h2>
         <p className="staff-intro-body r d2">
-          Our team brings a wide range of specialties across therapy and coaching. What holds us together is a shared commitment to treating every client like a whole person — not a diagnosis, not a case, not a number. You won&apos;t get cookie-cutter care here.
+          Our team brings a wide range of specialties across therapy and coaching. What holds us together is a shared commitment to treating every client with respect and dignity. We want to help you heal. We believe in you.
         </p>
       </section>
 

@@ -42,6 +42,19 @@ const nextConfig = {
         destination: '/privacy',
         permanent: true,
       },
+      // The /services/couples comparison page existed briefly before being
+      // removed in favor of separate couples-counseling and couples-coaching
+      // pages. Redirect any lingering links to the services index.
+      {
+        source: '/services/couples',
+        destination: '/services',
+        permanent: true,
+      },
+      {
+        source: '/services/couples/',
+        destination: '/services',
+        permanent: true,
+      },
     ];
   },
 };

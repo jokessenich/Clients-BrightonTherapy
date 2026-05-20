@@ -38,6 +38,7 @@ export default function Footer() {
               <li><Link href="/staff">Our Staff</Link></li>
               <li><Link href="/teletherapy">Teletherapy</Link></li>
               <li><Link href="/family-workshop">Family Workshop</Link></li>
+              <li><Link href="/affordable-care">Affordable Care &amp; Pricing</Link></li>
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>

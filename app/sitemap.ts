@@ -9,10 +9,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: SITE.url, priority: 1.0, changeFrequency: 'weekly' as const },
     { url: `${SITE.url}/about`, priority: 0.9, changeFrequency: 'monthly' as const },
     { url: `${SITE.url}/services`, priority: 0.95, changeFrequency: 'monthly' as const },
-    { url: `${SITE.url}/services/couples`, priority: 0.9, changeFrequency: 'monthly' as const },
     { url: `${SITE.url}/staff`, priority: 0.85, changeFrequency: 'monthly' as const },
     { url: `${SITE.url}/teletherapy`, priority: 0.9, changeFrequency: 'monthly' as const },
     { url: `${SITE.url}/family-workshop`, priority: 0.85, changeFrequency: 'monthly' as const },
+    { url: `${SITE.url}/affordable-care`, priority: 0.88, changeFrequency: 'monthly' as const },
     { url: `${SITE.url}/contact`, priority: 0.95, changeFrequency: 'monthly' as const },
     { url: `${SITE.url}/privacy`, priority: 0.3, changeFrequency: 'yearly' as const },
   ];

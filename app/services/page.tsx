@@ -22,10 +22,7 @@ const groups = [
   {
     title: 'Adults',
     audience: 'For adult individuals and partnerships',
-    // 'couples' here is a special virtual slug — it doesn't render from
-    // SERVICE_CONTENT, it renders as a custom overview card linking to the
-    // new /services/couples page that explains counseling vs coaching.
-    services: ['adult-counseling', 'anxiety-therapy', 'depression-therapy', 'couples', 'coaching-and-mentoring'],
+    services: ['adult-counseling', 'anxiety-therapy', 'depression-therapy', 'couples-counseling', 'couples-coaching', 'coaching-and-mentoring'],
   },
   {
     title: 'All Ages',
@@ -60,27 +57,6 @@ export default function ServicesIndex() {
           <div className="svc-index-grid">
             {group.services.map((slug, si) => {
               const delayClass = si < 4 ? `d${si + 1}` : '';
-              // Special case: 'couples' is a virtual overview card that links
-              // to a dedicated page explaining the difference between couples
-              // counseling and couples coaching.
-              if (slug === 'couples') {
-                return (
-                  <Link
-                    key={slug}
-                    href="/services/couples"
-                    className={`svc-index-card r ${delayClass} ${gi % 2 === 0 ? 'alt' : ''}`.trim()}
-                  >
-                    <div className="svc-audience">Couples</div>
-                    <div className="svc-title">Couples Therapy &amp; Coaching</div>
-                    <p className="svc-summary">
-                      We offer two paths for couples — clinical counseling for
-                      deeper work, and coaching for forward-focused practical
-                      tools. Learn which is right for you.
-                    </p>
-                    <span className="svc-more">Learn more →</span>
-                  </Link>
-                );
-              }
               const svc = SERVICE_CONTENT.find((s) => s.slug === slug);
               if (!svc) return null;
               return (
