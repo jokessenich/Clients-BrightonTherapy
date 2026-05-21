@@ -43,7 +43,7 @@ const TEAM: TeamMember[] = [
   },
   {
     name: 'Arica VanGelderen',
-    title: 'Operations Director, Mentor & Coach',
+    title: 'Operations Director & Mental Health Specialist',
     credentials: 'MSW',
     email: 'arica@wapcenter.org',
     photo: IMAGES.staffArica,
@@ -61,10 +61,10 @@ const TEAM: TeamMember[] = [
     photo: IMAGES.staffKisha,
     bio: [
       "Kisha received her Masters in Social Work from Michigan State University and her Bachelor of Science from Baker College.",
-      "Kisha specializes in working with children and teens, though she has deep experience across all age groups — from clients as young as two through adulthood. Her clinical focus includes trauma, anxiety, depression, family conflict, and sexuality. Her passion is helping clients heal from emotional pain and live empowered lives.",
+      "Kisha specializes in working with children and teens, though she has deep experience across all age groups — from clients as young as two through adulthood. Her clinical focus includes trauma, anxiety, depression, and family conflict. Her passion is helping clients heal from emotional pain and live empowered lives.",
       "In her work with children and teens, Kisha incorporates mindfulness, play therapy, and art therapy. She validates her clients' feelings, listens to their stories, and provides a safe, welcoming, judgment-free space — whether in person or virtual. She works with your strengths to help you reach your goals, understanding that life is always changing.",
     ],
-    specialties: ['Trauma', 'Anxiety & depression', 'Children & teens', 'Family conflict', 'Sexuality', 'Play & art therapy'],
+    specialties: ['Trauma', 'Anxiety & depression', 'Children & teens', 'Family conflict', 'Play & art therapy'],
     personal: 'Kisha lives in Howell with her five-year-old Pomchi and her one-year-old cat. She enjoys traveling, concerts, crafting, and spending time with friends — and she\'s an avid movie fan, especially horror.',
   },
   {
@@ -78,7 +78,7 @@ const TEAM: TeamMember[] = [
       "Marcie also works with adults moving through life transitions: divorce, grief and loss, career change, isolation, low self-esteem, and spiritual exploration. She believes everyone has the power to create the life they desire, and her role is to provide the tools and support to make that happen.",
       "Over 50-plus years of her own life experiences have deepened her compassion and empathy — especially for people dealing with emotional and physical pain. She draws on a wide range of healing modalities to support growth and transformation, and works collaboratively with clients in a warm, welcoming environment where they feel seen and heard.",
     ],
-    specialties: ['Couples & communication', 'Life transitions', 'Divorce, grief & loss', 'Self-esteem', 'Pre-marital coaching'],
+    specialties: ['Adults', 'Couples & communication', 'Unhealthy relationship dynamics', 'Life transitions', 'Divorce, grief & loss', 'Self-esteem & negative self-beliefs', 'Pre-marital coaching'],
     personal: 'Marcie lives in Wixom with her husband and one of her daughters. Her hobbies are working out, being outside in nature, and time with family and friends.',
   },
   {
