@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import Sidebar from '@/components/Sidebar';
 import MobileCTA from '@/components/MobileCTA';
 import ScrollObserver from '@/components/ScrollObserver';
+import BehaviorTracker from '@/components/BehaviorTracker';
 import { SITE } from '@/lib/site';
 
 const cormorant = Cormorant_Garamond({
@@ -163,10 +164,18 @@ export default function RootLayout({
         <Sidebar />
         <MobileCTA />
         <ScrollObserver />
+        <BehaviorTracker />
         <Script
           id="ld-business"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <Script
+          id="umami-analytics"
+          strategy="afterInteractive"
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="af803354-83f1-4db8-bd55-e8128cc80e33"
         />
       </body>
     </html>

@@ -3,13 +3,63 @@
 import { useState } from 'react';
 import { SITE } from '@/lib/site';
 
+// ─────────────────────────────────────────────────────────────────────────
+// FORMSPREE ENDPOINT — submissions POST here. The destination email is set
+// in the Formspree dashboard (not in code). To change where leads are sent,
+// update it there.
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xykvbwnj';
+// ─────────────────────────────────────────────────────────────────────────
+
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(false);
+  const [started, setStarted] = useState(false);
+
+  // Fire once, when the user first interacts with any field. Paired with
+  // 'contact-form-submit', this gives us the start→submit abandonment funnel.
+  const handleFirstFocus = () => {
+    if (started) return;
+    setStarted(true);
+    if (typeof window !== 'undefined' && (window as any).umami) {
+      (window as any).umami.track('contact-form-start', {
+        page: window.location.pathname,
+      });
+    }
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // TODO: wire to Formspree, Netlify Forms, or your form handler
-    setSubmitted(true);
+    setError(false);
+    setSubmitting(true);
+
+    const formEl = e.currentTarget;
+    const formData = new FormData(formEl);
+
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: formData,
+      });
+
+      if (!res.ok) throw new Error('Request failed');
+
+      // Track the conversion in Umami (a submitted request is a real lead).
+      if (typeof window !== 'undefined' && (window as any).umami) {
+        (window as any).umami.track('contact-form-submit', {
+          service: (formData.get('service') as string) || 'unspecified',
+          referral: (formData.get('referral') as string) || 'unspecified',
+          page: window.location.pathname,
+        });
+      }
+
+      setSubmitted(true);
+    } catch {
+      setError(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -33,7 +83,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} onFocus={handleFirstFocus}>
       <div className="form-group">
         <label className="form-label" htmlFor="c-name">
           Full Name
@@ -120,6 +170,29 @@ export default function ContactForm() {
         />
       </div>
       <div className="form-group">
+        <label className="form-label" htmlFor="c-referral">
+          How did you hear about us?
+        </label>
+        <select
+          className="form-select"
+          id="c-referral"
+          name="referral"
+          defaultValue=""
+        >
+          <option value="" disabled>
+            Select one...
+          </option>
+          <option>Google search</option>
+          <option>Google Maps</option>
+          <option>Referred by a friend or family member</option>
+          <option>Referred by a doctor or therapist</option>
+          <option>Social media</option>
+          <option>Psychology Today</option>
+          <option>Insurance / provider directory</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div className="form-group">
         <label className="form-label" htmlFor="c-msg">
           Message
         </label>
@@ -130,8 +203,24 @@ export default function ContactForm() {
           placeholder="Tell us a bit about what you're looking for..."
         />
       </div>
-      <button type="submit" className="form-submit">
-        Send Request
+      {error && (
+        <p
+          style={{
+            color: '#b91c1c',
+            fontSize: '0.9rem',
+            marginBottom: '1rem',
+          }}
+        >
+          Something went wrong sending your request. Please try again, or call
+          us at{' '}
+          <a href={`tel:${SITE.phoneRaw}`} style={{ color: 'var(--rust)', fontWeight: 600 }}>
+            {SITE.phone}
+          </a>
+          .
+        </p>
+      )}
+      <button type="submit" className="form-submit" disabled={submitting}>
+        {submitting ? 'Sending…' : 'Send Request'}
       </button>
     </form>
   );

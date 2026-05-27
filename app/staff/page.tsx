@@ -36,7 +36,7 @@ const TEAM: TeamMember[] = [
     bio: [
       "Johanna received her Masters in Social Work from Eastern Michigan University with a concentration in Children and Family Services. She has worked in the Social Work field since 1983.",
       "Johanna founded the William A. Presti Center for Families and Youth to provide a caring, empathetic, supportive environment for people struggling with emotional and mental health issues — and to keep services at a price that actually makes care accessible.",
-      "Over her career, Johanna has worked with clients experiencing anxiety, loss, low self-esteem, depression, and other emotional and mental health concerns. She has served as a Therapist, Coach, and Case Manager across mental health, education, and residential settings, and supervised programs for chronically mentally ill and head-injured adults.",
+      "Over her career, Johanna has worked with clients experiencing anxiety, trauma, loss, low self-esteem, depression, and other emotional and mental health concerns. She has served as a Therapist, Coach, and Case Manager across mental health, education, and residential settings, and supervised programs for chronically mentally ill and head-injured adults.",
       "Today, Johanna's focus is the ongoing development of the center. She's proud of the team of therapists, coaches, and support staff she's built — and honored to serve Livingston County and the surrounding communities.",
     ],
     personal: 'Johanna lives locally with her husband and her 15-year-old dog. She loves long walks, reading, and collecting jewelry.',
