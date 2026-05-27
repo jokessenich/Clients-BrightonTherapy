@@ -4,9 +4,15 @@ import { useEffect, useRef, useState } from 'react';
 import { SITE } from '@/lib/site';
 import { SIDEBAR_EVENT } from '@/lib/sidebar';
 
+// Same Formspree endpoint as the contact-page form.
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xykvbwnj';
+
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(false);
+  const [started, setStarted] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
@@ -34,16 +40,54 @@ export default function Sidebar() {
     return () => document.removeEventListener('keydown', onKey);
   }, []);
 
+  // Fire once when the user first interacts — paired with the submit event
+  // this gives the start→submit funnel for the nav/sidebar form specifically.
+  const handleFirstFocus = () => {
+    if (started) return;
+    setStarted(true);
+    if (typeof window !== 'undefined' && (window as any).umami) {
+      (window as any).umami.track('sidebar-form-start');
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // TODO: wire to Formspree, Netlify Forms, or your form handler
-    // Example: await fetch('https://formspree.io/f/YOUR_ID', { method: 'POST', body: new FormData(e.currentTarget) });
-    setSubmitted(true);
+    setError(false);
+    setSubmitting(true);
+
+    const formData = new FormData(e.currentTarget);
+
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: formData,
+      });
+
+      if (!res.ok) throw new Error('Request failed');
+
+      if (typeof window !== 'undefined' && (window as any).umami) {
+        (window as any).umami.track('contact-form-submit', {
+          service: (formData.get('service') as string) || 'unspecified',
+          source: 'sidebar',
+          page: window.location.pathname,
+        });
+      }
+
+      setSubmitted(true);
+    } catch {
+      setError(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const close = () => {
     setOpen(false);
-    setTimeout(() => setSubmitted(false), 400);
+    setTimeout(() => {
+      setSubmitted(false);
+      setError(false);
+    }, 400);
   };
 
   return (
@@ -85,7 +129,7 @@ export default function Sidebar() {
                 </a>
                 .
               </p>
-              <form ref={formRef} onSubmit={handleSubmit}>
+              <form ref={formRef} onSubmit={handleSubmit} onFocus={handleFirstFocus}>
                 <div className="form-group">
                   <label className="form-label" htmlFor="fname">
                     Full Name
@@ -160,8 +204,18 @@ export default function Sidebar() {
                     placeholder="Tell us a little about what you're looking for..."
                   />
                 </div>
-                <button type="submit" className="form-submit">
-                  Send Request
+                {error && (
+                  <p style={{ color: '#b91c1c', fontSize: '0.9rem', marginBottom: '1rem' }}>
+                    Something went wrong sending your request. Please try again,
+                    or call us at{' '}
+                    <a href={`tel:${SITE.phoneRaw}`} style={{ color: 'var(--rust)', fontWeight: 600 }}>
+                      {SITE.phone}
+                    </a>
+                    .
+                  </p>
+                )}
+                <button type="submit" className="form-submit" disabled={submitting}>
+                  {submitting ? 'Sending…' : 'Send Request'}
                 </button>
               </form>
             </>
