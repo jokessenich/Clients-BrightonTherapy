@@ -1978,7 +1978,20 @@ details[open] .faq-q::after { transform: rotate(45deg); }
      the ~110px width cost. */
   .nav-phone { display: none; }
   .nav-phone-icon { display: flex; }
-  .hero { padding: 0 1.25rem; }
+  .hero { padding: 0 1.25rem; min-height: 78vh; }
+  /* On mobile, the sticky bottom bar already shows "Call us — 810-299-1472"
+     persistently across every page. Duplicating it as the hero's primary
+     button creates a "phone number twice" first impression with no real
+     gain — tap-to-call is already one tap away. Hide it; keep the Request
+     Appointment button as the hero's primary CTA. */
+  .hero-actions .btn-fill { display: none; }
+  /* Pull hero content up. The desktop layout uses align-items: end with
+     a generous top padding (10rem) so the content sits near the bottom
+     of a tall photo. On mobile that leaves a large dark band above
+     "Brighton, Michigan" before any text appears — the first impression
+     is empty space, not the message. Tightening top padding moves the
+     content into the viewer's first glance. */
+  .hero-content { padding-top: 5rem; padding-bottom: 3rem; }
   .hero-meta { display: none; }
   .hero-h1 { font-size: 2.6rem; }
   .hero-actions { flex-direction: column; align-items: stretch; }
