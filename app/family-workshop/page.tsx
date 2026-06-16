@@ -30,10 +30,7 @@ const faqs = [
     q: 'What if I\'m nervous about sharing in a group?',
     a: 'Most people are. There\'s no pressure to share before you\'re ready. The clinician sets a respectful tone from day one.',
   },
-  {
-    q: 'How much does it cost?',
-    a: 'The Family Workshop is $82 per session, the same as individual therapy. It\'s typically HSA-eligible.',
-  },
+
   {
     q: 'How do I sign up?',
     a: `Call ${SITE.phone}. We'll let you know when the next workshop is starting and whether it sounds like a good fit for you.`,
@@ -149,14 +146,7 @@ export default function FamilyWorkshopPage() {
                 parents, and how to do things differently now.
               </p>
             </div>
-            <div className="offering-card r d4">
-              <div className="o-aud">$82</div>
-              <h3>Same flat fee</h3>
-              <p>
-                The workshop is $82 per session, the same as individual therapy.
-                Typically HSA-eligible. No insurance hoops.
-              </p>
-            </div>
+            
           </div>
         </div>
       </section>
