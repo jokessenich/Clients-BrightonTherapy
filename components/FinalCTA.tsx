@@ -21,10 +21,13 @@ export default function FinalCTA({
         <a href={`tel:${SITE.phoneRaw}`} className="cta-phone r d3">
           {SITE.phone}
         </a>
-        <p className="cta-note r d3">Call our center today</p>
+        <p className="cta-note r d3">Call or text us today</p>
         <div className="cta-btns r d4">
           <a href={`tel:${SITE.phoneRaw}`} className="btn btn-fill">
             Call Now
+          </a>
+          <a href={`sms:${SITE.phoneRaw}`} className="btn btn-ghost">
+            Text Us
           </a>
           <RequestButton className="btn btn-dark" />
         </div>

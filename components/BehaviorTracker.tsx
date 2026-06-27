@@ -81,6 +81,19 @@ export default function BehaviorTracker() {
         return;
       }
 
+      // Text-link (SMS) clicks — same landmark labeling as call clicks.
+      if (link && link.getAttribute('href')?.startsWith('sms:')) {
+        let location = 'body';
+        if (link.closest('nav')) location = 'nav';
+        else if (link.closest('footer')) location = 'footer';
+        else if (link.closest('[class*="hero"]')) location = 'hero';
+        else if (link.closest('[class*="mobile-cta"]')) location = 'mobile-bar';
+        else if (link.closest('[class*="sidebar"]')) location = 'sidebar';
+        else if (link.closest('[class*="cta"]')) location = 'final-cta';
+        track('text-click', { location });
+        return;
+      }
+
       // "Request Appointment" / primary CTA clicks.
       const text = interactive.textContent?.toLowerCase() || '';
       if (text.includes('request') || text.includes('appointment')) {
