@@ -236,6 +236,20 @@ body.js-reveal .r.v {
 .nav.nav-solid .nav-phone-icon { color: var(--rust); }
 .nav:not(.stuck):not(.nav-solid) .nav-phone-icon { color: var(--white); }
 
+/* Text (SMS) icon — sits beside the phone affordance at every breakpoint. */
+.nav-text-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--rust);
+  padding: 0.4rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.nav-text-icon:hover { color: var(--rust-hover); }
+.nav.nav-solid .nav-text-icon { color: var(--rust); }
+.nav:not(.stuck):not(.nav-solid) .nav-text-icon { color: var(--white); }
+
 /* Secondary CTA in nav (Request Appointment) */
 .nav-cta-secondary {
   font-size: 0.78rem;
@@ -1997,7 +2011,7 @@ details[open] .faq-q::after { transform: rotate(45deg); }
      button creates a "phone number twice" first impression with no real
      gain — tap-to-call is already one tap away. Hide it; keep the Request
      Appointment button as the hero's primary CTA. */
-  .hero-actions .btn-fill { display: none; }
+  .hero-actions .btn-fill, .hero-actions .hero-text-cta { display: none; }
   /* Pull hero content up. The desktop layout uses align-items: end with
      a generous top padding (10rem) so the content sits near the bottom
      of a tall photo. On mobile that leaves a large dark band above

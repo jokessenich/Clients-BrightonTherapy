@@ -64,6 +64,9 @@ export default function Hero({
           <a href={`tel:${SITE.phoneRaw}`} className="btn btn-fill">
             Call {SITE.phone}
           </a>
+          <a href={`sms:${SITE.phoneRaw}`} className="btn btn-outline hero-text-cta">
+            Text Us
+          </a>
           <RequestButton className="btn btn-outline" />
         </RevealOnMount>
       </div>
