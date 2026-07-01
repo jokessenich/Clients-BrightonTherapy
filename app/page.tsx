@@ -101,37 +101,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PHILOSOPHY */}
-      <section className="philosophy">
-        <div className="philosophy-inner">
-          <div className="philosophy-quote-side r">
-            <p className="philosophy-quote">
-              We believe that everyone can heal from emotional pain in a caring
-              and warm environment. We want you to feel heard and validated.
-            </p>
-            <p className="philosophy-attr">— Our Philosophy</p>
-          </div>
-          <div className="philosophy-body r d1">
-            <p>
-              Our therapists and coaches will compassionately listen and validate your
-              experience. We understand how emotional pain can impact many parts
-              of a person&apos;s life.
-            </p>
-            <p>
-              We will teach you new and healthy ways to cope with trauma,
-              depression, anxiety, anger, and other emotional issues. We have a
-              dynamic, committed team of therapists and Certified Coaches that
-              will help you realize your strengths and live an empowered life.
-            </p>
-            <p>
-              We also run an adult-only Family Workshop — a small group setting
-              where adults work on family relationships together. Healing often
-              happens in community, not just in isolation.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* SERVICES */}
       <section className="services" id="services">
         <div className="services-header">
@@ -142,6 +111,45 @@ export default function Home() {
             teens, and children. We work collaboratively with you to find what
             helps.
           </p>
+        </div>
+
+        <div className="svc-block r">
+          <div className="svc-img-col">
+            <SmartImage
+              image={IMAGES.youthSession}
+              alt="A young woman in a bright, supportive therapy session"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              style={{ objectFit: 'cover', objectPosition: 'center center' }}
+            />
+            <div className="svc-img-label">Children &amp; Teens</div>
+          </div>
+          <div className="svc-list-col">
+            <div className="svc-cat">Children &amp; Teens</div>
+            <ul className="svc-list">
+              {[
+                { label: 'ADD / ADHD', href: '/services/add-therapy' },
+                { label: 'Anxiety', href: '/services/anxiety-therapy' },
+                { label: 'Depression', href: '/services/depression-therapy' },
+                { label: 'Trauma', href: '/services' },
+                { label: 'Addiction Issues', href: '/services/teenage-therapy' },
+                { label: 'Internet & Gaming Addiction', href: '/services/teenage-therapy' },
+                { label: 'Peer Issues', href: '/services/teenage-therapy' },
+                { label: 'Autism Spectrum Disorder', href: '/services/autism-spectrum-disorder' },
+                { label: 'Gender Identity Support', href: '/services' },
+                { label: 'Emotional Dysregulation', href: '/services/childrens-therapy' },
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href} className="svc-item">
+                    <span className="svc-name">{item.label}</span>
+                    <svg className="svc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         <div className="svc-block r">
@@ -182,43 +190,35 @@ export default function Home() {
             </ul>
           </div>
         </div>
+      </section>
 
-        <div className="svc-block r">
-          <div className="svc-img-col">
-            <SmartImage
-              image={IMAGES.youthSession}
-              alt="A young woman in a bright, supportive therapy session"
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              style={{ objectFit: 'cover', objectPosition: 'center center' }}
-            />
-            <div className="svc-img-label">Children &amp; Teens</div>
+      {/* PHILOSOPHY */}
+      <section className="philosophy">
+        <div className="philosophy-inner">
+          <div className="philosophy-quote-side r">
+            <p className="philosophy-quote">
+              We believe that everyone can heal from emotional pain in a caring
+              and warm environment. We want you to feel heard and validated.
+            </p>
+            <p className="philosophy-attr">— Our Philosophy</p>
           </div>
-          <div className="svc-list-col">
-            <div className="svc-cat">Children &amp; Teens</div>
-            <ul className="svc-list">
-              {[
-                { label: 'ADD / ADHD', href: '/services/add-therapy' },
-                { label: 'Anxiety', href: '/services/anxiety-therapy' },
-                { label: 'Depression', href: '/services/depression-therapy' },
-                { label: 'Trauma', href: '/services' },
-                { label: 'Addiction Issues', href: '/services/teenage-therapy' },
-                { label: 'Internet & Gaming Addiction', href: '/services/teenage-therapy' },
-                { label: 'Peer Issues', href: '/services/teenage-therapy' },
-                { label: 'Autism Spectrum Disorder', href: '/services/autism-spectrum-disorder' },
-                { label: 'Gender Identity Support', href: '/services' },
-                { label: 'Emotional Dysregulation', href: '/services/childrens-therapy' },
-              ].map((item) => (
-                <li key={item.label}>
-                  <Link href={item.href} className="svc-item">
-                    <span className="svc-name">{item.label}</span>
-                    <svg className="svc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
-                      <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          <div className="philosophy-body r d1">
+            <p>
+              Our therapists and coaches will compassionately listen and validate your
+              experience. We understand how emotional pain can impact many parts
+              of a person&apos;s life.
+            </p>
+            <p>
+              We will teach you new and healthy ways to cope with trauma,
+              depression, anxiety, anger, and other emotional issues. We have a
+              dynamic, committed team of therapists and Certified Coaches that
+              will help you realize your strengths and live an empowered life.
+            </p>
+            <p>
+              We also run an adult-only Family Workshop — a small group setting
+              where adults work on family relationships together. Healing often
+              happens in community, not just in isolation.
+            </p>
           </div>
         </div>
       </section>
