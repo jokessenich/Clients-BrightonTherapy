@@ -90,9 +90,7 @@ const TEAM: TeamMember[] = [
     bio: [
       "Mitchell earned his Bachelor's in Psychology from Grand Valley State University and his Masters in Clinical Mental Health Counseling. He's also a Certified Life Coach.",
       "Mitchell has expertise working with teens, adults, and children experiencing anxiety, depression, trauma, ADHD, low self-esteem, emotional dysregulation, and relationship and peer issues. He has worked as a Behavioral Specialist with children and teens diagnosed with autism. Mitchell utilizes mindfulness, cognitive behavioral therapy, and solution-focused therapy in his work with clients. He has mentored teens and taught them the value of teamwork and mutual respect.",
-      "In sessions, Mitchell brings a strong focus on building a warm, trusting, collaborative relationship. He helps clients gain clarity and find new, healthier perspectives on their emotional struggles.",
       "Whether Mitchell is working with adults or teens, he is focused on developing a warm, trusting collaborative relationship with his clients. He helps his clients gain clarity and new, healthy perspectives into their emotional struggles.",
-      "In his spare time, Mitchell loves to travel, fish, and enjoys boating. He loves playing sports. Mitchell has a great enthusiasm for life and lives every day to its fullest. He would love to share his enthusiasm with you and help you live a fulfilling, empowered life. He looks forward to working with you!"
     ],
     specialties: ['Anxiety & depression', 'ADHD', 'Teens & adults', 'Autism spectrum', 'Trauma', 'CBT & mindfulness'],
     personal: 'In his spare time Mitchell loves to travel, fish, boat, and play sports. He brings a real enthusiasm for life to his work and looks forward to sharing that energy with his clients.',
