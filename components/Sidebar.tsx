@@ -170,7 +170,8 @@ export default function Sidebar() {
                 </div>
                 <div className="form-group">
                   <label className="form-label" htmlFor="fservice">
-                    Service Interest
+                    Service Interest{' '}
+                    <span className="form-optional">(optional)</span>
                   </label>
                   <select
                     className="form-select"
@@ -178,9 +179,7 @@ export default function Sidebar() {
                     name="service"
                     defaultValue=""
                   >
-                    <option value="" disabled>
-                      Select a service...
-                    </option>
+                    <option value="">Not sure yet / tell us below</option>
                     <option>Individual Therapy</option>
                     <option>Couples Counseling</option>
                     <option>Child &amp; Teen Therapy</option>

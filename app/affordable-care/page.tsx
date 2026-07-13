@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: 'Can I get reimbursed by my insurance?',
-    a: 'Possibly. Many insurance plans offer out-of-network mental health benefits — partial reimbursement for therapy with an unaffiliated provider. We can provide superbills (detailed receipts with diagnostic and procedure codes) that you submit to your insurer. Call your plan and ask: "What are my out-of-network mental health benefits?"',
+    a: 'In most cases, yes. Our services are eligible for insurance reimbursement. We provide an invoice with the appropriate diagnostic codes that you submit to your insurer. We can\'t guarantee reimbursement — that\'s between you and your plan — but with the major insurance companies, our clients haven\'t had issues. If you want to confirm ahead of time, call your plan and ask: "What are my out-of-network mental health benefits?"',
   },
   {
     q: 'Is the fee the same for couples and family sessions?',

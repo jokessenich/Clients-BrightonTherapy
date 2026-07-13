@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Hero from '@/components/Hero';
 import CredsBar from '@/components/CredsBar';
 import FinalCTA from '@/components/FinalCTA';
+import RequestButton from '@/components/RequestButton';
 import Monogram from '@/components/Monogram';
 import SmartImage from '@/components/SmartImage';
 import type { ImageRef } from '@/components/SmartImage';
@@ -90,12 +91,25 @@ const TEAM: TeamMember[] = [
     bio: [
       "Mitchell earned his Bachelor's in Psychology from Grand Valley State University and his Masters in Clinical Mental Health Counseling. He's also a Certified Life Coach.",
       "Mitchell has expertise working with teens, adults, and children experiencing anxiety, depression, trauma, ADHD, low self-esteem, emotional dysregulation, and relationship and peer issues. He has worked as a Behavioral Specialist with children and teens diagnosed with autism. Mitchell utilizes mindfulness, cognitive behavioral therapy, and solution-focused therapy in his work with clients. He has mentored teens and taught them the value of teamwork and mutual respect.",
-      "Whether Mitchell is working with adults or teens, he is focused on developing a warm, trusting collaborative relationship with his clients. He helps his clients gain clarity and new, healthy perspectives into their emotional struggles.",
+      "In sessions, Mitchell brings a strong focus on building a warm, trusting, collaborative relationship. He helps clients gain clarity and find new, healthier perspectives on their emotional struggles.",
     ],
     specialties: ['Anxiety & depression', 'ADHD', 'Teens & adults', 'Autism spectrum', 'Trauma', 'CBT & mindfulness'],
     personal: 'In his spare time Mitchell loves to travel, fish, boat, and play sports. He brings a real enthusiasm for life to his work and looks forward to sharing that energy with his clients.',
   },
-
+  {
+    name: 'Bailey Vanderweel',
+    title: 'Licensed Master Social Worker',
+    credentials: 'LMSW · Therapist · Masters in Clinical Mental Health',
+    email: 'bailey@wapcenter.org',
+    photo: IMAGES.staffBailey,
+    bio: [
+      "Bailey received her Bachelor's degree in Social Work from Central Michigan University, where she double-majored in Psychology and Social Work. She then earned her Master's degree in Social Work from Madonna University, with a concentration in Clinical Mental Health.",
+      "Bailey has a diverse clinical background that includes crisis intervention, hospital social work, and mental health services. She has successfully treated anxiety, depression, trauma, OCD, eating disorders, ADD, substance abuse, anger management issues, and chronic mental illness. With over 10 years of clinical experience, Bailey has worked with both youth and adults.",
+      "Bailey also specializes in working with couples experiencing communication difficulties, emotional disconnection, trust issues, grief and loss, intimacy challenges, marital infidelity, and mental health concerns. She provides a warm and welcoming environment and strives to help clients achieve happiness and live fulfilling, empowered lives.",
+    ],
+    specialties: ['Anxiety & depression', 'Trauma & OCD', 'Couples & relationships', 'Substance use', 'Eating disorders', 'Youth & adults'],
+    personal: 'In her spare time, Bailey enjoys relaxing, spending time with her loved ones, and watching her favorite TV shows.',
+  },
   {
     name: 'Suzette Presti',
     title: 'Intake Manager',
@@ -182,6 +196,26 @@ export default function StaffPage() {
               <a href={`mailto:${person.email}`} className="team-email">
                 {person.email}
               </a>
+
+              {/* Next step on every card — the staff page is the 2nd most-visited
+                  page but few visitors reach the bottom, so the CTA rides along
+                  with each bio rather than only living at the end. */}
+              <div className="team-cta">
+                <span className="team-cta-label">
+                  Work with {person.name.split(' ')[0]}
+                </span>
+                <div className="team-cta-actions">
+                  <a href={`tel:${SITE.phoneRaw}`} className="btn btn-fill">
+                    Call
+                  </a>
+                  <a href={`sms:${SITE.phoneRaw}`} className="btn btn-ghost">
+                    Text
+                  </a>
+                  <RequestButton className="btn btn-dark">
+                    Request Appointment
+                  </RequestButton>
+                </div>
+              </div>
             </div>
           </article>
         ))}

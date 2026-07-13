@@ -2056,3 +2056,156 @@ details[open] .faq-q::after { transform: rotate(45deg); }
   .contact-form-card { padding: 1.75rem; }
   .crumb { padding: 1rem 1.25rem 0; }
 }
+
+/* ── Price strip ─────────────────────────────────────────────────────────
+   High-placement pricing CTA on the homepage (under Services). */
+.price-strip {
+  background: var(--rust);
+  color: var(--white);
+  padding: 3.25rem 2rem;
+}
+.price-strip-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 2.75rem;
+  align-items: center;
+}
+.price-strip-fee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  padding-right: 2.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.22);
+}
+.price-strip-amt {
+  font-family: var(--serif);
+  font-size: 4.25rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+.price-strip-per {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.82;
+  margin-top: 0.6rem;
+}
+.price-strip-heading {
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem;
+}
+.price-strip-heading em {
+  font-style: italic;
+  color: var(--white);
+  opacity: 0.9;
+}
+.price-strip-sub {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  opacity: 0.92;
+  margin: 0;
+  max-width: 46rem;
+}
+.price-strip-sub strong { font-weight: 700; color: var(--white); }
+.price-strip-points {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.75rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  opacity: 0.95;
+}
+.price-strip-points li::before {
+  content: '✓';
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+.price-strip-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  white-space: nowrap;
+}
+.price-strip .btn-fill {
+  background: var(--white);
+  color: var(--rust);
+  border-color: var(--white);
+}
+.price-strip .btn-fill:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--rust-deep);
+}
+.price-strip-note {
+  font-size: 0.76rem;
+  opacity: 0.78;
+  margin: 0;
+}
+@media (max-width: 900px) {
+  .price-strip { padding: 2.5rem 1.5rem; }
+  .price-strip-inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: left;
+  }
+  .price-strip-fee {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.75rem;
+    padding-right: 0;
+    border-right: none;
+  }
+  .price-strip-amt { font-size: 3rem; }
+  .price-strip-per { margin-top: 0; }
+  .price-strip-heading { font-size: 1.5rem; }
+  .price-strip-cta { align-items: stretch; }
+  .price-strip-cta .btn { text-align: center; }
+}
+
+/* ── Staff card CTA ──────────────────────────────────────────────────────
+   Per-therapist next step. The staff page is the 2nd most-visited page but
+   few visitors reach the bottom, so each bio carries its own call to action. */
+.team-cta {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--stone);
+}
+.team-cta-label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+}
+.team-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.team-cta-actions .btn {
+  padding: 0.6rem 1.15rem;
+  font-size: 0.8rem;
+}
+@media (max-width: 600px) {
+  .team-cta-actions .btn { flex: 1 1 auto; text-align: center; }
+}
+
+/* Optional-field hint — signals which fields can be skipped, to reduce
+   form abandonment (18 opened vs 8 completed in the June data). */
+.form-optional {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--text-light);
+  opacity: 0.75;
+  font-size: 0.85em;
+}

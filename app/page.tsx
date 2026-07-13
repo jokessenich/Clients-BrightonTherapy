@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import CredsBar from '@/components/CredsBar';
 import FinalCTA from '@/components/FinalCTA';
 import AreasServed from '@/components/AreasServed';
+import PriceStrip from '@/components/PriceStrip';
 import FAQSection from '@/components/FAQSection';
 import SmartImage from '@/components/SmartImage';
 import Testimonials from '@/components/Testimonials';
@@ -191,6 +192,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* PRICE STRIP — high placement: scroll data shows <50% reach the
+          pricing content further down, and cost is the most-clicked FAQ. */}
+      <PriceStrip />
 
       {/* PHILOSOPHY */}
       <section className="philosophy">

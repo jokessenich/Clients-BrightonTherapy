@@ -49,7 +49,6 @@ export default function ContactForm() {
       if (typeof window !== 'undefined' && (window as any).umami) {
         (window as any).umami.track('contact-form-submit', {
           service: (formData.get('service') as string) || 'unspecified',
-          referral: (formData.get('referral') as string) || 'unspecified',
           page: window.location.pathname,
         });
       }
@@ -112,7 +111,7 @@ export default function ContactForm() {
       </div>
       <div className="form-group">
         <label className="form-label" htmlFor="c-phone">
-          Phone
+          Phone <span className="form-optional">(optional)</span>
         </label>
         <input
           className="form-input"
@@ -123,18 +122,8 @@ export default function ContactForm() {
         />
       </div>
       <div className="form-group">
-        <label className="form-label" htmlFor="c-pref">
-          Preferred Contact Method
-        </label>
-        <select className="form-select" id="c-pref" name="preferred" defaultValue="email">
-          <option value="email">Email</option>
-          <option value="phone">Phone</option>
-          <option value="text">Text</option>
-        </select>
-      </div>
-      <div className="form-group">
         <label className="form-label" htmlFor="c-service">
-          What brings you in?
+          What brings you in? <span className="form-optional">(optional)</span>
         </label>
         <select
           className="form-select"
@@ -142,9 +131,7 @@ export default function ContactForm() {
           name="service"
           defaultValue=""
         >
-          <option value="" disabled>
-            Select a service...
-          </option>
+          <option value="">Not sure yet / tell us below</option>
           <option>Individual Therapy</option>
           <option>Couples Counseling</option>
           <option>Child &amp; Teen Therapy</option>
@@ -155,41 +142,6 @@ export default function ContactForm() {
           <option>Life Coaching</option>
           <option>Teletherapy</option>
           <option>Other / Not Sure</option>
-        </select>
-      </div>
-      <div className="form-group">
-        <label className="form-label" htmlFor="c-time">
-          Ideal Appointment Time
-        </label>
-        <input
-          className="form-input"
-          type="text"
-          id="c-time"
-          name="ideal_time"
-          placeholder="e.g., Weekday evenings, Saturday mornings"
-        />
-      </div>
-      <div className="form-group">
-        <label className="form-label" htmlFor="c-referral">
-          How did you hear about us?
-        </label>
-        <select
-          className="form-select"
-          id="c-referral"
-          name="referral"
-          defaultValue=""
-        >
-          <option value="" disabled>
-            Select one...
-          </option>
-          <option>Google search</option>
-          <option>Google Maps</option>
-          <option>Referred by a friend or family member</option>
-          <option>Referred by a doctor or therapist</option>
-          <option>Social media</option>
-          <option>Psychology Today</option>
-          <option>Insurance / provider directory</option>
-          <option>Other</option>
         </select>
       </div>
       <div className="form-group">
