@@ -122,13 +122,7 @@ export default function AffordableCarePage() {
                 marginBottom: '1.25rem',
               }}
             >
-              &ldquo;Early in my career, my supervisor asked for a young
-              client&apos;s diagnosis. I told him I didn&apos;t have one — he
-              was a 10-year-old whose parents were getting divorced, and he
-              just needed someone to talk to. My supervisor pushed me to give
-              him a label anyway, so we could bill insurance. I said no. I
-              wasn&apos;t putting a mental-health diagnosis on a child who
-              didn&apos;t need one. That moment stayed with me.&rdquo;
+              &ldquo;Early in my career, I saw how therapists, including myself, felt  pressure to provide a diagnoses quickly for insurance purposes. The focus is supposed to be on the client, not the diagnosis. A therapist needs time to get to know someone without the pressure of providing a diagnosis almost immediately. The client comes first, not the insurance company. &rdquo;
             </p>
             <p
               style={{
