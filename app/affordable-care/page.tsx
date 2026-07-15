@@ -122,7 +122,7 @@ export default function AffordableCarePage() {
                 marginBottom: '1.25rem',
               }}
             >
-              &ldquo;Early in my career, I saw how therapists, including myself, felt  pressure to provide a diagnoses quickly for insurance purposes. The focus is supposed to be on the client, not the diagnosis. A therapist needs time to get to know someone without the pressure of providing a diagnosis almost immediately. The client comes first, not the insurance company. &rdquo;
+              &ldquo;Early in my career, I saw how therapists, including myself, felt  pressure to provide a diagnoses quickly for insurance purposes. The focus is supposed to be on the client, not the diagnosis. A therapist needs time to get to know someone without the pressure of providing a diagnosis almost immediately. The client comes first, not the insurance company.&rdquo;
             </p>
             <p
               style={{
