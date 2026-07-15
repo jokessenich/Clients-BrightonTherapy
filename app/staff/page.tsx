@@ -97,20 +97,6 @@ const TEAM: TeamMember[] = [
     personal: 'In his spare time Mitchell loves to travel, fish, boat, and play sports. He brings a real enthusiasm for life to his work and looks forward to sharing that energy with his clients.',
   },
   {
-    name: 'Bailey Vanderweel',
-    title: 'Licensed Master Social Worker',
-    credentials: 'LMSW · Therapist · Masters in Clinical Mental Health',
-    email: 'bailey@wapcenter.org',
-    photo: IMAGES.staffBailey,
-    bio: [
-      "Bailey received her Bachelor's degree in Social Work from Central Michigan University, where she double-majored in Psychology and Social Work. She then earned her Master's degree in Social Work from Madonna University, with a concentration in Clinical Mental Health.",
-      "Bailey has a diverse clinical background that includes crisis intervention, hospital social work, and mental health services. She has successfully treated anxiety, depression, trauma, OCD, eating disorders, ADD, substance abuse, anger management issues, and chronic mental illness. With over 10 years of clinical experience, Bailey has worked with both youth and adults.",
-      "Bailey also specializes in working with couples experiencing communication difficulties, emotional disconnection, trust issues, grief and loss, intimacy challenges, marital infidelity, and mental health concerns. She provides a warm and welcoming environment and strives to help clients achieve happiness and live fulfilling, empowered lives.",
-    ],
-    specialties: ['Anxiety & depression', 'Trauma & OCD', 'Couples & relationships', 'Substance use', 'Eating disorders', 'Youth & adults'],
-    personal: 'In her spare time, Bailey enjoys relaxing, spending time with her loved ones, and watching her favorite TV shows.',
-  },
-  {
     name: 'Suzette Presti',
     title: 'Intake Manager',
     credentials: '',
