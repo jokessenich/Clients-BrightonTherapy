@@ -97,6 +97,20 @@ const TEAM: TeamMember[] = [
     personal: 'In his spare time Mitchell loves to travel, fish, boat, and play sports. He brings a real enthusiasm for life to his work and looks forward to sharing that energy with his clients.',
   },
   {
+    name: 'Shoshana Applebaum',
+    title: "Master's Level Intern in Clinical Mental Health",
+    credentials: 'B.A.',
+    email: 'shoshana@wapcenter.org',
+    photo: IMAGES.staffShoshana,
+    bio: [
+      "Shoshana received her Bachelor's degree in Psychology from Oakland University and is currently pursuing her Master's degree in Clinical Mental Health.",
+      "Her counseling experience includes working with adults struggling with anxiety, anger, and trauma in an outpatient, clinical setting. Additionally, Shoshana has worked with children utilizing Applied Behavior Analysis, focusing on empathy, autonomy, and skill-building for children on the autism spectrum.",
+      "In her current Master's level internship, Shoshana works with children and teens navigating anxiety, depression, trauma, and peer relationship issues, utilizing cognitive behavioral therapy and play therapy. In her work with adults, she focuses on trauma-related issues, depression, anger, and anxiety, employing psychodynamic approaches and cognitive behavioral therapy. Shoshana is passionate about client-centered care and is deeply committed to her clients' emotional well-being.",
+    ],
+    specialties: ['Anxiety & depression', 'Trauma', 'Anger', 'Children & teens', 'Autism spectrum', 'CBT & play therapy'],
+    personal: 'In her spare time, Shoshana enjoys reading, hiking, spending time with friends and family, and playing with her cat. She looks forward to helping you live a happy, authentic life and is eager to work with you.',
+  },
+  {
     name: 'Suzette Presti',
     title: 'Intake Manager',
     credentials: '',

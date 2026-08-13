@@ -187,6 +187,7 @@ export const IMAGES = {
   staffKisha: { src: '/images/staff/kisha.jpg', width: 315, height: 420, alt: 'Portrait of Kisha Hath, Therapist and Clinical Supervisor' },
   staffMarcie: { src: '/images/staff/marcie.jpg', width: 512, height: 640, alt: 'Portrait of Marcie Reznik, Certified Life Coach' },
   staffMitchell: { src: '/images/staff/mitchell.jpg', width: 512, height: 592, alt: 'Portrait of Mitchell Brown, Clinical Mental Health Counselor and Coach' },
+  staffShoshana: { src: '/images/staff/shoshana.jpg', width: 420, height: 559, alt: 'Portrait of Shoshana Applebaum, Master\'s Level Intern in Clinical Mental Health' },
   staffBailey: { src: '/images/staff/bailey.jpg', width: 512, height: 769, alt: 'Portrait of Bailey Vanderweel, Licensed Master Social Worker' },
   staffSuzette: { src: '/images/staff/suzette.jpg', width: 768, height: 1024, alt: 'Portrait of Suzette Presti, Intake Manager' },
 };
