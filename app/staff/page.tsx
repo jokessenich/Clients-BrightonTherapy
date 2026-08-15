@@ -107,7 +107,7 @@ const TEAM: TeamMember[] = [
       "Her counseling experience includes working with adults struggling with anxiety, anger, and trauma in an outpatient, clinical setting. Additionally, Shoshana has worked with children utilizing Applied Behavior Analysis, focusing on empathy, autonomy, and skill-building for children on the autism spectrum.",
       "In her current Master's level internship, Shoshana works with children and teens navigating anxiety, depression, trauma, and peer relationship issues, utilizing cognitive behavioral therapy and play therapy. In her work with adults, she focuses on trauma-related issues, depression, anger, and anxiety, employing psychodynamic approaches and cognitive behavioral therapy. Shoshana is passionate about client-centered care and is deeply committed to her clients' emotional well-being.",
     ],
-    specialties: ['Anxiety & depression', 'Trauma', 'Anger', 'Children & teens', 'Autism spectrum', 'CBT & play therapy'],
+    specialties: ['Anxiety & depression', 'Trauma', 'Anger', 'Children & teens', 'Autism spectrum', 'CBT & play therapy', 'Adults'],
     personal: 'In her spare time, Shoshana enjoys reading, hiking, spending time with friends and family, and playing with her cat. She looks forward to helping you live a happy, authentic life and is eager to work with you.',
   },
   {
